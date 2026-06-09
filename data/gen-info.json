@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gen_1",
+    "question": "Under the 1987 Philippine Constitution, what is the maximum term of office allowed for the President of the Philippines?",
+    "choices": ["4 years with one re-election", "5 years without re-election", "6 years without re-election", "6 years with one re-election"],
+    "answer": "6 years without re-election",
+    "explanation": "According to Article VII, Section 4 of the 1987 Philippine Constitution, the President shall be elected by a direct vote of the people for a single term of six years and shall not be eligible for any re-election."
+  },
+  {
+    "id": "gen_2",
+    "question": "Which Republic Act is officially known as the 'Code of Conduct and Ethical Standards for Public Officials and Employees'?",
+    "choices": ["Republic Act No. 3019", "Republic Act No. 6713", "Republic Act No. 9485", "Republic Act No. 7160"],
+    "answer": "Republic Act No. 6713",
+    "explanation": "Republic Act No. 6713 establishes the code of conduct, ethical standards, duties, and responsibilities of public officials and employees, promoting integrity, efficiency, and accountability in government service."
+  },
+  {
+    "id": "gen_3",
+    "question": "Which of the following is declared as a state policy regarding social justice in the 1987 Constitution?",
+    "choices": [
+      "The State shall promote social justice in all phases of national development.",
+      "Social justice shall be implemented only in urban industrial sectors.",
+      "The state shall prioritize business profits over employee welfare.",
+      "Social justice is secondary to defense spending."
+    ],
+    "answer": "The State shall promote social justice in all phases of national development.",
+    "explanation": "Article II, Section 10 of the Declaration of Principles and State Policies states: 'The State shall promote social justice in all phases of national development.'"
+  },
+  {
+    "id": "gen_4",
+    "question": "What is the national flower of the Philippines, representing purity and simplicity?",
+    "choices": ["Sampaguita", "Orchid", "Waling-waling", "Rose"],
+    "answer": "Sampaguita",
+    "explanation": "Sampaguita was declared the national flower of the Philippines in 1934 by Governor-General Frank Murphy. It is a sweet-smelling white flower associated with purity, simplicity, and strength."
+  },
+  {
+    "id": "gen_5",
+    "question": "Under RA 6713, public officials and employees are required to file a Statement of Assets, Liabilities, and Net Worth (SALN) within how many days after assumption of office?",
+    "choices": ["15 days", "30 days", "45 days", "60 days"],
+    "answer": "30 days",
+    "explanation": "Under Section 8 of RA 6713, the Statement of Assets, Liabilities and Net Worth (SALN) must be filed within thirty (30) days after assumption of office, on or before April 30 of every year thereafter, and within thirty (30) days after resignation or separation from the service."
+  }
+]

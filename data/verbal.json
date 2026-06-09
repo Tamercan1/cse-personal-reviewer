@@ -1,0 +1,42 @@
+[
+  {
+    "id": "verb_1",
+    "question": "Choose the word that is most nearly opposite in meaning to the capitalized word: 'The judge was known for his IMPARTIAL decisions.'",
+    "choices": ["Biased", "Fair", "Objective", "Neutral"],
+    "answer": "Biased",
+    "explanation": "'Impartial' means treating all rivals or disputants equally; fair and just. The opposite (antonym) of impartial is 'biased', which means showing an unreasonable preference or prejudice."
+  },
+  {
+    "id": "verb_2",
+    "question": "Which of the following sentences is grammatically correct?",
+    "choices": [
+      "Neither the director nor the managers has signed the contract.",
+      "Neither the director nor the managers have signed the contract.",
+      "Neither the director or the managers have signed the contract.",
+      "Neither the director nor the managers was signing the contract."
+    ],
+    "answer": "Neither the director nor the managers have signed the contract.",
+    "explanation": "When a subject has two parts connected by 'neither... nor', the verb agrees with the closer subject. 'Managers' is plural and closer to the verb, so the plural verb 'have' is correct."
+  },
+  {
+    "id": "verb_3",
+    "question": "Select the word that is closest in meaning to the capitalized word: 'The software update was designed to MITIGATE the system lag.'",
+    "choices": ["Increase", "Alleviate", "Ignore", "Aggravate"],
+    "answer": "Alleviate",
+    "explanation": "'Mitigate' means to make less severe, serious, or painful. 'Alleviate' is a direct synonym meaning to make suffering or a problem less severe."
+  },
+  {
+    "id": "verb_4",
+    "question": "Fill in the blank with the correct preposition: 'The committee members finally agreed ________ the terms of the proposal.'",
+    "choices": ["to", "on", "in", "with"],
+    "answer": "on",
+    "explanation": "We 'agree on' a plan, topic, or terms after discussion. 'Agree to' is used when giving consent to a proposal/action, and 'agree with' is used when sharing the same opinion as someone else."
+  },
+  {
+    "id": "verb_5",
+    "question": "Identify the relationship in the given analogy: BIRD : FLY :: FISH : ________",
+    "choices": ["Water", "Swim", "Gill", "Scale"],
+    "answer": "Swim",
+    "explanation": "This is an agent-to-action analogy. A bird's primary mode of movement is to fly, and a fish's primary mode of movement is to swim."
+  }
+]

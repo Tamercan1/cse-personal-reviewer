@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cler_1",
+    "question": "Which of the following words is spelled correctly?",
+    "choices": ["Accomodate", "Accommadate", "Accommodate", "Acommodate"],
+    "answer": "Accommodate",
+    "explanation": "The correct spelling is 'accommodate' with a double 'c' and double 'm'. It is one of the most commonly misspelled words in spelling subtests."
+  },
+  {
+    "id": "cler_2",
+    "question": "If the names [Santos, A.], [Santos, B.], [San Diego, M.], and [Santiago, J.] are arranged alphabetically, which name will come third?",
+    "choices": ["San Diego, M.", "Santiago, J.", "Santos, A.", "Santos, B."],
+    "answer": "Santos, A.",
+    "explanation": "To arrange them alphabetically: (1) San Diego, M. [begins with 'San '], (2) Santiago, J. [begins with 'Santia'], (3) Santos, A. [begins with 'Santo' followed by 'A'], (4) Santos, B. [begins with 'Santo' followed by 'B']. Therefore, 'Santos, A.' is third."
+  },
+  {
+    "id": "cler_3",
+    "question": "What is the correct filing order for the following government offices: (1) Department of Education (2) Bureau of Internal Revenue (3) Commission on Audit?",
+    "choices": ["2, 3, 1", "3, 2, 1", "2, 1, 3", "1, 2, 3"],
+    "answer": "2, 3, 1",
+    "explanation": "In filing, names are indexed alphabetically by their key words. Ordering the first words: 'Bureau' (2) comes first, 'Commission' (3) comes second, and 'Department' (1) comes third. So, the correct filing order is 2, 3, 1."
+  },
+  {
+    "id": "cler_4",
+    "question": "Compare the two lists. How many differences can you find between List A and List B?\nList A: [PX-2098, 98-XQ-30, AB-7019, 12-YY-09]\nList B: [PX-2089, 98-XQ-30, AB-7019, 12-YY-90]",
+    "choices": ["0", "1", "2", "3"],
+    "answer": "2",
+    "explanation": "Compare item-by-item:\n1. PX-2098 vs PX-2089 (Difference 1)\n2. 98-XQ-30 vs 98-XQ-30 (Same)\n3. AB-7019 vs AB-7019 (Same)\n4. 12-YY-09 vs 12-YY-90 (Difference 2)\nThere are exactly 2 differences."
+  },
+  {
+    "id": "cler_5",
+    "question": "Choose the correctly punctuated sentence.",
+    "choices": [
+      "Please submit your documents by Friday, June 12.",
+      "Please submit your documents by Friday June 12.",
+      "Please, submit your documents by Friday June 12.",
+      "Please submit your documents by Friday; June 12."
+    ],
+    "answer": "Please submit your documents by Friday, June 12.",
+    "explanation": "A comma is used to separate the day of the week from the calendar date, and a period ends a statement. 'Friday, June 12.' is correct."
+  }
+]

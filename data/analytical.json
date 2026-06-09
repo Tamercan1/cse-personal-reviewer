@@ -1,0 +1,52 @@
+[
+  {
+    "id": "anal_1",
+    "question": "If all dogs are loyal, and Buster is a dog, which of the following statements must be true?",
+    "choices": [
+      "Buster is definitely loyal.",
+      "Buster is probably loyal.",
+      "Buster is not loyal.",
+      "Loyal animals are always dogs."
+    ],
+    "answer": "Buster is definitely loyal.",
+    "explanation": "This is a basic deductive logical syllogism. Premise 1: All dogs are loyal. Premise 2: Buster is a dog. Conclusion: Buster is loyal. Because the premises are absolute, the conclusion must be definitely true."
+  },
+  {
+    "id": "anal_2",
+    "question": "Choose the word that does NOT belong with the others in the group.",
+    "choices": ["Core", "Crust", "Mantle", "Atmosphere"],
+    "answer": "Atmosphere",
+    "explanation": "Core, crust, and mantle are the three internal layers that make up the solid structure of the Earth. The atmosphere is the gaseous envelope surrounding the Earth, making it the odd one out."
+  },
+  {
+    "id": "anal_3",
+    "question": "Statements: (1) Some actors are singers. (2) All singers are dancers. What valid conclusion can be drawn?",
+    "choices": [
+      "All actors are dancers.",
+      "Some actors are dancers.",
+      "No actors are dancers.",
+      "All dancers are singers."
+    ],
+    "answer": "Some actors are dancers.",
+    "explanation": "Since 'Some actors are singers' and 'All singers are dancers', the specific actors who are singers must also be dancers. Therefore, we can validly conclude that 'Some actors are dancers'."
+  },
+  {
+    "id": "anal_4",
+    "question": "If X is taller than Y, and Y is taller than Z, which of the following statements represents the correct relationship?",
+    "choices": [
+      "Z is taller than X.",
+      "Y is the tallest.",
+      "X is taller than Z.",
+      "X and Z are of the same height."
+    ],
+    "answer": "X is taller than Z.",
+    "explanation": "The relationship can be written as an inequality: X > Y and Y > Z. By transitive property, X > Z. Therefore, X is taller than Z."
+  },
+  {
+    "id": "anal_5",
+    "question": "Teacher is to School as Doctor is to ________.",
+    "choices": ["Medicine", "Patient", "Hospital", "Stethoscope"],
+    "answer": "Hospital",
+    "explanation": "This is a worker-to-workplace analogy. A teacher's primary professional workplace is a school, and a doctor's primary professional workplace is a hospital."
+  }
+]

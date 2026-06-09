@@ -1,0 +1,37 @@
+[
+  {
+    "id": "num_1",
+    "question": "What is 25% of 200?",
+    "choices": ["25", "50", "75", "100"],
+    "answer": "50",
+    "explanation": "To find 25% of 200, convert 25% to a decimal (0.25) and multiply: 0.25 × 200 = 50. Alternatively, 25% is equal to 1/4, and 1/4 of 200 is 50."
+  },
+  {
+    "id": "num_2",
+    "question": "If a car travels at a constant speed of 60 km/h, how far will it travel in 2.5 hours?",
+    "choices": ["120 km", "150 km", "160 km", "180 km"],
+    "answer": "150 km",
+    "explanation": "Use the distance formula: Distance = Speed × Time. Here, Speed = 60 km/h and Time = 2.5 hours. Distance = 60 × 2.5 = 150 km."
+  },
+  {
+    "id": "num_3",
+    "question": "Complete the numerical series: 3, 6, 12, 24, 48, ...?",
+    "choices": ["56", "72", "96", "120"],
+    "answer": "96",
+    "explanation": "Analyze the pattern between consecutive numbers: 3 × 2 = 6, 6 × 2 = 12, 12 × 2 = 24, 24 × 2 = 48. Each term is double the previous term. The next term is 48 × 2 = 96."
+  },
+  {
+    "id": "num_4",
+    "question": "A laptop is sold for Php 24,000 after a 20% discount. What was its original price?",
+    "choices": ["Php 28,000", "Php 30,000", "Php 32,000", "Php 36,000"],
+    "answer": "Php 30,000",
+    "explanation": "Let X be the original price. The sale price represents 80% of the original price (100% - 20% = 80%). So, 0.80 × X = Php 24,000. Solving for X: X = 24,000 / 0.80 = Php 30,000."
+  },
+  {
+    "id": "num_5",
+    "question": "Find the average of the following set of numbers: 15, 20, 25, 30, and 35.",
+    "choices": ["20", "25", "30", "35"],
+    "answer": "25",
+    "explanation": "To find the average, sum all numbers and divide by the count of numbers: Sum = 15 + 20 + 25 + 30 + 35 = 125. Since there are 5 numbers, Average = 125 / 5 = 25."
+  }
+]
