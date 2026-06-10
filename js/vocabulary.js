@@ -38,6 +38,21 @@ function showTodayWords() {
     dayData.words.forEach(item => {
         const isMastered = vocabularyState.masteredWords.includes(item.word);
         
+        // Define clean tag/chip arrays for Synonyms and Antonyms
+        const synonymsHTML = item.synonyms ? item.synonyms.map(syn => `
+            <span class="inline-block bg-slate-100 text-slate-650 text-[11px] px-2.5 py-0.5 rounded-full border border-slate-200/60 font-semibold select-none">
+                ${syn}
+            </span>`).join('') : '';
+
+        const antonymsHTML = item.antonyms ? item.antonyms.map(ant => `<span class="inline-block bg-slate-100 text-slate-650 text-[11px] px-2.5 py-0.5 rounded-full border border-slate-200/60 font-semibold select-none">
+                ${ant}
+            </span>`).join('') : '';
+
+        // Master button SVG Icon based on state
+        const starIconHTML = isMastered 
+            ? `<svg class="w-4 h-4 text-emerald-600 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`
+            : `<svg class="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
+
         const card = document.createElement('div');
         card.className = `bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden border-slate-200`;
         
@@ -58,12 +73,12 @@ function showTodayWords() {
                         <span class="text-xs text-slate-400 font-mono">${item.ipa}</span>
                     </div>
                 </div>
-                <button onclick="toggleMastered('${item.word.replace(/'/g, "\\'")}')" class="p-2.5 rounded-xl border transition-all flex items-center space-x-1.5 text-xs font-semibold focus:outline-none ${
+                <button onclick="toggleMastered('${item.word.replace(/'/g, "\\'")}')" class="group p-2 rounded-xl border transition-all flex items-center space-x-1.5 text-xs font-semibold focus:outline-none cursor-pointer ${
                     isMastered 
                     ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100/70' 
-                    : 'bg-white text-slate-500 border-slate-200 hover:border-blue-400 hover:bg-blue-50/10 hover:text-blue-600'
+                    : 'bg-white text-slate-555 border-slate-200 hover:border-blue-400 hover:bg-blue-50/10 hover:text-blue-600'
                 }" title="${isMastered ? 'Word Mastered' : 'Mark as Mastered'}">
-                    <span>${isMastered ? '★' : '☆'}</span>
+                    ${starIconHTML}
                     <span>${isMastered ? 'Mastered' : 'Master'}</span>
                 </button>
             </div>
@@ -72,6 +87,18 @@ function showTodayWords() {
                 <strong class="text-slate-700 text-xs uppercase tracking-wider font-semibold block mb-1">Definition</strong>
                 ${item.definition}
             </p>
+
+            <!-- Synonyms and Antonyms chips section -->
+            <div class="mb-4 space-y-2.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider min-w-[70px]">Synonyms:</span>
+                    <div class="flex flex-wrap gap-1.5">${synonymsHTML}</div>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider min-w-[70px]">Antonyms:</span>
+                    <div class="flex flex-wrap gap-1.5">${antonymsHTML}</div>
+                </div>
+            </div>
             
             <div class="bg-slate-50 rounded-xl p-3.5 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Context Sentence</span>
@@ -108,11 +135,16 @@ function toggleMastered(word) {
     showTodayWords();
 }
 
+function scrollToTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function nextDay() {
     const maxDay = Math.max(...vocabularyState.vocabData.map(d => d.day), 1);
     if (vocabularyState.currentDay < maxDay) {
         vocabularyState.currentDay++;
         showTodayWords();
+        scrollToTop();
     }
 }
 
@@ -120,32 +152,47 @@ function previousDay() {
     if (vocabularyState.currentDay > 1) {
         vocabularyState.currentDay--;
         showTodayWords();
+        scrollToTop();
     }
 }
 
 function updateDayNavigationButtons() {
     const prevBtn = document.getElementById('prev-day-btn');
     const nextBtn = document.getElementById('next-day-btn');
+    const prevBtnBottom = document.getElementById('prev-day-btn-bottom');
+    const nextBtnBottom = document.getElementById('next-day-btn-bottom');
+    
+    const isFirstDay = (vocabularyState.currentDay === 1);
     
     if (prevBtn) {
-        if (vocabularyState.currentDay === 1) {
-            prevBtn.disabled = true;
-            prevBtn.className = "px-4 py-2.5 bg-slate-50 text-slate-300 font-semibold rounded-xl border border-slate-100 cursor-not-allowed text-sm flex items-center space-x-1";
-        } else {
-            prevBtn.disabled = false;
-            prevBtn.className = "px-4 py-2.5 bg-white text-slate-600 font-semibold rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center space-x-1 cursor-pointer";
-        }
+        prevBtn.disabled = isFirstDay;
+        prevBtn.className = isFirstDay
+            ? "px-4 py-2.5 bg-slate-50 text-slate-300 font-semibold rounded-xl border border-slate-100 cursor-not-allowed text-sm flex items-center space-x-1.5"
+            : "px-4 py-2.5 bg-white text-slate-655 font-semibold rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center space-x-1.5 cursor-pointer";
     }
     
+    if (prevBtnBottom) {
+        prevBtnBottom.disabled = isFirstDay;
+        prevBtnBottom.className = isFirstDay
+            ? "w-full sm:w-auto px-5 py-3 bg-slate-50 text-slate-300 font-semibold rounded-2xl border border-slate-100 cursor-not-allowed text-sm flex items-center justify-center space-x-1.5 select-none transition-all"
+            : "w-full sm:w-auto px-5 py-3 bg-white text-slate-655 font-semibold rounded-2xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center justify-center space-x-1.5 cursor-pointer select-none";
+    }
+    
+    const maxDay = Math.max(...vocabularyState.vocabData.map(d => d.day), 1);
+    const isLastDay = (vocabularyState.currentDay >= maxDay);
+    
     if (nextBtn) {
-        const maxDay = Math.max(...vocabularyState.vocabData.map(d => d.day), 1);
-        if (vocabularyState.currentDay >= maxDay) {
-            nextBtn.disabled = true;
-            nextBtn.className = "px-4 py-2.5 bg-slate-50 text-slate-300 font-semibold rounded-xl border border-slate-100 cursor-not-allowed text-sm flex items-center space-x-1";
-        } else {
-            nextBtn.disabled = false;
-            nextBtn.className = "px-4 py-2.5 bg-white text-slate-600 font-semibold rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center space-x-1 cursor-pointer";
-        }
+        nextBtn.disabled = isLastDay;
+        nextBtn.className = isLastDay
+            ? "px-4 py-2.5 bg-slate-50 text-slate-300 font-semibold rounded-xl border border-slate-100 cursor-not-allowed text-sm flex items-center space-x-1.5"
+            : "px-4 py-2.5 bg-white text-slate-655 font-semibold rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center space-x-1.5 cursor-pointer";
+    }
+    
+    if (nextBtnBottom) {
+        nextBtnBottom.disabled = isLastDay;
+        nextBtnBottom.className = isLastDay
+            ? "w-full sm:w-auto px-5 py-3 bg-slate-50 text-slate-300 font-semibold rounded-2xl border border-slate-100 cursor-not-allowed text-sm flex items-center justify-center space-x-1.5 select-none transition-all"
+            : "w-full sm:w-auto px-5 py-3 bg-white text-slate-655 font-semibold rounded-2xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm flex items-center justify-center space-x-1.5 cursor-pointer select-none";
     }
 }
 
@@ -154,7 +201,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const prevBtn = document.getElementById('prev-day-btn');
     const nextBtn = document.getElementById('next-day-btn');
+    const prevBtnBottom = document.getElementById('prev-day-btn-bottom');
+    const nextBtnBottom = document.getElementById('next-day-btn-bottom');
+    const backToTopBtn = document.getElementById('back-to-top-btn');
     
     if (prevBtn) prevBtn.addEventListener('click', previousDay);
     if (nextBtn) nextBtn.addEventListener('click', nextDay);
+    if (prevBtnBottom) prevBtnBottom.addEventListener('click', previousDay);
+    if (nextBtnBottom) nextBtnBottom.addEventListener('click', nextDay);
+    if (backToTopBtn) backToTopBtn.addEventListener('click', scrollToTop);
+    
 });

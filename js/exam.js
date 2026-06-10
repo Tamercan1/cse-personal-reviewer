@@ -4,8 +4,8 @@
 
 const examState = {
     questions: [],
-    selectedAnswers: Array(25).fill(null),
-    markedForReview: Array(25).fill(false),
+    selectedAnswers: [],
+    markedForReview: [],
     currentQuestion: 0,
     timeRemaining: 9000, // 2 hours 30 minutes in seconds
     finished: false
@@ -53,6 +53,8 @@ async function loadExam() {
         });
         
         examState.questions = allQuestions;
+        examState.selectedAnswers = Array(allQuestions.length).fill(null);
+        examState.markedForReview = Array(allQuestions.length).fill(false);
         
         if (container) {
             container.classList.remove('opacity-50');
@@ -117,7 +119,9 @@ function renderGrid() {
         // show q number and mark if flagged
         btn.innerHTML = `
             <span>${i + 1}</span>
-            <span id="grid-flag-${i}" class="text-[9px] text-amber-500 absolute -top-1 -right-0.5 ${examState.markedForReview[i] ? '' : 'hidden'}">🚩</span>
+            <svg id="grid-flag-${i}" class="w-2.5 h-2.5 text-amber-500 absolute top-0.5 right-0.5 fill-current ${examState.markedForReview[i] ? '' : 'hidden'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
+            </svg>
         `;
         
         btn.addEventListener('click', () => {
@@ -218,11 +222,21 @@ function showQuestion(index) {
     if (flagCheckbox) {
         const isFlagged = examState.markedForReview[index];
         if (isFlagged) {
-            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 text-sm font-semibold transition-all";
-            flagCheckbox.innerHTML = `<span>🚩</span><span>Flagged for Review</span>`;
+            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 text-sm font-semibold transition-all select-none";
+            flagCheckbox.innerHTML = `
+                <svg class="w-4 h-4 text-amber-600 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
+                </svg>
+                <span>Flagged for Review</span>
+            `;
         } else {
-            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-white text-slate-500 border border-slate-200 hover:border-amber-300 hover:text-amber-600 transition-all text-sm font-semibold transition-all cursor-pointer";
-            flagCheckbox.innerHTML = `<span>☆</span><span>Flag for Review</span>`;
+            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-white text-slate-500 border border-slate-200 hover:border-amber-300 hover:text-amber-600 transition-all text-sm font-semibold transition-all cursor-pointer select-none";
+            flagCheckbox.innerHTML = `
+                <svg class="w-4 h-4 text-slate-400 group-hover:text-amber-500 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
+                </svg>
+                <span>Flag for Review</span>
+            `;
         }
     }
     

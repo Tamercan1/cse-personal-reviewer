@@ -69,6 +69,8 @@ function showQuestion() {
     
     // Hide explanation box
     document.getElementById('explanation-box').classList.add('hidden');
+    const expBoxDesktop = document.getElementById('explanation-box-desktop');
+    if (expBoxDesktop) expBoxDesktop.classList.add('hidden');
     
     // Setup submit button
     const submitBtn = document.getElementById('action-btn');
@@ -146,6 +148,15 @@ function checkAnswer() {
     expText.textContent = question.explanation;
     expBox.classList.remove('hidden');
     
+    // Show desktop explanation box if it exists
+    const expBoxDesktop = document.getElementById('explanation-box-desktop');
+    const expTextDesktop = document.getElementById('explanation-text-desktop');
+    if (expBoxDesktop && expTextDesktop) {
+        expTextDesktop.textContent = question.explanation;
+        expBoxDesktop.classList.remove('hidden');
+    }
+    
+    
     // Toggle action button to next
     const actionBtn = document.getElementById('action-btn');
     const isLast = (quizState.currentQuestion === quizState.questions.length - 1);
@@ -176,12 +187,19 @@ function finishQuiz() {
     
     const cardBody = document.getElementById('quiz-card-body');
     const cardFooter = document.getElementById('quiz-card-footer');
+    const completionPanel = document.getElementById('quiz-completion-panel');
     
-    if (cardBody) {
-        cardBody.innerHTML = `
-            <div class="text-center py-8">
-                <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-inner animate-bounce">
-                    🎉
+    if (cardBody) cardBody.classList.add('hidden');
+    if (cardFooter) cardFooter.classList.add('hidden');
+    
+    if (completionPanel) {
+        completionPanel.classList.remove('hidden');
+        completionPanel.innerHTML = `
+            <div class="text-center py-8 select-none">
+                <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-100 shadow-sm animate-bounce">
+                    <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0110 21a3.745 3.745 0 01-3.068-1.593 3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.746 3.746 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0114 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
+                    </svg>
                 </div>
                 <h3 class="text-2xl font-bold text-slate-800 mb-2">Quiz Completed!</h3>
                 <p class="text-slate-500 mb-6 max-w-sm mx-auto">You've finished the practice quiz for <strong class="text-slate-700">${quizState.category}</strong>.</p>
@@ -193,26 +211,28 @@ function finishQuiz() {
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md mx-auto">
-                    <button onclick='restartCategory()' class="py-3 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-xl transition-all">
+                    <button onclick="restartCategory()" class="py-3 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-xl transition-all cursor-pointer">
                         Retake Quiz
                     </button>
-                    <a href="dashboard.html" class="py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-center shadow-md shadow-blue-100 transition-all">
+                    <a href="dashboard.html" class="py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-center shadow-md shadow-blue-100 transition-all cursor-pointer">
                         View Results Dashboard
                     </a>
                 </div>
             </div>
         `;
     }
-    
-    if (cardFooter) {
-        cardFooter.classList.add('hidden');
-    }
 }
 
 function restartCategory() {
-    startCategory(quizState.category);
+    const cardBody = document.getElementById('quiz-card-body');
     const cardFooter = document.getElementById('quiz-card-footer');
+    const completionPanel = document.getElementById('quiz-completion-panel');
+    
+    if (completionPanel) completionPanel.classList.add('hidden');
+    if (cardBody) cardBody.classList.remove('hidden');
     if (cardFooter) cardFooter.classList.remove('hidden');
+    
+    startCategory(quizState.category);
 }
 
 function updateProgress() {

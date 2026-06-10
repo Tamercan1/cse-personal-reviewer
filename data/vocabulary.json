@@ -7,21 +7,27 @@
         "type": "noun",
         "ipa": "/ædˈvɜːrsəti/",
         "definition": "A state of hardship, misfortune, or difficulty.",
-        "example": "She showed great strength and resilience in the face of adversity."
+        "example": "She showed great strength and resilience in the face of adversity.",
+        "synonyms": ["hardship", "difficulty", "misfortune"],
+        "antonyms": ["prosperity", "blessing", "advantage"]
       },
       {
         "word": "Pragmatic",
         "type": "adjective",
         "ipa": "/præɡˈmætɪk/",
         "definition": "Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
-        "example": "A pragmatic approach to study scheduling ensures you cover all subjects before the exam."
+        "example": "A pragmatic approach to study scheduling ensures you cover all subjects before the exam.",
+        "synonyms": ["practical", "sensible", "realistic"],
+        "antonyms": ["idealistic", "impractical", "visionary"]
       },
       {
         "word": "Mitigate",
         "type": "verb",
         "ipa": "/ˈmɪtɪɡeɪt/",
         "definition": "To make less severe, serious, or painful.",
-        "example": "Reviewing daily flashcards helps mitigate the stress of exam preparation."
+        "example": "Reviewing daily flashcards helps mitigate the stress of exam preparation.",
+        "synonyms": ["alleviate", "reduce", "lessen"],
+        "antonyms": ["aggravate", "intensify", "increase"]
       }
     ]
   },
@@ -33,21 +39,27 @@
         "type": "adjective",
         "ipa": "/ɪˈkwɪvəkl/",
         "definition": "Open to more than one interpretation; ambiguous, uncertain, or questionable.",
-        "example": "The politician gave an equivocal answer when asked about the proposed tax reforms."
+        "example": "The politician gave an equivocal answer when asked about the proposed tax reforms.",
+        "synonyms": ["ambiguous", "vague", "uncertain"],
+        "antonyms": ["clear", "definite", "unequivocal"]
       },
       {
         "word": "Meticulous",
         "type": "adjective",
         "ipa": "/məˈtɪkjələs/",
         "definition": "Showing great attention to detail; very careful and precise.",
-        "example": "A meticulous review of the clerical questions can save you from spelling mistakes."
+        "example": "A meticulous review of the clerical questions can save you from spelling mistakes.",
+        "synonyms": ["precise", "careful", "detailed"],
+        "antonyms": ["careless", "sloppy", "negligent"]
       },
       {
         "word": "Benevolent",
         "type": "adjective",
         "ipa": "/bəˈnevələnt/",
         "definition": "Well-meaning and kindly; serving a charitable rather than a profit-making purpose.",
-        "example": "The benevolent supervisor offered to mentor the new civil service interns."
+        "example": "The benevolent supervisor offered to mentor the new civil service interns.",
+        "synonyms": ["kind", "generous", "helpful"],
+        "antonyms": ["malevolent", "selfish", "hostile"]
       }
     ]
   },
@@ -59,21 +71,27 @@
         "type": "adjective",
         "ipa": "/ˈkɒɡnɪzənt/",
         "definition": "Having knowledge or being aware of something.",
-        "example": "Reviewees must be cognizant of the rules governing the examination rooms."
+        "example": "Reviewees must be cognizant of the rules governing the examination rooms.",
+        "synonyms": ["aware", "conscious", "mindful"],
+        "antonyms": ["unaware", "ignorant", "oblivious"]
       },
       {
         "word": "Acuteness",
         "type": "noun",
         "ipa": "/əˈkjuːtnəs/",
         "definition": "Sharpness or severity; intellectual alertness or penetration.",
-        "example": "Her mathematical acuteness helped her solve the complex numerical series instantly."
+        "example": "Her mathematical acuteness helped her solve the complex numerical series instantly.",
+        "synonyms": ["sharpness", "severity", "sensitivity"],
+        "antonyms": ["dullness", "mildness", "slowness"]
       },
       {
         "word": "Diligence",
         "type": "noun",
         "ipa": "/ˈdɪlɪdʒəns/",
         "definition": "Careful and persistent work or effort.",
-        "example": "Your diligence in studying will pay off on the day of the Civil Service Exam."
+        "example": "Your diligence in studying will pay off on the day of the Civil Service Exam.",
+        "synonyms": ["persistence", "industry", "attentiveness"],
+        "antonyms": ["laziness", "neglect", "sloth"]
       }
     ]
   }

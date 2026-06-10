@@ -6,6 +6,7 @@
     <title>CSE Reviewer - Philippine Civil Service Exam Prep</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9afc422c67.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -35,70 +36,69 @@
     <!-- Main Content Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
-        <!-- Welcome Hero Section -->
-        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 sm:p-10 text-white shadow-xl shadow-blue-100 mb-8 relative overflow-hidden">
-            <div class="absolute right-0 bottom-0 opacity-10 transform translate-x-12 translate-y-12">
-                <svg class="w-72 h-72" fill="currentColor" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="40" />
+        <!-- Compact Greeting & Continue Learning Card -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-6 mb-8">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 border border-blue-100 flex items-center justify-center text-sm font-bold shadow-sm select-none">
+                    RD
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold text-slate-800 tracking-tight">Good day, Ka-CSE</h1>
+                    <p class="text-sm text-slate-500 mt-0.5">Resume your study journey and stay consistent.</p>
+                </div>
+            </div>
+            <a href="pages/practice.html" class="inline-flex items-center justify-center px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-md shadow-blue-100 transition-all hover:scale-[1.02] active:scale-[0.98] duration-150 text-sm cursor-pointer whitespace-nowrap">
+                <svg class="w-4.5 h-4.5 mr-2" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
-            </div>
-            
-            <div class="relative z-10 max-w-2xl">
-                <span class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 border border-white/10 shadow-inner">
-                    🇵🇭 Philippine CSE Prep
-                </span>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3">CSE Reviewer</h1>
-                <p class="text-blue-100 text-base sm:text-lg mb-6 leading-relaxed">
-                    Review smarter with Quizlet-style vocabulary cards, LeetCode-style practice quizzes, and full realistic exam simulations. Ace the Civil Service Exam on your first try!
-                </p>
-                <a href="pages/practice.html" class="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-2xl shadow-lg transition-all hover:scale-105 active:scale-95 duration-150">
-                    Start Learning
-                </a>
-            </div>
+                Continue Studying
+            </a>
         </div>
 
         <!-- Dashboard Stats Section -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <!-- Streak Card -->
+            <!-- Exam High Score Card -->
             <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm flex items-center space-x-4">
-                <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100 text-3xl">
-                    🔥
+                <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-100">
+                    <i class="fa-solid fa-bullseye fa-2xl" style="color: rgb(20, 33, 55);"></i>
                 </div>
                 <div>
-                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Daily Streak</span>
-                    <h3 id="daily-streak" class="text-2xl font-extrabold text-slate-800 mt-0.5">1 Day</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Keep studying to maintain your streak!</p>
+                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block">Exam High Score</span>
+                    <h3 id="stat-high-score" class="text-xl font-extrabold text-slate-800 mt-0.5">0% (0 / 0)</h3>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Your highest mock exam score.</p>
                 </div>
             </div>
 
-            <!-- Vocabulary Card -->
+            <!-- Vocabulary Progress Card -->
             <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm flex items-center space-x-4">
-                <div class="p-4 rounded-2xl bg-violet-50 border border-violet-100 text-3xl">
-                    📚
+                <div class="p-4 rounded-2xl bg-violet-50 border border-violet-100">
+                    <i class="fa-solid fa-book fa-2xl" style="color: rgb(20, 33, 55);"></i>
                 </div>
                 <div>
-                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Vocabulary Digest</span>
-                    <h3 id="stat-vocab-day" class="text-2xl font-extrabold text-slate-800 mt-0.5">Day 1</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">20 new words are ready to learn today.</p>
+                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block">Vocabulary Progress</span>
+                    <h3 id="stat-vocab-progress" class="text-xl font-extrabold text-slate-800 mt-0.5">0 / 0 Mastered</h3>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Mastered words from the digest.</p>
                 </div>
             </div>
 
             <!-- Best Practice Card -->
             <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm flex items-center space-x-4">
-                <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100 text-3xl">
-                    🏆
+                <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+                    <i class="fa-solid fa-trophy fa-2xl" style="color: rgb(20, 33, 55);"></i>
                 </div>
                 <div class="overflow-hidden w-full">
-                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Best Practice Score</span>
-                    <h3 id="stat-best-score" class="text-xl font-extrabold text-slate-800 mt-0.5 truncate">Null</h3>
-                    <p class="text-xs text-slate-500 mt-0.5">Your highest score across categories.</p>
+                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block">Best Practice Score</span>
+                    <h3 id="stat-best-score" class="text-xl font-extrabold text-slate-800 mt-0.5 truncate">0%</h3>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Your highest score across categories.</p>
                 </div>
             </div>
         </div>
 
         <!-- Three Primary Actions -->
-        <h2 class="text-lg font-bold text-slate-800 mb-4 tracking-tight flex items-center space-x-2">
-            <span>🚀</span>
+        <h2 class="text-lg font-bold text-slate-800 mb-4 tracking-tight flex items-center space-x-2 select-none">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.61 3.54a14.98 14.98 0 00-6.16 12.12A14.98 14.98 0 009.29 21.3m5.84-2.58A14.98 14.98 0 0021 12.12M12 12h.01M16 8h.01M12 8h.01M8 12h.01"></path>
+            </svg>
             <span>Primary Review Programs</span>
         </h2>
         
@@ -106,18 +106,20 @@
             <!-- Practice Quiz Card -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
                 <div>
-                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold mb-4 border border-blue-100">
-                        ⚡
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 border border-blue-100">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
                     </div>
                     <span class="inline-block text-[10px] font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 mb-2 uppercase tracking-wide">
                         Instant Feedback
                     </span>
                     <h3 class="text-xl font-extrabold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">Practice Quiz</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        Test your skills across Numerical, Verbal, Analytical, Clerical, and Gen-Info subtests. Review detailed step-by-step explanations after each answer.
+                    <p class="text-slate-550 text-sm leading-relaxed mb-6">
+                        Select category and test your skills with step-by-step explanations.
                     </p>
                 </div>
-                <a href="pages/practice.html" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-center shadow-md shadow-blue-100 transition-all cursor-pointer animate-duration-150">
+                <a href="pages/practice.html" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-center shadow-md shadow-blue-100 transition-all cursor-pointer">
                     Start Practice Quiz
                 </a>
             </div>
@@ -125,18 +127,20 @@
             <!-- Full Exam Simulation Card -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
                 <div>
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl font-bold mb-4 border border-indigo-100">
-                        ⏱️
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 border border-indigo-100">
+                        <svg class="w-6 h-6 text-indigo-650" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
                     </div>
                     <span class="inline-block text-[10px] font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 mb-2 uppercase tracking-wide">
                         Simulated Exam
                     </span>
                     <h3 class="text-xl font-extrabold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors">Exam Simulation</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        Take a timed, 25-question mock exam containing mixed subtest categories. Flag items for review, track remaining time, and analyze passing results.
+                    <p class="text-slate-550 text-sm leading-relaxed mb-6">
+                        170-question mock exam containing mixed subtest categories. Finish within 2 hours and 10 minutes.
                     </p>
                 </div>
-                <a href="pages/exam.html" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-center shadow-md shadow-indigo-100 transition-all cursor-pointer animate-duration-150">
+                <a href="pages/exam.html" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-center shadow-md shadow-indigo-100 transition-all cursor-pointer">
                     Start Simulation
                 </a>
             </div>
@@ -144,18 +148,20 @@
             <!-- Vocabulary Digest Card -->
             <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
                 <div>
-                    <div class="w-12 h-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center text-xl font-bold mb-4 border border-violet-100">
-                        📖
+                    <div class="w-12 h-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center mb-4 border border-violet-100">
+                        <svg class="w-6 h-6 text-violet-650" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
                     </div>
                     <span class="inline-block text-[10px] font-bold px-2.5 py-1 rounded-full bg-violet-50 text-violet-700 border border-violet-100 mb-2 uppercase tracking-wide">
                         Daily Reading
                     </span>
                     <h3 class="text-xl font-extrabold text-slate-800 mb-2 group-hover:text-violet-600 transition-colors">Vocabulary Digest</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                        Boost your verbal reasoning capabilities. Read through daily lists of advanced vocabulary words, IPA pronunciation keys, definitions, and contextual examples.
+                    <p class="text-slate-550 text-sm leading-relaxed mb-6">
+                        Increase your vocabulary. Read through daily lists of advanced vocabulary words.
                     </p>
                 </div>
-                <a href="pages/vocabulary.html" class="w-full py-3 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-xl text-center shadow-md shadow-violet-100 transition-all cursor-pointer animate-duration-150">
+                <a href="pages/vocabulary.html" class="w-full py-3 bg-violet-600 hover:bg-violet-700 text-white font-bold rounded-xl text-center shadow-md shadow-violet-100 transition-all cursor-pointer">
                     Open Vocabulary Digest
                 </a>
             </div>
@@ -165,7 +171,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             <!-- Recent Activity list -->
             <div class="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                <h3 class="text-base font-bold text-slate-800 mb-4 tracking-tight">Recent Activity History</h3>
+                <h3 class="text-base font-bold text-slate-800 mb-4 tracking-tight select-none">Recent Activity History</h3>
                 <div id="recent-activity-list" class="divide-y divide-slate-100">
                     <!-- Loaded dynamically via js/main.js -->
                 </div>
@@ -174,7 +180,7 @@
             <!-- Dev tools card -->
             <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
                 <div>
-                    <h3 class="text-base font-bold text-slate-800 mb-2 tracking-tight">System Settings</h3>
+                    <h3 class="text-base font-bold text-slate-800 mb-2 tracking-tight select-none">System Settings</h3>
                     <p class="text-slate-500 text-xs leading-relaxed mb-4">
                         Reset simulated user logs and clear your local storage progress to start clean.
                     </p>

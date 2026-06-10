@@ -39,14 +39,14 @@ function renderNavbar() {
     const streak = load('cse_streak', 1);
     
     const navbarHTML = `
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 select-none">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <!-- Logo / Brand -->
                     <a href="${basePath}index.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl tracking-tight">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                         </svg>
                         <span class="hover:text-blue-700 transition-colors">CSE Reviewer</span>
                     </a>
@@ -64,14 +64,17 @@ function renderNavbar() {
                 <!-- Streak & Profile -->
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-1.5 bg-amber-50 text-amber-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-amber-200 shadow-sm transition-transform hover:scale-105" title="Study streak">
-                        <span>🔥</span>
+                        <!-- Flame outline SVG icon -->
+                        <svg class="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+                        </svg>
                         <span>${streak} Day Streak</span>
                     </div>
                     <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 border border-blue-200 flex items-center justify-center text-xs font-bold shadow-sm" title="User Profile">
                         RD
                     </div>
                     <!-- Mobile Menu Trigger -->
-                    <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-600 hover:text-slate-800 focus:outline-none">
+                    <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-600 hover:text-slate-800 focus:outline-none cursor-pointer">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -93,9 +96,9 @@ function renderNavbar() {
     
     const placeholder = document.getElementById('navbar-placeholder');
     if (placeholder) {
+        placeholder.className = "sticky top-0 z-50";
         placeholder.innerHTML = navbarHTML;
         
-        // Add mobile menu toggle logic
         const toggle = document.getElementById('mobile-menu-toggle');
         const menu = document.getElementById('mobile-menu');
         if (toggle && menu) {
@@ -109,11 +112,12 @@ function renderNavbar() {
 // Function to render the consistent footer
 function renderFooter() {
     const footerHTML = `
-    <footer class="bg-white border-t border-slate-200 mt-auto py-8">
+    <footer class="bg-white border-t border-slate-200 mt-auto py-8 select-none">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
             <p class="text-sm text-slate-500">&copy; 2026 CSE Reviewer.</p>
             <div class="flex justify-center space-x-6 mt-4 md:mt-0">
                 <span class="text-xs text-slate-400">Light Mode Active</span>
+                <span class="text-xs text-slate-400">Offline Study Ready</span>
             </div>
         </div>
     </footer>
@@ -124,22 +128,25 @@ function renderFooter() {
     }
 }
 
-// Simple Custom Toast Notification
+// Custom Toast Notification with SVG iconography instead of Emojis
 function showToast(message, type = 'success') {
     const toast = document.createElement('div');
-    toast.className = `fixed bottom-5 right-5 z-50 flex items-center space-x-2 px-4 py-3 rounded-xl shadow-lg border text-sm font-medium transition-all duration-300 transform translate-y-10 opacity-0`;
+    toast.className = `fixed bottom-5 right-5 z-50 flex items-center space-x-2.5 px-4 py-3 rounded-xl shadow-lg border text-sm font-semibold transition-all duration-300 transform translate-y-10 opacity-0 select-none`;
+    
+    let svgIcon = '';
     
     if (type === 'success') {
-        toast.className += ' bg-emerald-50 text-emerald-800 border-emerald-200';
-        toast.innerHTML = `<span>✅</span><span>${message}</span>`;
+        toast.className += ' bg-emerald-50 text-emerald-800 border-emerald-250';
+        svgIcon = `<svg class="w-4 h-4 text-emerald-600 flex-shrink-0 fill-none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>`;
     } else if (type === 'error') {
-        toast.className += ' bg-rose-50 text-rose-800 border-rose-200';
-        toast.innerHTML = `<span>❌</span><span>${message}</span>`;
+        toast.className += ' bg-rose-50 text-rose-800 border-rose-250';
+        svgIcon = `<svg class="w-4 h-4 text-rose-600 flex-shrink-0 fill-none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>`;
     } else {
-        toast.className += ' bg-blue-50 text-blue-800 border-blue-200';
-        toast.innerHTML = `<span>ℹ️</span><span>${message}</span>`;
+        toast.className += ' bg-blue-50 text-blue-800 border-blue-250';
+        svgIcon = `<svg class="w-4 h-4 text-blue-600 flex-shrink-0 fill-none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.084-1.008l-.382 1.16a.75.75 0 001.077.942l.04-.02m-.03 2.502h.008v.008H12v-.008zM12 3a9 9 0 100 18 9 9 0 000-18z"></path></svg>`;
     }
     
+    toast.innerHTML = `${svgIcon}<span>${message}</span>`;
     document.body.appendChild(toast);
     
     // Animate in
