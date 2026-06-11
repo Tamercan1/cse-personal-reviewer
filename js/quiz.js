@@ -127,8 +127,8 @@ function checkAnswer() {
         
         // if correct => green
         if (choice === question.answer) {
-            btn.className = `w-full text-left p-4 rounded-xl border-2 border-emerald-500 bg-emerald-50/30 flex items-center space-x-3 transition-all duration-200 focus:outline-none`;
-            badge.className = `w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-semibold text-sm border border-emerald-600 select-none`;
+            btn.className = `w-full text-left p-4 rounded-xl border-2 border-blue-500 bg-blue-50/30 flex items-center space-x-3 transition-all duration-200 focus:outline-none`;
+            badge.className = `w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-sm border border-blue-600 select-none`;
         }
         // if wrong => red
         else if (choice === quizState.selectedAnswer) {
@@ -214,13 +214,18 @@ function finishQuiz() {
                     <button onclick="restartCategory()" class="py-3 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-xl transition-all cursor-pointer">
                         Retake Quiz
                     </button>
-                    <a href="dashboard.html" class="py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-center shadow-md shadow-blue-100 transition-all cursor-pointer">
-                        View Results Dashboard
-                    </a>
+                    <button onclick="scrollToTop()" class="py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl text-center shadow-md shadow-blue-100 transition-all cursor-pointer">
+                        Choose Category
+                    </button>
                 </div>
             </div>
         `;
     }
+}
+
+function scrollToTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    restartCategory();
 }
 
 function restartCategory() {
@@ -262,6 +267,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const cat = e.currentTarget.getAttribute('data-category');
                 startCategory(cat);
+                
+                // Only scroll on mobile/tablet viewports (below the desktop lg breakpoint)
+                if (window.innerWidth < 1024) {
+                    const quizCard = document.getElementById('quiz-card');
+                    if (quizCard) {
+                        quizCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
             });
         }); 
         

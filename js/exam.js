@@ -7,7 +7,7 @@ const examState = {
     selectedAnswers: [],
     markedForReview: [],
     currentQuestion: 0,
-    timeRemaining: 9000, // 2 hours 30 minutes in seconds
+    timeRemaining: 11400, // 2 hours 30 minutes in seconds
     finished: false
 };
 
@@ -165,7 +165,11 @@ function showQuestion(index) {
     const oldBtn = document.getElementById(`grid-btn-${prevActive}`);
     const newBtn = document.getElementById(`grid-btn-${index}`);
     if (oldBtn) updateGridBtnClass(oldBtn, prevActive);
-    if (newBtn) updateGridBtnClass(newBtn, index);
+    if (newBtn) {
+        updateGridBtnClass(newBtn, index);
+        // Automatically scroll the active question button into view inside the scrollable container
+        newBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
     
     const question = examState.questions[index];
     
@@ -252,10 +256,15 @@ function showQuestion(index) {
     }
     
     if (nextBtn) {
-        nextBtn.disabled = (index === examState.questions.length - 1); // true if index == lenght of question
-        nextBtn.className = index === examState.questions.length - 1
-            ? "px-4 py-2.5 bg-slate-50 text-slate-300 rounded-xl border border-slate-100 cursor-not-allowed text-sm font-semibold flex items-center space-x-1"
-            : "px-4 py-2.5 bg-white text-slate-600 rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm font-semibold flex items-center space-x-1 cursor-pointer";
+        if (index === examState.questions.length - 1) {
+            nextBtn.disabled = false;
+            nextBtn.innerHTML = `<span>Submit</span><span>&rarr;</span>`;
+            nextBtn.className = "px-4 py-2.5 bg-blue-500 hover:bg-blue-600 text-white rounded-xl border border-blue-600 text-sm font-semibold flex items-center space-x-1 cursor-pointer transition-all shadow-sm";
+        } else {
+            nextBtn.disabled = false;
+            nextBtn.innerHTML = `<span>Next</span><span>&rarr;</span>`;
+            nextBtn.className = "px-4 py-2.5 bg-white text-slate-655 rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm font-semibold flex items-center space-x-1 cursor-pointer";
+        }
     }
 }
 
@@ -440,7 +449,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prev-question-btn');
     const nextBtn = document.getElementById('next-question-btn');
     if (prevBtn) prevBtn.addEventListener('click', () => handleNavigation('prev'));
-    if (nextBtn) nextBtn.addEventListener('click', () => handleNavigation('next'));
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            if (examState.currentQuestion === examState.questions.length - 1) {
+                confirmSubmit();
+            } else {
+                handleNavigation('next');
+            }
+        });
+    }
     
     // Flag check
     const flagBtn = document.getElementById('flag-review-btn');

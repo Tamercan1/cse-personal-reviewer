@@ -40,14 +40,12 @@ function renderNavbar() {
     
     const navbarHTML = `
     <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 select-none">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <!-- Logo / Brand -->
-                    <a href="${basePath}index.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl tracking-tight">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
+                    <a href="${basePath}index.html" class="flex items-center space-x-2 sm:space-x-3 text-blue-600 font-extrabold text-xl sm:text-2xl tracking-tight">
+                        <img src="${basePath}img/logo.png" alt="CSE Reviewer Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl shadow-sm object-cover border border-slate-100">
                         <span class="hover:text-blue-700 transition-colors">CSE Reviewer</span>
                     </a>
                     
@@ -62,19 +60,22 @@ function renderNavbar() {
                 </div>
                 
                 <!-- Streak & Profile -->
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-1.5 bg-amber-50 text-amber-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-amber-200 shadow-sm transition-transform hover:scale-105" title="Study streak">
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <div class="flex items-center space-x-1 bg-amber-50 text-amber-700 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs font-semibold border border-amber-200 shadow-sm transition-transform hover:scale-105" title="Study streak">
                         <!-- Flame outline SVG icon -->
                         <svg class="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
                         </svg>
-                        <span>${streak} Day Streak</span>
+                        <span class="hidden sm:inline">${streak} Day Streak</span>
+                        <span class="sm:hidden">${streak}d</span>
                     </div>
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 border border-blue-200 flex items-center justify-center text-xs font-bold shadow-sm" title="User Profile">
+                    
+                    <div class="hidden sm:flex w-8 h-8 rounded-full bg-blue-100 text-blue-700 border border-blue-200 items-center justify-center text-xs font-bold shadow-sm" title="User Profile">
                         RD
                     </div>
+                    
                     <!-- Mobile Menu Trigger -->
-                    <button id="mobile-menu-toggle" class="md:hidden p-2 text-slate-600 hover:text-slate-800 focus:outline-none cursor-pointer">
+                    <button id="mobile-menu-toggle" class="md:hidden p-1.5 text-slate-600 hover:text-slate-800 focus:outline-none cursor-pointer">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
