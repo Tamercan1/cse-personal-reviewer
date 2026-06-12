@@ -28,6 +28,69 @@
         "example": "Reviewing daily flashcards helps mitigate the stress of exam preparation.",
         "synonyms": ["alleviate", "reduce", "lessen"],
         "antonyms": ["aggravate", "intensify", "increase"]
+      },
+      {
+        "word": "Capricious",
+        "type": "adjective",
+        "ipa": "/kəˈprɪʃəs/",
+        "definition": "Given to sudden and unaccountable changes of mood or behavior.",
+        "example": "The administration was criticized for its capricious decision-making process.",
+        "synonyms": ["unpredictable", "fickle", "erratic"],
+        "antonyms": ["stable", "consistent", "predictable"]
+      },
+      {
+        "word": "Dissent",
+        "type": "noun",
+        "ipa": "/dɪˈsent/",
+        "definition": "The expression or holding of opinions at variance with those previously or commonly held.",
+        "example": "In a democracy, the right to peaceful dissent is a fundamental liberty.",
+        "synonyms": ["disagreement", "opposition", "objection"],
+        "antonyms": ["agreement", "assent", "concurrence"]
+      },
+      {
+        "word": "Elaborate",
+        "type": "adjective",
+        "ipa": "/ɪˈlæbərət/",
+        "definition": "Involving many carefully arranged parts or details; detailed and complicated in design and planning.",
+        "example": "The security system they installed was elaborate and highly effective.",
+        "synonyms": ["detailed", "complex", "intricate"],
+        "antonyms": ["simple", "plain", "uncomplicated"]
+      },
+      {
+        "word": "Feasible",
+        "type": "adjective",
+        "ipa": "/ˈfiːzəbl/",
+        "definition": "Possible to do easily or conveniently.",
+        "example": "It is not feasible to complete the entire reviewer in a single afternoon.",
+        "synonyms": ["possible", "practicable", "workable"],
+        "antonyms": ["impossible", "impractical", "unfeasible"]
+      },
+      {
+        "word": "Garrulous",
+        "type": "adjective",
+        "ipa": "/ˈɡærələs/",
+        "definition": "Excessively talkative, especially on trivial matters.",
+        "example": "The garrulous witness took hours to explain a simple event to the court.",
+        "synonyms": ["talkative", "loquacious", "chatty"],
+        "antonyms": ["taciturn", "quiet", "reserved"]
+      },
+      {
+        "word": "Harangue",
+        "type": "noun",
+        "ipa": "/həˈræŋ/",
+        "definition": "A lengthy and aggressive speech.",
+        "example": "They were subjected to a long harangue about their lack of discipline.",
+        "synonyms": ["tirade", "lecture", "diatribe"],
+        "antonyms": ["eulogy", "panegyric", "acclaim"]
+      },
+      {
+        "word": "Imminent",
+        "type": "adjective",
+        "ipa": "/ˈɪmɪnənt/",
+        "definition": "About to happen; overhanging or threatening.",
+        "example": "With the dark clouds gathering, rain seemed imminent.",
+        "synonyms": ["impending", "approaching", "looming"],
+        "antonyms": ["distant", "remote", "delayed"]
       }
     ]
   },
@@ -60,6 +123,69 @@
         "example": "The benevolent supervisor offered to mentor the new civil service interns.",
         "synonyms": ["kind", "generous", "helpful"],
         "antonyms": ["malevolent", "selfish", "hostile"]
+      },
+      {
+        "word": "Jubilant",
+        "type": "adjective",
+        "ipa": "/ˈdʒuːbɪlənt/",
+        "definition": "Feeling or expressing great happiness and triumph.",
+        "example": "The reviewees were jubilant after receiving their passing results.",
+        "synonyms": ["joyful", "elated", "triumphant"],
+        "antonyms": ["depressed", "sad", "sorrowful"]
+      },
+      {
+        "word": "Lament",
+        "type": "verb",
+        "ipa": "/ləˈment/",
+        "definition": "A passionate expression of grief or sorrow; to mourn.",
+        "example": "He lamented the fact that he did not start studying earlier in the year.",
+        "synonyms": ["mourn", "grieve", "deplore"],
+        "antonyms": ["celebrate", "rejoice", "hail"]
+      },
+      {
+        "word": "Novel",
+        "type": "adjective",
+        "ipa": "/ˈnɒvl/",
+        "definition": "New or unusual in an interesting or creative way.",
+        "example": "She proposed a novel solution to speed up their numerical calculations.",
+        "synonyms": ["new", "original", "innovative"],
+        "antonyms": ["common", "traditional", "old"]
+      },
+      {
+        "word": "Obsolete",
+        "type": "adjective",
+        "ipa": "/ˈɒbsəliːt/",
+        "definition": "No longer produced or used; out of date.",
+        "example": "The old classification rules became obsolete under the new memo guidelines.",
+        "synonyms": ["outdated", "antique", "defunct"],
+        "antonyms": ["modern", "current", "state-of-the-art"]
+      },
+      {
+        "word": "Pensive",
+        "type": "adjective",
+        "ipa": "/ˈpensɪv/",
+        "definition": "Engaged in, involving, or reflecting deep or serious thought.",
+        "example": "She sat in a pensive mood, weighing her choices before taking the exam.",
+        "synonyms": ["thoughtful", "reflective", "contemplative"],
+        "antonyms": ["shallow", "thoughtless", "frivolous"]
+      },
+      {
+        "word": "Quandary",
+        "type": "noun",
+        "ipa": "/ˈkwɒndəri/",
+        "definition": "A state of perplexity or uncertainty over what to do in a difficult situation.",
+        "example": "He was in a quandary about whether to review clerical or verbal reasoning first.",
+        "synonyms": ["dilemma", "predicament", "plight"],
+        "antonyms": ["certainty", "resolution", "clarity"]
+      },
+      {
+        "word": "Resilient",
+        "type": "adjective",
+        "ipa": "/rɪˈzɪliənt/",
+        "definition": "Able to withstand or recover quickly from difficult conditions.",
+        "example": "A resilient study mindset will help you bounce back after low drill scores.",
+        "synonyms": ["tough", "strong", "hardy"],
+        "antonyms": ["fragile", "weak", "vulnerable"]
       }
     ]
   },
@@ -92,6 +218,69 @@
         "example": "Your diligence in studying will pay off on the day of the Civil Service Exam.",
         "synonyms": ["persistence", "industry", "attentiveness"],
         "antonyms": ["laziness", "neglect", "sloth"]
+      },
+      {
+        "word": "Scrutinize",
+        "type": "verb",
+        "ipa": "/ˈskruːtənaɪz/",
+        "definition": "Examine or inspect closely and thoroughly.",
+        "example": "You should scrutinize every option before selecting your final answer.",
+        "synonyms": ["examine", "inspect", "analyze"],
+        "antonyms": ["ignore", "neglect", "glance"]
+      },
+      {
+        "word": "Tacit",
+        "type": "adjective",
+        "ipa": "/ˈtæsɪt/",
+        "definition": "Understood or implied without being stated directly.",
+        "example": "There was a tacit agreement that everyone would remain silent during the mock exam.",
+        "synonyms": ["implied", "unspoken", "implicit"],
+        "antonyms": ["explicit", "stated", "express"]
+      },
+      {
+        "word": "Ubiquitous",
+        "type": "adjective",
+        "ipa": "/juːˈbɪkwɪtəs/",
+        "definition": "Present, appearing, or found everywhere.",
+        "example": "Mobile phones have become ubiquitous in daily communications.",
+        "synonyms": ["omnipresent", "pervasive", "widespread"],
+        "antonyms": ["rare", "scarce", "uncommon"]
+      },
+      {
+        "word": "Venerate",
+        "type": "verb",
+        "ipa": "/ˈvenəreɪt/",
+        "definition": "Regard with great respect or revere.",
+        "example": "Filipinos venerate historical figures who fought for national liberation.",
+        "synonyms": ["revere", "worship", "respect"],
+        "antonyms": ["despise", "dishonor", "mock"]
+      },
+      {
+        "word": "Wary",
+        "type": "adjective",
+        "ipa": "/ˈweəri/",
+        "definition": "Feeling or showing caution about possible dangers or problems.",
+        "example": "Be wary of questions that contain double negatives in the verbal section.",
+        "synonyms": ["cautious", "careful", "alert"],
+        "antonyms": ["reckless", "careless", "foolhardy"]
+      },
+      {
+        "word": "Zealous",
+        "type": "adjective",
+        "ipa": "/ˈzeləs/",
+        "definition": "Having or showing great zeal, passion, or enthusiasm.",
+        "example": "The zealous instructor spent extra hours preparing mock reviews.",
+        "synonyms": ["enthusiastic", "passionate", "eager"],
+        "antonyms": ["apathetic", "indifferent", "unconcerned"]
+      },
+      {
+        "word": "Ephemeral",
+        "type": "adjective",
+        "ipa": "/ɪˈfemərəl/",
+        "definition": "Lasting for a very short time; transient.",
+        "example": "Fame in the digital era is often ephemeral, lasting only a few days.",
+        "synonyms": ["transient", "fleeting", "short-lived"],
+        "antonyms": ["permanent", "eternal", "lasting"]
       }
     ]
   }

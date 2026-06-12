@@ -1,0 +1,377 @@
+[
+  {
+    "day": 1,
+    "questions": [
+      {
+        "question": "What is the definition of the word 'Adversity'?",
+        "type": "meaning",
+        "choices": [
+          "A state of hardship, misfortune, or difficulty.",
+          "Possessing a sensible and realistic approach to planning.",
+          "An excessively talkative and chatty personality.",
+          "A state of being about to happen at any moment."
+        ],
+        "answer": "A state of hardship, misfortune, or difficulty.",
+        "explanation": "Adversity is a noun that refers to a state of hardship, misfortune, or difficulty."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Pragmatic'?",
+        "type": "synonym",
+        "choices": [
+          "Idealistic",
+          "Practical",
+          "Unpredictable",
+          "Intricate"
+        ],
+        "answer": "Practical",
+        "explanation": "Pragmatic means dealing with things sensibly and realistically based on practical considerations. Therefore, 'Practical' is a synonym."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Mitigate'?",
+        "type": "antonym",
+        "choices": [
+          "Alleviate",
+          "Lessen",
+          "Reduce",
+          "Increase"
+        ],
+        "answer": "Increase",
+        "explanation": "Mitigate means to make less severe, serious, or painful. Its antonym is to 'Increase' (or aggravate, intensify)."
+      },
+      {
+        "question": "Fill in the blank: 'The administration was criticized for its _______ decision-making process.'",
+        "type": "fill",
+        "choices": [
+          "Feasible",
+          "Capricious",
+          "Elaborate",
+          "Imminent"
+        ],
+        "answer": "Capricious",
+        "explanation": "Capricious means given to sudden and unaccountable changes of mood or behavior, which fits the context of arbitrary decision-making."
+      },
+      {
+        "question": "What is the definition of the word 'Dissent'?",
+        "type": "meaning",
+        "choices": [
+          "A long and aggressive speech of opposition.",
+          "The expression or holding of opinions at variance with those commonly held.",
+          "An intricate and highly detailed description of planning.",
+          "A quiet, reserved, or silent disposition."
+        ],
+        "answer": "The expression or holding of opinions at variance with those commonly held.",
+        "explanation": "Dissent is a noun referring to disagreement or holding opinions that differ from commonly held views."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Elaborate'?",
+        "type": "antonym",
+        "choices": [
+          "Complex",
+          "Simple",
+          "Intricate",
+          "Detailed"
+        ],
+        "answer": "Simple",
+        "explanation": "Elaborate describes something detailed, complicated, or intricate. Its antonym is 'Simple'."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Feasible'?",
+        "type": "synonym",
+        "choices": [
+          "Workable",
+          "Impossible",
+          "Impractical",
+          "Fickle"
+        ],
+        "answer": "Workable",
+        "explanation": "Feasible means possible to do easily or conveniently. 'Workable' is a close synonym."
+      },
+      {
+        "question": "What is the definition of the word 'Garrulous'?",
+        "type": "meaning",
+        "choices": [
+          "Feeling or showing caution about possible dangers.",
+          "Excessively talkative, especially on trivial matters.",
+          "Lasting for a very short or transient period of time.",
+          "Having an attitude of deep respect and reverence."
+        ],
+        "answer": "Excessively talkative, especially on trivial matters.",
+        "explanation": "Garrulous is an adjective meaning excessively talkative, especially about unimportant topics."
+      },
+      {
+        "question": "Fill in the blank: 'They were subjected to a long _______ about their lack of discipline.'",
+        "type": "fill",
+        "choices": [
+          "Harangue",
+          "Dissent",
+          "Adversity",
+          "Mitigate"
+        ],
+        "answer": "Harangue",
+        "explanation": "A harangue is a lengthy and aggressive speech, which fits the context of being lectured about discipline."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Imminent'?",
+        "type": "synonym",
+        "choices": [
+          "Distant",
+          "Looming",
+          "Delayed",
+          "Remote"
+        ],
+        "answer": "Looming",
+        "explanation": "Imminent means about to happen. 'Looming' (or impending) is a synonym."
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "questions": [
+      {
+        "question": "What is the definition of the word 'Equivocal'?",
+        "type": "meaning",
+        "choices": [
+          "Open to more than one interpretation; ambiguous or uncertain.",
+          "Showing extreme care, precision, and attention to detail.",
+          "Being well-meaning, kindly, and charitable in actions.",
+          "Feeling great happiness and triumph after a victory."
+        ],
+        "answer": "Open to more than one interpretation; ambiguous or uncertain.",
+        "explanation": "Equivocal means ambiguous, uncertain, or questionable, leaving room for multiple interpretations."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Meticulous'?",
+        "type": "synonym",
+        "choices": [
+          "Careless",
+          "Precise",
+          "Sloppy",
+          "Negligent"
+        ],
+        "answer": "Precise",
+        "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Benevolent'?",
+        "type": "antonym",
+        "choices": [
+          "Kind",
+          "Generous",
+          "Malevolent",
+          "Helpful"
+        ],
+        "answer": "Malevolent",
+        "explanation": "Benevolent means well-meaning and kindly. Its antonym is 'Malevolent' (wishing evil to others)."
+      },
+      {
+        "question": "Fill in the blank: 'The reviewees were _______ after receiving their passing results.'",
+        "type": "fill",
+        "choices": [
+          "Pensive",
+          "Jubilant",
+          "Obsolete",
+          "Equivocal"
+        ],
+        "answer": "Jubilant",
+        "explanation": "Jubilant means feeling or expressing great happiness and triumph, which matches the context of passing results."
+      },
+      {
+        "question": "What is the definition of the word 'Lament'?",
+        "type": "meaning",
+        "choices": [
+          "A state of perplexity or uncertainty over what to do.",
+          "A passionate expression of grief or sorrow; to mourn.",
+          "An innovative or unusual solution to a problem.",
+          "Being able to bounce back and recover quickly from hardship."
+        ],
+        "answer": "A passionate expression of grief or sorrow; to mourn.",
+        "explanation": "To lament is to feel or express deep grief, sorrow, or regret."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Novel'?",
+        "type": "antonym",
+        "choices": [
+          "Original",
+          "Innovative",
+          "Traditional",
+          "New"
+        ],
+        "answer": "Traditional",
+        "explanation": "Novel in this context means new or unusual. Its antonym is 'Traditional' or 'Common'."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Obsolete'?",
+        "type": "synonym",
+        "choices": [
+          "Outdated",
+          "Modern",
+          "Current",
+          "State-of-the-art"
+        ],
+        "answer": "Outdated",
+        "explanation": "Obsolete means no longer produced or used; out of date. 'Outdated' is a direct synonym."
+      },
+      {
+        "question": "What is the definition of the word 'Pensive'?",
+        "type": "meaning",
+        "choices": [
+          "A state of confusion or difficult dilemma.",
+          "Engaged in, involving, or reflecting deep or serious thought.",
+          "Being tough, strong, and highly resistant to failure.",
+          "Showing negligent behavior or lack of attention to details."
+        ],
+        "answer": "Engaged in, involving, or reflecting deep or serious thought.",
+        "explanation": "Pensive is an adjective describing someone engaged in or reflecting deep, serious, or melancholic thought."
+      },
+      {
+        "question": "Fill in the blank: 'He was in a _______ about whether to review clerical or verbal reasoning first.'",
+        "type": "fill",
+        "choices": [
+          "Quandary",
+          "Benevolent",
+          "Meticulous",
+          "Resilient"
+        ],
+        "answer": "Quandary",
+        "explanation": "A quandary is a state of perplexity or uncertainty, such as being stuck in a dilemma between two choices."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Resilient'?",
+        "type": "synonym",
+        "choices": [
+          "Fragile",
+          "Tough",
+          "Weak",
+          "Vulnerable"
+        ],
+        "answer": "Tough",
+        "explanation": "Resilient means able to withstand or recover quickly from difficult conditions. 'Tough' is a synonym."
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "questions": [
+      {
+        "question": "What is the definition of the word 'Cognizant'?",
+        "type": "meaning",
+        "choices": [
+          "Having knowledge or being aware of something.",
+          "Intellectual sharpness or sensitivity to detail.",
+          "Careful and persistent work or effort.",
+          "Examining or inspecting something closely and thoroughly."
+        ],
+        "answer": "Having knowledge or being aware of something.",
+        "explanation": "Cognizant means being aware, mindful, or having conscious knowledge of something."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Acuteness'?",
+        "type": "synonym",
+        "choices": [
+          "Dullness",
+          "Sharpness",
+          "Slowness",
+          "Mildness"
+        ],
+        "answer": "Sharpness",
+        "explanation": "Acuteness refers to sharpness, severity, or intellectual alertness. 'Sharpness' is a synonym."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Diligence'?",
+        "type": "antonym",
+        "choices": [
+          "Persistence",
+          "Laziness",
+          "Attentiveness",
+          "Industry"
+        ],
+        "answer": "Laziness",
+        "explanation": "Diligence refers to careful and persistent work or effort. Its antonym is 'Laziness' (or sloth, neglect)."
+      },
+      {
+        "question": "Fill in the blank: 'You should _______ every option before selecting your final answer.'",
+        "type": "fill",
+        "choices": [
+          "Venerate",
+          "Scrutinize",
+          "Tacit",
+          "Wary"
+        ],
+        "answer": "Scrutinize",
+        "explanation": "Scrutinize means to examine or inspect closely and thoroughly, which fits checking multiple-choice options."
+      },
+      {
+        "question": "What is the definition of the word 'Tacit'?",
+        "type": "meaning",
+        "choices": [
+          "Understood or implied without being stated directly.",
+          "Present, appearing, or found everywhere.",
+          "Regarding with great respect or deep reverence.",
+          "Feeling or showing caution about possible dangers."
+        ],
+        "answer": "Understood or implied without being stated directly.",
+        "explanation": "Tacit refers to an agreement, understanding, or implication that is unspoken or implicit."
+      },
+      {
+        "question": "Which of the following is an ANTONYM of the word 'Ubiquitous'?",
+        "type": "antonym",
+        "choices": [
+          "Omnipresent",
+          "Rare",
+          "Pervasive",
+          "Widespread"
+        ],
+        "answer": "Rare",
+        "explanation": "Ubiquitous means found everywhere or omnipresent. Its antonym is 'Rare' or 'Scarce'."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Venerate'?",
+        "type": "synonym",
+        "choices": [
+          "Revere",
+          "Despise",
+          "Mock",
+          "Dishonor"
+        ],
+        "answer": "Revere",
+        "explanation": "Venerate means to regard with great respect or revere. 'Revere' is a direct synonym."
+      },
+      {
+        "question": "What is the definition of the word 'Wary'?",
+        "type": "meaning",
+        "choices": [
+          "Having or showing great passion, zeal, or enthusiasm.",
+          "Feeling or showing caution about possible dangers or problems.",
+          "Lasting for a very short, transient, or fleeting time.",
+          "Being aware or cognizant of rules and regulations."
+        ],
+        "answer": "Feeling or showing caution about possible dangers or problems.",
+        "explanation": "Wary is an adjective meaning cautious, careful, or alert to potential danger."
+      },
+      {
+        "question": "Fill in the blank: 'The _______ instructor spent extra hours preparing mock reviews.'",
+        "type": "fill",
+        "choices": [
+          "Zealous",
+          "Ephemeral",
+          "Tacit",
+          "Diligence"
+        ],
+        "answer": "Zealous",
+        "explanation": "Zealous means having or showing passion and enthusiasm, which fits the context of a dedicated instructor."
+      },
+      {
+        "question": "Which of the following is a SYNONYM of the word 'Ephemeral'?",
+        "type": "synonym",
+        "choices": [
+          "Permanent",
+          "Transient",
+          "Eternal",
+          "Lasting"
+        ],
+        "answer": "Transient",
+        "explanation": "Ephemeral means lasting for a very short time. 'Transient' (or fleeting) is a synonym."
+      }
+    ]
+  }
+]

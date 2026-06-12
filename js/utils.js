@@ -32,7 +32,7 @@ function renderNavbar() {
     let activePage = 'home';
     if (path.includes('practice.html')) activePage = 'practice';
     else if (path.includes('exam.html')) activePage = 'exam';
-    else if (path.includes('vocabulary.html')) activePage = 'vocabulary';
+    else if (path.includes('vocabulary.html') || path.includes('vocab-quiz.html')) activePage = 'vocabulary';
     else if (path.includes('dashboard.html')) activePage = 'dashboard';
 
     // Get daily streak from localStorage
