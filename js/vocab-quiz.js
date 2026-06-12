@@ -9,7 +9,7 @@ const vocabQuizState = {
     questions: [],
     selectedAnswer: null,
     isSubmitted: false,
-    quizItemsCount: 5 // Configurable constant for vocabulary challenge question count
+    quizItemsCount: 15 // Configurable constant for vocabulary challenge question count
 };
 
 async function loadQuiz() {

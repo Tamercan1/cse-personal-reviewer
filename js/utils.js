@@ -46,7 +46,7 @@ function renderNavbar() {
                     <!-- Logo / Brand -->
                     <a href="${basePath}index.html" class="flex items-center space-x-2 sm:space-x-3 text-blue-600 font-extrabold text-xl sm:text-2xl tracking-tight">
                         <img src="${basePath}img/logo.png" alt="CSE Reviewer Logo" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl shadow-sm object-cover border border-slate-100">
-                        <span class="hover:text-blue-700 transition-colors">CSE Reviewer</span>
+                        <span class="hover:text-blue-700 transition-colors">Ka-CSE Reviewer</span>
                     </a>
                     
                     <!-- Navigation Links -->
@@ -116,9 +116,10 @@ function renderFooter() {
     <footer class="bg-white border-t border-slate-200 mt-auto py-8 select-none">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
             <p class="text-sm text-slate-500">&copy; 2026 CSE Reviewer.</p>
+            <p class="text-sm text-slate-500">An independent reviewer for Civil Service Examination preparation.</p>
+            <p class="text-sm text-slate-400">Made by: Tamercan Wawa</p>
             <div class="flex justify-center space-x-6 mt-4 md:mt-0">
                 <span class="text-xs text-slate-400">Light Mode Active</span>
-                <span class="text-xs text-slate-400">Offline Study Ready</span>
             </div>
         </div>
     </footer>
@@ -132,7 +133,7 @@ function renderFooter() {
 // Custom Toast Notification with SVG iconography instead of Emojis
 function showToast(message, type = 'success') {
     const toast = document.createElement('div');
-    toast.className = `fixed bottom-5 right-5 z-50 flex items-center space-x-2.5 px-4 py-3 rounded-xl shadow-lg border text-sm font-semibold transition-all duration-300 transform translate-y-10 opacity-0 select-none`;
+    toast.className = `fixed top-5 left-4 right-4 sm:top-auto sm:bottom-5 sm:left-auto sm:right-5 sm:w-auto z-50 flex items-center justify-center sm:justify-start space-x-2.5 px-4 py-3 rounded-xl shadow-lg border text-sm font-semibold transition-all duration-300 transform -translate-y-4 sm:translate-y-4 opacity-0 select-none`;
     
     let svgIcon = '';
     
@@ -152,12 +153,12 @@ function showToast(message, type = 'success') {
     
     // Animate in
     setTimeout(() => {
-        toast.classList.remove('translate-y-10', 'opacity-0');
+        toast.classList.remove('-translate-y-4', 'sm:translate-y-4', 'opacity-0');
     }, 10);
     
     // Animate out and remove
     setTimeout(() => {
-        toast.classList.add('translate-y-10', 'opacity-0');
+        toast.classList.add('-translate-y-4', 'sm:translate-y-4', 'opacity-0');
         setTimeout(() => {
             toast.remove();
         }, 300);

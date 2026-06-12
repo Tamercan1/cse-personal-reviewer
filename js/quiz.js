@@ -1,6 +1,4 @@
-/**
- * Interactive controller for the Practice Quiz mode.
- */
+const QUIZ_LIMIT = 5; // Maximum questions per practice quiz category
 
 const quizState = {
     category: "Numerical",
@@ -8,8 +6,163 @@ const quizState = {
     score: 0,
     questions: [],
     selectedAnswer: null,
+    selectedAnswers: [],
     isSubmitted: false
 };
+
+const categoryDisplayNames = {
+    'Numerical': 'Numerical Reasoning',
+    'Verbal': 'Verbal Reasoning',
+    'Analytical': 'Analytical Reasoning',
+    'Clerical': 'Clerical Ability',
+    'General Information': 'General Information'
+};
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function saveQuizProgress() {
+    if (quizState.questions.length === 0) return;
+    const progress = {
+        category: quizState.category,
+        currentQuestion: quizState.currentQuestion,
+        score: quizState.score,
+        selectedAnswer: quizState.selectedAnswer,
+        selectedAnswers: quizState.selectedAnswers,
+        isSubmitted: quizState.isSubmitted,
+        questions: quizState.questions,
+        status: 'in-progress'
+    };
+    save('cse_quiz_progress', progress);
+}
+
+function disableQuizInteraction() {
+    const choices = document.querySelectorAll('#choices-container button');
+    choices.forEach(btn => btn.disabled = true);
+
+    const actionBtn = document.getElementById('action-btn');
+    if (actionBtn) {
+        actionBtn.disabled = true;
+        actionBtn.className = 'w-full py-3.5 bg-slate-100 text-slate-400 font-semibold rounded-xl transition-all cursor-not-allowed';
+    }
+}
+
+function enableQuizInteraction() {
+    const actionBtn = document.getElementById('action-btn');
+    if (actionBtn) {
+        actionBtn.disabled = false;
+    }
+}
+
+function resumeQuiz(savedState) {
+    quizState.category = savedState.category;
+    quizState.currentQuestion = savedState.currentQuestion;
+    quizState.score = savedState.score;
+    quizState.questions = savedState.questions;
+    quizState.selectedAnswer = savedState.selectedAnswer;
+    quizState.selectedAnswers = savedState.selectedAnswers || [];
+    quizState.isSubmitted = savedState.isSubmitted;
+
+    const resumeCard = document.getElementById('resume-card');
+    if (resumeCard) resumeCard.classList.add('hidden');
+
+    enableQuizInteraction();
+
+    const cardCategory = document.getElementById('question-category');
+    if (cardCategory) {
+        cardCategory.textContent = `${quizState.category} Quiz`;
+    }
+
+    if (quizState.isSubmitted) {
+        renderCheckedQuestion();
+    } else {
+        showQuestion();
+        if (quizState.selectedAnswer !== null) {
+            const index = quizState.questions[quizState.currentQuestion].choices.indexOf(quizState.selectedAnswer);
+            if (index !== -1) {
+                selectAnswer(quizState.selectedAnswer, index);
+            }
+        }
+    }
+    updateProgress();
+}
+
+function startOverQuiz() {
+    localStorage.removeItem('cse_quiz_progress');
+    const resumeCard = document.getElementById('resume-card');
+    if (resumeCard) resumeCard.classList.add('hidden');
+    enableQuizInteraction();
+    startCategory(quizState.category || "Numerical");
+}
+
+function renderCheckedQuestion() {
+    const qIndex = quizState.currentQuestion;
+    const question = quizState.questions[qIndex];
+    
+    document.getElementById('question-text').textContent = question.question;
+    
+    const choicesContainer = document.getElementById('choices-container');
+    choicesContainer.innerHTML = '';
+    
+    question.choices.forEach((choice, index) => {
+        const choiceBtn = document.createElement('button');
+        choiceBtn.className = `w-full text-left p-4 rounded-xl border border-slate-200 flex items-center space-x-3 focus:outline-none`;
+        choiceBtn.id = `choice-${index}`;
+        
+        if (choice === question.answer) {
+            choiceBtn.className = `w-full text-left p-4 rounded-xl border-2 border-blue-500 bg-blue-50/30 flex items-center space-x-3 transition-all duration-200 focus:outline-none`;
+            choiceBtn.innerHTML = `
+                <span class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold text-sm border border-blue-600 select-none">
+                    ${String.fromCharCode(65 + index)}
+                </span>
+                <span class="text-slate-700 font-medium">${choice}</span>
+            `;
+        } else if (choice === quizState.selectedAnswer) {
+            choiceBtn.className = `w-full text-left p-4 rounded-xl border-2 border-rose-300 bg-rose-50/20 flex items-center space-x-3 transition-all duration-200 focus:outline-none`;
+            choiceBtn.innerHTML = `
+                <span class="w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center font-semibold text-sm border border-rose-500 select-none">
+                    ${String.fromCharCode(65 + index)}
+                </span>
+                <span class="text-slate-700 font-medium">${choice}</span>
+            `;
+        } else {
+            choiceBtn.className = `w-full text-left p-4 rounded-xl border border-slate-100 flex items-center space-x-3 opacity-60 cursor-not-allowed focus:outline-none`;
+            choiceBtn.innerHTML = `
+                <span class="w-8 h-8 rounded-full bg-slate-50 text-slate-400 flex items-center justify-center font-semibold text-sm border border-slate-200 select-none">
+                    ${String.fromCharCode(65 + index)}
+                </span>
+                <span class="text-slate-700 font-medium">${choice}</span>
+            `;
+        }
+        choicesContainer.appendChild(choiceBtn);
+    });
+    
+    const expBox = document.getElementById('explanation-box');
+    const expText = document.getElementById('explanation-text');
+    if (expBox && expText) {
+        expText.textContent = question.explanation;
+        expBox.classList.remove('hidden');
+    }
+    
+    const expBoxDesktop = document.getElementById('explanation-box-desktop');
+    const expTextDesktop = document.getElementById('explanation-text-desktop');
+    if (expBoxDesktop && expTextDesktop) {
+        expTextDesktop.textContent = question.explanation;
+        expBoxDesktop.classList.remove('hidden');
+    }
+    
+    const actionBtn = document.getElementById('action-btn');
+    if (actionBtn) {
+        const isLast = (qIndex === quizState.questions.length - 1);
+        actionBtn.textContent = isLast ? 'Finish Quiz' : 'Next Question';
+        actionBtn.className = 'w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md shadow-blue-100 transition-all cursor-pointer';
+    }
+}
 
 const categoryFiles = {
     'Numerical': '../data/numerical.json',
@@ -24,16 +177,19 @@ async function startCategory(categoryName) {
     quizState.currentQuestion = 0;
     quizState.score = 0;
     quizState.selectedAnswer = null;
+    quizState.selectedAnswers = [];
     quizState.isSubmitted = false;
     
     const file = categoryFiles[categoryName];
     const data = await fetchJSON(file);
     if (data) {
-        quizState.questions = data;
+        shuffleArray(data);
+        quizState.questions = data.slice(0, QUIZ_LIMIT);
         showQuestion();
         updateProgress();
         const cardCategory = document.getElementById('question-category');
-        cardCategory.textContent = `${categoryName} Quiz`
+        cardCategory.textContent = `${categoryName} Quiz`;
+        saveQuizProgress();
     } else {
         console.error("Failed to load questions for " + categoryName);
     }
@@ -79,12 +235,14 @@ function showQuestion() {
     submitBtn.className = 'w-full py-3.5 bg-slate-150 text-slate-400 font-semibold rounded-xl transition-all cursor-not-allowed';
     
     updateProgress();
+    saveQuizProgress();
 }
 
 function selectAnswer(choice, index) {
     if (quizState.isSubmitted) return;
     
     quizState.selectedAnswer = choice;
+    quizState.selectedAnswers[quizState.currentQuestion] = choice;
     
     // Reset choices styling
     quizState.questions[quizState.currentQuestion].choices.forEach((_, idx) => {
@@ -104,6 +262,8 @@ function selectAnswer(choice, index) {
     const submitBtn = document.getElementById('action-btn');
     submitBtn.disabled = false;
     submitBtn.className = 'w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md shadow-blue-100 transition-all cursor-pointer';
+    
+    saveQuizProgress();
 }
 
 function checkAnswer() {
@@ -162,6 +322,8 @@ function checkAnswer() {
     const isLast = (quizState.currentQuestion === quizState.questions.length - 1);
     actionBtn.textContent = isLast ? 'Finish Quiz' : 'Next Question';
     actionBtn.className = 'w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md shadow-blue-100 transition-all cursor-pointer';
+
+    saveQuizProgress();
 }
 
 function nextQuestion() {
@@ -174,6 +336,7 @@ function nextQuestion() {
 }
 
 function finishQuiz() {
+    localStorage.removeItem('cse_quiz_progress');
     const bestScores = load('cse_best_scores', {});
     const percentage = Math.round((quizState.score / quizState.questions.length) * 100);
     
@@ -229,6 +392,7 @@ function scrollToTop(){
 }
 
 function restartCategory() {
+    localStorage.removeItem('cse_quiz_progress');
     const cardBody = document.getElementById('quiz-card-body');
     const cardFooter = document.getElementById('quiz-card-footer');
     const completionPanel = document.getElementById('quiz-completion-panel');
@@ -259,6 +423,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tabs.length > 0) {
         tabs.forEach(tab => {
             tab.addEventListener('click', (e) => {
+                localStorage.removeItem('cse_quiz_progress');
+                const resumeCard = document.getElementById('resume-card');
+                if (resumeCard) resumeCard.classList.add('hidden');
+                enableQuizInteraction();
+
                 tabs.forEach(t => {
                     t.className = "category-tab w-full text-left px-4 py-3 rounded-xl border border-slate-100 hover:bg-slate-50 text-slate-600 font-medium flex justify-between items-center transition-all";
                 });
@@ -278,7 +447,37 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }); 
         
-        startCategory("Numerical");
+        const savedState = load('cse_quiz_progress', null);
+        if (savedState && savedState.status === 'in-progress') {
+            const resumeCard = document.getElementById('resume-card');
+            const sessionDetails = document.getElementById('resume-session-details');
+            if (sessionDetails) {
+                sessionDetails.textContent = categoryDisplayNames[savedState.category] || savedState.category;
+            }
+            if (resumeCard) resumeCard.classList.remove('hidden');
+
+            const resumeBtn = document.getElementById('resume-btn');
+            if (resumeBtn) {
+                resumeBtn.onclick = () => resumeQuiz(savedState);
+            }
+            const startOverBtn = document.getElementById('start-over-btn');
+            if (startOverBtn) {
+                startOverBtn.onclick = () => startOverQuiz();
+            }
+
+            tabs.forEach(t => {
+                const cat = t.getAttribute('data-category');
+                if (cat === savedState.category) {
+                    t.className = "category-tab w-full text-left px-4 py-3 rounded-xl border border-blue-200 bg-blue-50/50 text-blue-700 font-semibold flex justify-between items-center transition-all shadow-sm";
+                } else {
+                    t.className = "category-tab w-full text-left px-4 py-3 rounded-xl border border-slate-100 hover:bg-slate-50 text-slate-600 font-medium flex justify-between items-center transition-all";
+                }
+            });
+
+            disableQuizInteraction();
+        } else {
+            startCategory("Numerical");
+        }
     }
     
     const actionBtn = document.getElementById('action-btn');

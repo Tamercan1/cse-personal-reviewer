@@ -2,286 +2,520 @@
   {
     "day": 1,
     "words": [
-      {
-        "word": "Adversity",
-        "type": "noun",
-        "ipa": "/ædˈvɜːrsəti/",
-        "definition": "A state of hardship, misfortune, or difficulty.",
-        "example": "She showed great strength and resilience in the face of adversity.",
-        "synonyms": ["hardship", "difficulty", "misfortune"],
-        "antonyms": ["prosperity", "blessing", "advantage"]
-      },
-      {
-        "word": "Pragmatic",
-        "type": "adjective",
-        "ipa": "/præɡˈmætɪk/",
-        "definition": "Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
-        "example": "A pragmatic approach to study scheduling ensures you cover all subjects before the exam.",
-        "synonyms": ["practical", "sensible", "realistic"],
-        "antonyms": ["idealistic", "impractical", "visionary"]
-      },
-      {
-        "word": "Mitigate",
-        "type": "verb",
-        "ipa": "/ˈmɪtɪɡeɪt/",
-        "definition": "To make less severe, serious, or painful.",
-        "example": "Reviewing daily flashcards helps mitigate the stress of exam preparation.",
-        "synonyms": ["alleviate", "reduce", "lessen"],
-        "antonyms": ["aggravate", "intensify", "increase"]
-      },
-      {
-        "word": "Capricious",
-        "type": "adjective",
-        "ipa": "/kəˈprɪʃəs/",
-        "definition": "Given to sudden and unaccountable changes of mood or behavior.",
-        "example": "The administration was criticized for its capricious decision-making process.",
-        "synonyms": ["unpredictable", "fickle", "erratic"],
-        "antonyms": ["stable", "consistent", "predictable"]
-      },
-      {
-        "word": "Dissent",
-        "type": "noun",
-        "ipa": "/dɪˈsent/",
-        "definition": "The expression or holding of opinions at variance with those previously or commonly held.",
-        "example": "In a democracy, the right to peaceful dissent is a fundamental liberty.",
-        "synonyms": ["disagreement", "opposition", "objection"],
-        "antonyms": ["agreement", "assent", "concurrence"]
-      },
-      {
-        "word": "Elaborate",
-        "type": "adjective",
-        "ipa": "/ɪˈlæbərət/",
-        "definition": "Involving many carefully arranged parts or details; detailed and complicated in design and planning.",
-        "example": "The security system they installed was elaborate and highly effective.",
-        "synonyms": ["detailed", "complex", "intricate"],
-        "antonyms": ["simple", "plain", "uncomplicated"]
-      },
-      {
-        "word": "Feasible",
-        "type": "adjective",
-        "ipa": "/ˈfiːzəbl/",
-        "definition": "Possible to do easily or conveniently.",
-        "example": "It is not feasible to complete the entire reviewer in a single afternoon.",
-        "synonyms": ["possible", "practicable", "workable"],
-        "antonyms": ["impossible", "impractical", "unfeasible"]
-      },
-      {
-        "word": "Garrulous",
-        "type": "adjective",
-        "ipa": "/ˈɡærələs/",
-        "definition": "Excessively talkative, especially on trivial matters.",
-        "example": "The garrulous witness took hours to explain a simple event to the court.",
-        "synonyms": ["talkative", "loquacious", "chatty"],
-        "antonyms": ["taciturn", "quiet", "reserved"]
-      },
-      {
-        "word": "Harangue",
-        "type": "noun",
-        "ipa": "/həˈræŋ/",
-        "definition": "A lengthy and aggressive speech.",
-        "example": "They were subjected to a long harangue about their lack of discipline.",
-        "synonyms": ["tirade", "lecture", "diatribe"],
-        "antonyms": ["eulogy", "panegyric", "acclaim"]
-      },
-      {
-        "word": "Imminent",
-        "type": "adjective",
-        "ipa": "/ˈɪmɪnənt/",
-        "definition": "About to happen; overhanging or threatening.",
-        "example": "With the dark clouds gathering, rain seemed imminent.",
-        "synonyms": ["impending", "approaching", "looming"],
-        "antonyms": ["distant", "remote", "delayed"]
-      }
+      { "word": "Abate", "type": "verb", "ipa": "/əˈbeɪt/", "definition": "To become less intense or widespread.", "example": "The storm began to abate after midnight.", "synonyms": ["decrease", "subside", "diminish"], "antonyms": ["increase", "intensify", "escalate"] },
+      { "word": "Abridge", "type": "verb", "ipa": "/əˈbrɪdʒ/", "definition": "To shorten a text without losing its meaning.", "example": "The book was abridged for easier reading.", "synonyms": ["shorten", "condense", "compress"], "antonyms": ["expand", "extend", "lengthen"] },
+      { "word": "Accord", "type": "noun", "ipa": "/əˈkɔːrd/", "definition": "An agreement or harmony between people or groups.", "example": "The countries reached an accord after long negotiations.", "synonyms": ["agreement", "treaty", "harmony"], "antonyms": ["disagreement", "conflict", "discord"] },
+      { "word": "Adept", "type": "adjective", "ipa": "/əˈdept/", "definition": "Highly skilled or proficient.", "example": "She is adept at solving logical problems.", "synonyms": ["skilled", "proficient", "expert"], "antonyms": ["incompetent", "inept", "unskilled"] },
+      { "word": "Adhere", "type": "verb", "ipa": "/ədˈhɪr/", "definition": "To stick to or follow rules or beliefs.", "example": "Employees must adhere to company policies.", "synonyms": ["obey", "follow", "comply"], "antonyms": ["ignore", "violate", "disobey"] },
+      { "word": "Alleviate", "type": "verb", "ipa": "/əˈliːvieɪt/", "definition": "To make something less severe.", "example": "Medicine helped alleviate the pain.", "synonyms": ["ease", "reduce", "relieve"], "antonyms": ["worsen", "intensify", "aggravate"] },
+      { "word": "Ambiguous", "type": "adjective", "ipa": "/æmˈbɪɡjuəs/", "definition": "Open to more than one interpretation.", "example": "The instruction was ambiguous and confusing.", "synonyms": ["unclear", "vague", "equivocal"], "antonyms": ["clear", "explicit", "definite"] },
+      { "word": "Amend", "type": "verb", "ipa": "/əˈmend/", "definition": "To make changes or improvements to something.", "example": "They amended the constitution.", "synonyms": ["revise", "modify", "alter"], "antonyms": ["ignore", "preserve", "maintain"] },
+      { "word": "Arbitrary", "type": "adjective", "ipa": "/ˈɑːrbɪtreri/", "definition": "Based on random choice rather than reason.", "example": "The decision seemed arbitrary.", "synonyms": ["random", "unreasonable", "capricious"], "antonyms": ["logical", "fair", "reasoned"] },
+      { "word": "Assert", "type": "verb", "ipa": "/əˈsɜːrt/", "definition": "To state something confidently.", "example": "He asserted his opinion during the meeting.", "synonyms": ["declare", "state", "affirm"], "antonyms": ["deny", "retract", "withdraw"] },
+      { "word": "Assuage", "type": "verb", "ipa": "/əˈsweɪdʒ/", "definition": "To make an unpleasant feeling less intense.", "example": "She tried to assuage his fears.", "synonyms": ["calm", "relieve", "soothe"], "antonyms": ["aggravate", "worsen", "intensify"] },
+      { "word": "Banal", "type": "adjective", "ipa": "/bəˈnɑːl/", "definition": "Lacking originality; boring.", "example": "The movie had a banal storyline.", "synonyms": ["trite", "ordinary", "unoriginal"], "antonyms": ["original", "creative", "fresh"] },
+      { "word": "Belligerent", "type": "adjective", "ipa": "/bəˈlɪdʒərənt/", "definition": "Hostile and aggressive.", "example": "The belligerent man started a fight.", "synonyms": ["aggressive", "hostile", "combative"], "antonyms": ["peaceful", "friendly", "calm"] },
+      { "word": "Bolster", "type": "verb", "ipa": "/ˈboʊlstər/", "definition": "To support or strengthen.", "example": "The data bolstered his argument.", "synonyms": ["support", "strengthen", "reinforce"], "antonyms": ["weaken", "undermine", "reduce"] },
+      { "word": "Candid", "type": "adjective", "ipa": "/ˈkændɪd/", "definition": "Honest and straightforward.", "example": "She gave a candid response.", "synonyms": ["honest", "frank", "direct"], "antonyms": ["dishonest", "guarded", "deceptive"] },
+      { "word": "Capitalize", "type": "verb", "ipa": "/ˈkæpɪtəlaɪz/", "definition": "To take advantage of something.", "example": "He capitalized on the opportunity.", "synonyms": ["exploit", "use", "benefit"], "antonyms": ["ignore", "waste", "miss"] },
+      { "word": "Censure", "type": "verb", "ipa": "/ˈsenʃər/", "definition": "To express strong disapproval.", "example": "The committee censured the official.", "synonyms": ["criticize", "condemn", "rebuke"], "antonyms": ["praise", "approve", "commend"] },
+      { "word": "Coerce", "type": "verb", "ipa": "/koʊˈɜːrs/", "definition": "To force someone to do something.", "example": "He was coerced into signing the document.", "synonyms": ["force", "compel", "pressure"], "antonyms": ["persuade", "convince", "encourage"] },
+      { "word": "Cogent", "type": "adjective", "ipa": "/ˈkoʊdʒənt/", "definition": "Clear, logical, and convincing.", "example": "She presented a cogent argument.", "synonyms": ["convincing", "logical", "sound"], "antonyms": ["weak", "illogical", "unclear"] },
+      { "word": "Complacent", "type": "adjective", "ipa": "/kəmˈpleɪsənt/", "definition": "Self-satisfied and unaware of dangers.", "example": "Do not become complacent about your studies.", "synonyms": ["self-satisfied", "smug", "content"], "antonyms": ["dissatisfied", "concerned", "alert"] }
     ]
   },
+
   {
     "day": 2,
     "words": [
-      {
-        "word": "Equivocal",
-        "type": "adjective",
-        "ipa": "/ɪˈkwɪvəkl/",
-        "definition": "Open to more than one interpretation; ambiguous, uncertain, or questionable.",
-        "example": "The politician gave an equivocal answer when asked about the proposed tax reforms.",
-        "synonyms": ["ambiguous", "vague", "uncertain"],
-        "antonyms": ["clear", "definite", "unequivocal"]
-      },
-      {
-        "word": "Meticulous",
-        "type": "adjective",
-        "ipa": "/məˈtɪkjələs/",
-        "definition": "Showing great attention to detail; very careful and precise.",
-        "example": "A meticulous review of the clerical questions can save you from spelling mistakes.",
-        "synonyms": ["precise", "careful", "detailed"],
-        "antonyms": ["careless", "sloppy", "negligent"]
-      },
-      {
-        "word": "Benevolent",
-        "type": "adjective",
-        "ipa": "/bəˈnevələnt/",
-        "definition": "Well-meaning and kindly; serving a charitable rather than a profit-making purpose.",
-        "example": "The benevolent supervisor offered to mentor the new civil service interns.",
-        "synonyms": ["kind", "generous", "helpful"],
-        "antonyms": ["malevolent", "selfish", "hostile"]
-      },
-      {
-        "word": "Jubilant",
-        "type": "adjective",
-        "ipa": "/ˈdʒuːbɪlənt/",
-        "definition": "Feeling or expressing great happiness and triumph.",
-        "example": "The reviewees were jubilant after receiving their passing results.",
-        "synonyms": ["joyful", "elated", "triumphant"],
-        "antonyms": ["depressed", "sad", "sorrowful"]
-      },
-      {
-        "word": "Lament",
-        "type": "verb",
-        "ipa": "/ləˈment/",
-        "definition": "A passionate expression of grief or sorrow; to mourn.",
-        "example": "He lamented the fact that he did not start studying earlier in the year.",
-        "synonyms": ["mourn", "grieve", "deplore"],
-        "antonyms": ["celebrate", "rejoice", "hail"]
-      },
-      {
-        "word": "Novel",
-        "type": "adjective",
-        "ipa": "/ˈnɒvl/",
-        "definition": "New or unusual in an interesting or creative way.",
-        "example": "She proposed a novel solution to speed up their numerical calculations.",
-        "synonyms": ["new", "original", "innovative"],
-        "antonyms": ["common", "traditional", "old"]
-      },
-      {
-        "word": "Obsolete",
-        "type": "adjective",
-        "ipa": "/ˈɒbsəliːt/",
-        "definition": "No longer produced or used; out of date.",
-        "example": "The old classification rules became obsolete under the new memo guidelines.",
-        "synonyms": ["outdated", "antique", "defunct"],
-        "antonyms": ["modern", "current", "state-of-the-art"]
-      },
-      {
-        "word": "Pensive",
-        "type": "adjective",
-        "ipa": "/ˈpensɪv/",
-        "definition": "Engaged in, involving, or reflecting deep or serious thought.",
-        "example": "She sat in a pensive mood, weighing her choices before taking the exam.",
-        "synonyms": ["thoughtful", "reflective", "contemplative"],
-        "antonyms": ["shallow", "thoughtless", "frivolous"]
-      },
-      {
-        "word": "Quandary",
-        "type": "noun",
-        "ipa": "/ˈkwɒndəri/",
-        "definition": "A state of perplexity or uncertainty over what to do in a difficult situation.",
-        "example": "He was in a quandary about whether to review clerical or verbal reasoning first.",
-        "synonyms": ["dilemma", "predicament", "plight"],
-        "antonyms": ["certainty", "resolution", "clarity"]
-      },
-      {
-        "word": "Resilient",
-        "type": "adjective",
-        "ipa": "/rɪˈzɪliənt/",
-        "definition": "Able to withstand or recover quickly from difficult conditions.",
-        "example": "A resilient study mindset will help you bounce back after low drill scores.",
-        "synonyms": ["tough", "strong", "hardy"],
-        "antonyms": ["fragile", "weak", "vulnerable"]
-      }
+      { "word": "Concise", "type": "adjective", "ipa": "/kənˈsaɪs/", "definition": "Giving a lot of information clearly in few words.", "example": "Her explanation was concise and clear.", "synonyms": ["brief", "short", "succinct"], "antonyms": ["wordy", "lengthy", "verbose"] },
+      { "word": "Concur", "type": "verb", "ipa": "/kənˈkɜːr/", "definition": "To agree with someone.", "example": "I concur with your opinion.", "synonyms": ["agree", "assent", "approve"], "antonyms": ["disagree", "oppose", "differ"] },
+      { "word": "Condone", "type": "verb", "ipa": "/kənˈdoʊn/", "definition": "To accept or allow behavior that is wrong.", "example": "The school does not condone cheating.", "synonyms": ["tolerate", "allow", "overlook"], "antonyms": ["reject", "condemn", "forbid"] },
+      { "word": "Confer", "type": "verb", "ipa": "/kənˈfɜːr/", "definition": "To give or grant something.", "example": "The university conferred a degree.", "synonyms": ["grant", "award", "give"], "antonyms": ["take", "remove", "deny"] },
+      { "word": "Consensus", "type": "noun", "ipa": "/kənˈsensəs/", "definition": "General agreement.", "example": "There is a consensus among experts.", "synonyms": ["agreement", "harmony", "accord"], "antonyms": ["disagreement", "conflict", "division"] },
+      { "word": "Contend", "type": "verb", "ipa": "/kənˈtend/", "definition": "To argue or struggle.", "example": "She contends that the policy is unfair.", "synonyms": ["argue", "claim", "assert"], "antonyms": ["accept", "yield", "agree"] },
+      { "word": "Contrive", "type": "verb", "ipa": "/kənˈtraɪv/", "definition": "To create or invent something cleverly.", "example": "They contrived a clever solution.", "synonyms": ["devise", "invent", "plan"], "antonyms": ["destroy", "ruin", "neglect"] },
+      { "word": "Credible", "type": "adjective", "ipa": "/ˈkredəbl/", "definition": "Able to be believed; convincing.", "example": "The witness gave a credible statement.", "synonyms": ["believable", "trustworthy", "reliable"], "antonyms": ["unreliable", "dubious", "false"] },
+      { "word": "Curtail", "type": "verb", "ipa": "/kɜːrˈteɪl/", "definition": "To reduce or limit something.", "example": "They curtailed spending.", "synonyms": ["reduce", "limit", "restrict"], "antonyms": ["expand", "increase", "extend"] },
+      { "word": "Debilitate", "type": "verb", "ipa": "/dɪˈbɪlɪteɪt/", "definition": "To weaken something severely.", "example": "The illness debilitated him.", "synonyms": ["weaken", "cripple", "drain"], "antonyms": ["strengthen", "fortify", "energize"] },
+      { "word": "Deference", "type": "noun", "ipa": "/ˈdefərəns/", "definition": "Respectful submission or yielding.", "example": "He showed deference to his elders.", "synonyms": ["respect", "honor", "regard"], "antonyms": ["disrespect", "defiance", "rudeness"] },
+      { "word": "Denote", "type": "verb", "ipa": "/dɪˈnoʊt/", "definition": "To indicate or mean something.", "example": "This symbol denotes danger.", "synonyms": ["indicate", "represent", "signify"], "antonyms": ["hide", "conceal", "misrepresent"] },
+      { "word": "Deride", "type": "verb", "ipa": "/dɪˈraɪd/", "definition": "To ridicule or mock.", "example": "They derided his idea.", "synonyms": ["mock", "ridicule", "scorn"], "antonyms": ["praise", "admire", "respect"] },
+      { "word": "Detrimental", "type": "adjective", "ipa": "/ˌdetrɪˈmentl/", "definition": "Causing harm or damage.", "example": "Smoking is detrimental to health.", "synonyms": ["harmful", "damaging", "bad"], "antonyms": ["beneficial", "helpful", "good"] },
+      { "word": "Diligent", "type": "adjective", "ipa": "/ˈdɪlɪdʒənt/", "definition": "Showing care and effort in work.", "example": "She is a diligent student.", "synonyms": ["hardworking", "careful", "meticulous"], "antonyms": ["lazy", "careless", "negligent"] },
+      { "word": "Disclose", "type": "verb", "ipa": "/dɪsˈkloʊz/", "definition": "To reveal information.", "example": "He disclosed the secret.", "synonyms": ["reveal", "expose", "uncover"], "antonyms": ["hide", "conceal", "cover"] },
+      { "word": "Disparage", "type": "verb", "ipa": "/dɪˈspærɪdʒ/", "definition": "To criticize unfairly.", "example": "He disparaged her efforts.", "synonyms": ["criticize", "belittle", "mock"], "antonyms": ["praise", "commend", "admire"] },
+      { "word": "Docile", "type": "adjective", "ipa": "/ˈdoʊsaɪl/", "definition": "Easily managed or taught.", "example": "The dog is docile and friendly.", "synonyms": ["obedient", "gentle", "meek"], "antonyms": ["wild", "defiant", "stubborn"] },
+      { "word": "Elicit", "type": "verb", "ipa": "/ɪˈlɪsɪt/", "definition": "To draw out a response.", "example": "The teacher elicited answers from students.", "synonyms": ["draw", "extract", "evoke"], "antonyms": ["suppress", "hide", "conceal"] },
+      { "word": "Elusive", "type": "adjective", "ipa": "/ɪˈluːsɪv/", "definition": "Difficult to find or understand.", "example": "The answer remained elusive.", "synonyms": ["hard to find", "slippery", "vague"], "antonyms": ["clear", "obvious", "easy"] }
     ]
   },
+
   {
     "day": 3,
     "words": [
-      {
-        "word": "Cognizant",
-        "type": "adjective",
-        "ipa": "/ˈkɒɡnɪzənt/",
-        "definition": "Having knowledge or being aware of something.",
-        "example": "Reviewees must be cognizant of the rules governing the examination rooms.",
-        "synonyms": ["aware", "conscious", "mindful"],
-        "antonyms": ["unaware", "ignorant", "oblivious"]
-      },
-      {
-        "word": "Acuteness",
-        "type": "noun",
-        "ipa": "/əˈkjuːtnəs/",
-        "definition": "Sharpness or severity; intellectual alertness or penetration.",
-        "example": "Her mathematical acuteness helped her solve the complex numerical series instantly.",
-        "synonyms": ["sharpness", "severity", "sensitivity"],
-        "antonyms": ["dullness", "mildness", "slowness"]
-      },
-      {
-        "word": "Diligence",
-        "type": "noun",
-        "ipa": "/ˈdɪlɪdʒəns/",
-        "definition": "Careful and persistent work or effort.",
-        "example": "Your diligence in studying will pay off on the day of the Civil Service Exam.",
-        "synonyms": ["persistence", "industry", "attentiveness"],
-        "antonyms": ["laziness", "neglect", "sloth"]
-      },
-      {
-        "word": "Scrutinize",
-        "type": "verb",
-        "ipa": "/ˈskruːtənaɪz/",
-        "definition": "Examine or inspect closely and thoroughly.",
-        "example": "You should scrutinize every option before selecting your final answer.",
-        "synonyms": ["examine", "inspect", "analyze"],
-        "antonyms": ["ignore", "neglect", "glance"]
-      },
-      {
-        "word": "Tacit",
-        "type": "adjective",
-        "ipa": "/ˈtæsɪt/",
-        "definition": "Understood or implied without being stated directly.",
-        "example": "There was a tacit agreement that everyone would remain silent during the mock exam.",
-        "synonyms": ["implied", "unspoken", "implicit"],
-        "antonyms": ["explicit", "stated", "express"]
-      },
-      {
-        "word": "Ubiquitous",
-        "type": "adjective",
-        "ipa": "/juːˈbɪkwɪtəs/",
-        "definition": "Present, appearing, or found everywhere.",
-        "example": "Mobile phones have become ubiquitous in daily communications.",
-        "synonyms": ["omnipresent", "pervasive", "widespread"],
-        "antonyms": ["rare", "scarce", "uncommon"]
-      },
-      {
-        "word": "Venerate",
-        "type": "verb",
-        "ipa": "/ˈvenəreɪt/",
-        "definition": "Regard with great respect or revere.",
-        "example": "Filipinos venerate historical figures who fought for national liberation.",
-        "synonyms": ["revere", "worship", "respect"],
-        "antonyms": ["despise", "dishonor", "mock"]
-      },
-      {
-        "word": "Wary",
-        "type": "adjective",
-        "ipa": "/ˈweəri/",
-        "definition": "Feeling or showing caution about possible dangers or problems.",
-        "example": "Be wary of questions that contain double negatives in the verbal section.",
-        "synonyms": ["cautious", "careful", "alert"],
-        "antonyms": ["reckless", "careless", "foolhardy"]
-      },
-      {
-        "word": "Zealous",
-        "type": "adjective",
-        "ipa": "/ˈzeləs/",
-        "definition": "Having or showing great zeal, passion, or enthusiasm.",
-        "example": "The zealous instructor spent extra hours preparing mock reviews.",
-        "synonyms": ["enthusiastic", "passionate", "eager"],
-        "antonyms": ["apathetic", "indifferent", "unconcerned"]
-      },
-      {
-        "word": "Ephemeral",
-        "type": "adjective",
-        "ipa": "/ɪˈfemərəl/",
-        "definition": "Lasting for a very short time; transient.",
-        "example": "Fame in the digital era is often ephemeral, lasting only a few days.",
-        "synonyms": ["transient", "fleeting", "short-lived"],
-        "antonyms": ["permanent", "eternal", "lasting"]
-      }
+      { "word": "Empirical", "type": "adjective", "ipa": "/ɪmˈpɪrɪkl/", "definition": "Based on observation or experience rather than theory.", "example": "The theory is supported by empirical evidence.", "synonyms": ["observational", "experimental", "factual"], "antonyms": ["theoretical", "speculative", "hypothetical"] },
+      { "word": "Eminent", "type": "adjective", "ipa": "/ˈemɪnənt/", "definition": "Famous and respected within a particular field.", "example": "He is an eminent scientist in physics.", "synonyms": ["distinguished", "renowned", "famous"], "antonyms": ["unknown", "obscure", "ordinary"] },
+      { "word": "Enhance", "type": "verb", "ipa": "/ɪnˈhæns/", "definition": "To improve the quality or value of something.", "example": "Practice enhances your exam performance.", "synonyms": ["improve", "boost", "strengthen"], "antonyms": ["worsen", "reduce", "diminish"] },
+      { "word": "Enumerate", "type": "verb", "ipa": "/ɪˈnjuːməreɪt/", "definition": "To list or count things one by one.", "example": "The examiner asked him to enumerate the steps.", "synonyms": ["list", "count", "itemize"], "antonyms": ["ignore", "omit", "overlook"] },
+      { "word": "Erratic", "type": "adjective", "ipa": "/ɪˈrætɪk/", "definition": "Not consistent or regular in behavior or movement.", "example": "His erratic study habits affected his score.", "synonyms": ["unpredictable", "irregular", "unstable"], "antonyms": ["consistent", "steady", "stable"] },
+      { "word": "Evoke", "type": "verb", "ipa": "/ɪˈvoʊk/", "definition": "To bring a feeling, memory, or image to mind.", "example": "The question evoked memories of past exams.", "synonyms": ["call forth", "inspire", "trigger"], "antonyms": ["suppress", "block", "erase"] },
+      { "word": "Exacerbate", "type": "verb", "ipa": "/ɪɡˈzæsərbeɪt/", "definition": "To make a problem worse.", "example": "Lack of sleep can exacerbate stress.", "synonyms": ["worsen", "aggravate", "intensify"], "antonyms": ["improve", "alleviate", "reduce"] },
+      { "word": "Exemplary", "type": "adjective", "ipa": "/ɪɡˈzempləri/", "definition": "Serving as a desirable model; outstanding.", "example": "She showed exemplary discipline.", "synonyms": ["excellent", "model", "perfect"], "antonyms": ["poor", "bad", "substandard"] },
+      { "word": "Explicit", "type": "adjective", "ipa": "/ɪkˈsplɪsɪt/", "definition": "Clear and fully expressed without ambiguity.", "example": "The instructions were explicit.", "synonyms": ["clear", "direct", "unambiguous"], "antonyms": ["vague", "unclear", "ambiguous"] },
+      { "word": "Facilitate", "type": "verb", "ipa": "/fəˈsɪlɪteɪt/", "definition": "To make an action easier.", "example": "Charts facilitate understanding of data.", "synonyms": ["help", "assist", "ease"], "antonyms": ["hinder", "block", "obstruct"] },
+      { "word": "Frugal", "type": "adjective", "ipa": "/ˈfruːɡl/", "definition": "Careful with money; avoiding waste.", "example": "She leads a frugal lifestyle.", "synonyms": ["thrifty", "economical", "careful"], "antonyms": ["wasteful", "extravagant", "lavish"] },
+      { "word": "Glean", "type": "verb", "ipa": "/ɡliːn/", "definition": "To gather information slowly and carefully.", "example": "We gleaned insights from the report.", "synonyms": ["collect", "gather", "extract"], "antonyms": ["ignore", "discard", "lose"] },
+      { "word": "Hypothesis", "type": "noun", "ipa": "/haɪˈpɒθəsɪs/", "definition": "A proposed explanation based on limited evidence.", "example": "The scientist tested his hypothesis.", "synonyms": ["theory", "assumption", "supposition"], "antonyms": ["fact", "certainty", "proof"] },
+      { "word": "Impartial", "type": "adjective", "ipa": "/ɪmˈpɑːʃl/", "definition": "Treating all sides equally; unbiased.", "example": "The judge remained impartial.", "synonyms": ["neutral", "fair", "unbiased"], "antonyms": ["biased", "partial", "prejudiced"] },
+      { "word": "Incessant", "type": "adjective", "ipa": "/ɪnˈsesənt/", "definition": "Continuing without pause.", "example": "The incessant noise was disturbing.", "synonyms": ["constant", "continuous", "unending"], "antonyms": ["intermittent", "occasional", "stopping"] },
+      { "word": "Indolent", "type": "adjective", "ipa": "/ˈɪndələnt/", "definition": "Lazy; avoiding work.", "example": "He became indolent during vacation.", "synonyms": ["lazy", "idle", "sluggish"], "antonyms": ["active", "diligent", "hardworking"] },
+      { "word": "Innovative", "type": "adjective", "ipa": "/ˈɪnəveɪtɪv/", "definition": "Featuring new methods or ideas.", "example": "She proposed an innovative solution.", "synonyms": ["creative", "original", "advanced"], "antonyms": ["traditional", "old", "outdated"] },
+      { "word": "Insinuate", "type": "verb", "ipa": "/ɪnˈsɪnjueɪt/", "definition": "To suggest indirectly.", "example": "He insinuated that she was lying.", "synonyms": ["imply", "suggest", "hint"], "antonyms": ["state", "declare", "announce"] },
+      { "word": "Irrefutable", "type": "adjective", "ipa": "/ˌɪrɪˈfjuːtəbl/", "definition": "Impossible to deny or disprove.", "example": "The evidence was irrefutable.", "synonyms": ["undeniable", "unquestionable", "certain"], "antonyms": ["doubtful", "uncertain", "refutable"] },
+      { "word": "Jeopardize", "type": "verb", "ipa": "/ˈdʒepədaɪz/", "definition": "To put something at risk.", "example": "Don’t jeopardize your future.", "synonyms": ["risk", "endanger", "threaten"], "antonyms": ["protect", "secure", "safeguard"] }
+    ]
+  },
+
+  {
+    "day": 4,
+    "words": [
+      { "word": "Judicious", "type": "adjective", "ipa": "/dʒuːˈdɪʃəs/", "definition": "Having or showing good judgment.", "example": "She made a judicious decision.", "synonyms": ["wise", "prudent", "sensible"], "antonyms": ["foolish", "reckless", "careless"] },
+      { "word": "Kindle", "type": "verb", "ipa": "/ˈkɪndl/", "definition": "To ignite or inspire.", "example": "The speech kindled hope.", "synonyms": ["ignite", "inspire", "stimulate"], "antonyms": ["extinguish", "suppress", "dampen"] },
+      { "word": "Laud", "type": "verb", "ipa": "/lɔːd/", "definition": "To praise highly.", "example": "They lauded his achievements.", "synonyms": ["praise", "commend", "applaud"], "antonyms": ["criticize", "condemn", "blame"] },
+      { "word": "Lucid", "type": "adjective", "ipa": "/ˈluːsɪd/", "definition": "Clear and easy to understand.", "example": "The explanation was lucid.", "synonyms": ["clear", "intelligible", "simple"], "antonyms": ["confusing", "unclear", "obscure"] },
+      { "word": "Mandate", "type": "noun", "ipa": "/ˈmæn.deɪt/", "definition": "An official order or authority.", "example": "The government issued a mandate.", "synonyms": ["order", "command", "directive"], "antonyms": ["request", "suggestion", "option"] },
+      { "word": "Metamorphosis", "type": "noun", "ipa": "/ˌmetəˈmɔːfəsɪs/", "definition": "A transformation or change.", "example": "The caterpillar undergoes metamorphosis.", "synonyms": ["transformation", "change", "conversion"], "antonyms": ["stability", "constancy", "sameness"] },
+      { "word": "Mitigate", "type": "verb", "ipa": "/ˈmɪtɪɡeɪt/", "definition": "To reduce severity.", "example": "Steps were taken to mitigate risk.", "synonyms": ["reduce", "alleviate", "ease"], "antonyms": ["intensify", "worsen", "aggravate"] },
+      { "word": "Nullify", "type": "verb", "ipa": "/ˈnʌlɪfaɪ/", "definition": "To make something legally void.", "example": "The contract was nullified.", "synonyms": ["cancel", "invalidate", "abolish"], "antonyms": ["validate", "confirm", "enforce"] },
+      { "word": "Obstinate", "type": "adjective", "ipa": "/ˈɒbstɪnət/", "definition": "Stubbornly refusing to change.", "example": "He is obstinate in his beliefs.", "synonyms": ["stubborn", "unyielding", "rigid"], "antonyms": ["flexible", "open", "yielding"] },
+      { "word": "Onerous", "type": "adjective", "ipa": "/ˈəʊnərəs/", "definition": "Involving great effort or difficulty.", "example": "The task was onerous.", "synonyms": ["burdensome", "heavy", "demanding"], "antonyms": ["easy", "light", "simple"] },
+      { "word": "Optimistic", "type": "adjective", "ipa": "/ˌɒptɪˈmɪstɪk/", "definition": "Hopeful about the future.", "example": "She is optimistic about her results.", "synonyms": ["hopeful", "positive", "confident"], "antonyms": ["pessimistic", "negative", "hopeless"] },
+      { "word": "Paradigm", "type": "noun", "ipa": "/ˈpærədaɪm/", "definition": "A typical example or pattern.", "example": "This is a new paradigm in education.", "synonyms": ["model", "pattern", "example"], "antonyms": ["anomaly", "exception", "deviation"] },
+      { "word": "Pragmatic", "type": "adjective", "ipa": "/præɡˈmætɪk/", "definition": "Practical rather than theoretical.", "example": "She took a pragmatic approach.", "synonyms": ["practical", "realistic", "sensible"], "antonyms": ["idealistic", "theoretical", "impractical"] },
+      { "word": "Precede", "type": "verb", "ipa": "/prɪˈsiːd/", "definition": "To come before something.", "example": "Warnings preceded the announcement.", "synonyms": ["lead", "come before", "foreshadow"], "antonyms": ["follow", "succeed", "trail"] },
+      { "word": "Prolific", "type": "adjective", "ipa": "/prəˈlɪfɪk/", "definition": "Producing a lot.", "example": "He is a prolific writer.", "synonyms": ["productive", "creative", "fertile"], "antonyms": ["unproductive", "inactive", "barren"] },
+      { "word": "Prompt", "type": "adjective", "ipa": "/prɒmpt/", "definition": "Done without delay.", "example": "He gave a prompt response.", "synonyms": ["quick", "immediate", "fast"], "antonyms": ["late", "delayed", "slow"] },
+      { "word": "Quaint", "type": "adjective", "ipa": "/kweɪnt/", "definition": "Attractively unusual or old-fashioned.", "example": "The village was quaint and peaceful.", "synonyms": ["charming", "old-fashioned", "picturesque"], "antonyms": ["modern", "ordinary", "plain"] },
+      { "word": "Rational", "type": "adjective", "ipa": "/ˈræʃənl/", "definition": "Based on logic and reason.", "example": "He made a rational decision.", "synonyms": ["logical", "reasonable", "sensible"], "antonyms": ["irrational", "illogical", "emotional"] },
+      { "word": "Redundant", "type": "adjective", "ipa": "/rɪˈdʌndənt/", "definition": "No longer needed or useful.", "example": "The sentence was redundant.", "synonyms": ["unnecessary", "excess", "superfluous"], "antonyms": ["necessary", "essential", "useful"] },
+      { "word": "Resilient", "type": "adjective", "ipa": "/rɪˈzɪliənt/", "definition": "Able to recover quickly.", "example": "She is resilient under pressure.", "synonyms": ["tough", "strong", "adaptable"], "antonyms": ["fragile", "weak", "vulnerable"] }
+    ]
+  },
+
+  {
+    "day": 5,
+    "words": [
+      { "word": "Scrutinize", "type": "verb", "ipa": "/ˈskruːtənaɪz/", "definition": "To examine closely.", "example": "They scrutinized the document.", "synonyms": ["inspect", "analyze", "review"], "antonyms": ["ignore", "overlook", "neglect"] },
+      { "word": "Serene", "type": "adjective", "ipa": "/səˈriːn/", "definition": "Calm and peaceful.", "example": "The lake was serene.", "synonyms": ["calm", "peaceful", "tranquil"], "antonyms": ["chaotic", "stormy", "noisy"] },
+      { "word": "Substantiate", "type": "verb", "ipa": "/səbˈstænʃieɪt/", "definition": "To prove or support with evidence.", "example": "He substantiated his claim.", "synonyms": ["prove", "confirm", "verify"], "antonyms": ["refute", "disprove", "deny"] },
+      { "word": "Superficial", "type": "adjective", "ipa": "/ˌsuːpəˈfɪʃl/", "definition": "Existing only on the surface.", "example": "His understanding was superficial.", "synonyms": ["shallow", "surface-level", "basic"], "antonyms": ["deep", "thorough", "profound"] },
+      { "word": "Tangible", "type": "adjective", "ipa": "/ˈtændʒəbl/", "definition": "Perceptible by touch or real.", "example": "There is tangible evidence.", "synonyms": ["real", "actual", "concrete"], "antonyms": ["abstract", "imaginary", "theoretical"] },
+      { "word": "Tenacious", "type": "adjective", "ipa": "/təˈneɪʃəs/", "definition": "Persistent and determined.", "example": "She is a tenacious learner.", "synonyms": ["persistent", "determined", "resolute"], "antonyms": ["weak", "indifferent", "yielding"] },
+      { "word": "Transient", "type": "adjective", "ipa": "/ˈtrænziənt/", "definition": "Lasting for a short time.", "example": "Happiness can be transient.", "synonyms": ["temporary", "brief", "short-lived"], "antonyms": ["permanent", "lasting", "enduring"] },
+      { "word": "Undermine", "type": "verb", "ipa": "/ˌʌndəˈmaɪn/", "definition": "To weaken gradually.", "example": "Criticism can undermine confidence.", "synonyms": ["weaken", "damage", "erode"], "antonyms": ["strengthen", "support", "reinforce"] },
+      { "word": "Unprecedented", "type": "adjective", "ipa": "/ʌnˈpresɪdentɪd/", "definition": "Never done before.", "example": "The event was unprecedented.", "synonyms": ["unique", "unusual", "novel"], "antonyms": ["common", "ordinary", "usual"] },
+      { "word": "Ubiquitous", "type": "adjective", "ipa": "/juːˈbɪkwɪtəs/", "definition": "Present everywhere.", "example": "Smartphones are ubiquitous.", "synonyms": ["everywhere", "widespread", "common"], "antonyms": ["rare", "scarce", "limited"] },
+      { "word": "Validate", "type": "verb", "ipa": "/ˈvælɪdeɪt/", "definition": "To confirm or prove validity.", "example": "The data was validated.", "synonyms": ["confirm", "verify", "approve"], "antonyms": ["invalidate", "reject", "disprove"] },
+      { "word": "Viable", "type": "adjective", "ipa": "/ˈvaɪəbl/", "definition": "Capable of working successfully.", "example": "This is a viable solution.", "synonyms": ["feasible", "workable", "possible"], "antonyms": ["impossible", "unworkable", "nonviable"] },
+      { "word": "Vigilant", "type": "adjective", "ipa": "/ˈvɪdʒɪlənt/", "definition": "Watchful and alert.", "example": "Be vigilant while studying online.", "synonyms": ["alert", "watchful", "attentive"], "antonyms": ["careless", "unaware", "neglectful"] },
+      { "word": "Volatile", "type": "adjective", "ipa": "/ˈvɒlətaɪl/", "definition": "Likely to change rapidly.", "example": "The market is volatile.", "synonyms": ["unstable", "unpredictable", "erratic"], "antonyms": ["stable", "steady", "predictable"] },
+      { "word": "Warrant", "type": "verb", "ipa": "/ˈwɒrənt/", "definition": "To justify or require.", "example": "This situation warrants attention.", "synonyms": ["justify", "require", "support"], "antonyms": ["forbid", "deny", "reject"] },
+      { "word": "Wary", "type": "adjective", "ipa": "/ˈweəri/", "definition": "Cautious and alert to danger.", "example": "Be wary of scams.", "synonyms": ["careful", "cautious", "alert"], "antonyms": ["careless", "reckless", "trusting"] },
+      { "word": "Zealous", "type": "adjective", "ipa": "/ˈzeləs/", "definition": "Very passionate and enthusiastic.", "example": "He is zealous in his studies.", "synonyms": ["enthusiastic", "passionate", "dedicated"], "antonyms": ["indifferent", "apathetic", "uninterested"] },
+      { "word": "Tantamount", "type": "adjective", "ipa": "/ˈtæntəmaʊnt/", "definition": "Equivalent in value, significance, or effect.", "example": "Her silence was tantamount to an admission of guilt.", "synonyms": ["equivalent", "equal", "identical"], "antonyms": ["different", "opposite", "polar"] },
+      { "word": "Vanguard", "type": "noun", "ipa": "/ˈvænɡɑːrd/", "definition": "A group of people leading the way in new developments or ideas.", "example": "The research team was in the vanguard of cancer research.", "synonyms": ["forefront", "pioneers", "leaders"], "antonyms": ["followers", "rearguard", "followers"] },
+      { "word": "Waver", "type": "verb", "ipa": "/ˈweɪvər/", "definition": "To shake with a quivering motion; be undecided between two opinions.", "example": "She did not waver in her determination to succeed.", "synonyms": ["hesitate", "vacillate", "falter"], "antonyms": ["decide", "remain firm", "continue"] }
+    ]
+  },
+
+  {
+    "day": 6,
+    "words": [
+      { "word": "Altruistic", "type": "adjective", "ipa": "/ˌæltruːˈɪstɪk/", "definition": "Showing selfless concern for the well-being of others.", "example": "Her altruistic actions helped many students pass the exam.", "synonyms": ["selfless", "generous", "philanthropic"], "antonyms": ["selfish", "self-centered", "egoistic"] },
+      { "word": "Arduous", "type": "adjective", "ipa": "/ˈɑːrdjuəs/", "definition": "Involving or requiring strenuous effort.", "example": "Preparing for the CSE is an arduous journey.", "synonyms": ["difficult", "laborious", "tiring"], "antonyms": ["easy", "simple", "effortless"] },
+      { "word": "Astute", "type": "adjective", "ipa": "/əˈstjuːt/", "definition": "Having sharp judgment or intelligence.", "example": "She made an astute observation about the question pattern.", "synonyms": ["clever", "shrewd", "intelligent"], "antonyms": ["foolish", "naive", "stupid"] },
+      { "word": "Austere", "type": "adjective", "ipa": "/ɒˈstɪər/", "definition": "Severe or strict in manner or appearance.", "example": "The professor had an austere teaching style.", "synonyms": ["strict", "stern", "harsh"], "antonyms": ["lenient", "soft", "relaxed"] },
+      { "word": "Axiom", "type": "noun", "ipa": "/ˈæksiəm/", "definition": "A statement accepted as true without proof.", "example": "It is an axiom that practice improves performance.", "synonyms": ["principle", "truth", "rule"], "antonyms": ["doubt", "fallacy", "uncertainty"] },
+      { "word": "Belittle", "type": "verb", "ipa": "/bɪˈlɪtl/", "definition": "To make someone or something seem less important.", "example": "Do not belittle your own efforts.", "synonyms": ["mock", "undermine", "disparage"], "antonyms": ["praise", "value", "uplift"] },
+      { "word": "Brevity", "type": "noun", "ipa": "/ˈbrevɪti/", "definition": "Concise and exact use of words.", "example": "Brevity is important in exams.", "synonyms": ["conciseness", "shortness", "succinctness"], "antonyms": ["verbosity", "lengthiness", "wordiness"] },
+      { "word": "Capitulate", "type": "verb", "ipa": "/kəˈpɪtʃuleɪt/", "definition": "To surrender or give up resistance.", "example": "He refused to capitulate under pressure.", "synonyms": ["surrender", "yield", "submit"], "antonyms": ["resist", "fight", "defy"] },
+      { "word": "Circumspect", "type": "adjective", "ipa": "/ˈsɜːkəmspekt/", "definition": "Careful and considering all circumstances.", "example": "Be circumspect when answering tricky questions.", "synonyms": ["cautious", "careful", "vigilant"], "antonyms": ["reckless", "careless", "rash"] },
+      { "word": "Coherent", "type": "adjective", "ipa": "/koʊˈhɪərənt/", "definition": "Logical and consistent.", "example": "Her answer was coherent and well-structured.", "synonyms": ["logical", "clear", "consistent"], "antonyms": ["confused", "incoherent", "disorganized"] },
+      { "word": "Conducive", "type": "adjective", "ipa": "/kənˈdjuːsɪv/", "definition": "Making a certain situation likely or possible.", "example": "A quiet room is conducive to studying.", "synonyms": ["helpful", "favorable", "supportive"], "antonyms": ["harmful", "unfavorable", "hindering"] },
+      { "word": "Conscientious", "type": "adjective", "ipa": "/ˌkɒnʃiˈenʃəs/", "definition": "Thorough and careful in work.", "example": "She is a conscientious student.", "synonyms": ["diligent", "careful", "responsible"], "antonyms": ["careless", "lazy", "negligent"] },
+      { "word": "Corroborate", "type": "verb", "ipa": "/kəˈrɒbəreɪt/", "definition": "To confirm or support with evidence.", "example": "The data corroborated the findings.", "synonyms": ["confirm", "support", "verify"], "antonyms": ["refute", "deny", "contradict"] },
+      { "word": "Cryptic", "type": "adjective", "ipa": "/ˈkrɪptɪk/", "definition": "Mysterious or difficult to understand.", "example": "The message was cryptic.", "synonyms": ["mysterious", "puzzling", "unclear"], "antonyms": ["clear", "obvious", "simple"] },
+      { "word": "Daunt", "type": "verb", "ipa": "/dɔːnt/", "definition": "To make someone feel intimidated.", "example": "The exam did not daunt him.", "synonyms": ["intimidate", "discourage", "frighten"], "antonyms": ["encourage", "inspire", "motivate"] },
+      { "word": "Deleterious", "type": "adjective", "ipa": "/ˌdelɪˈtɪəriəs/", "definition": "Causing harm or damage.", "example": "Poor habits have deleterious effects.", "synonyms": ["harmful", "damaging", "bad"], "antonyms": ["beneficial", "helpful", "good"] },
+      { "word": "Dexterous", "type": "adjective", "ipa": "/ˈdekstərəs/", "definition": "Skilful, especially with hands.", "example": "She is dexterous at solving puzzles.", "synonyms": ["skilled", "adept", "agile"], "antonyms": ["clumsy", "inept", "awkward"] },
+      { "word": "Dichotomy", "type": "noun", "ipa": "/daɪˈkɒtəmi/", "definition": "A division into two contrasting parts.", "example": "There is a dichotomy between theory and practice.", "synonyms": ["division", "contrast", "split"], "antonyms": ["unity", "harmony", "wholeness"] },
+      { "word": "Discreet", "type": "adjective", "ipa": "/dɪˈskriːt/", "definition": "Careful not to attract attention.", "example": "He made a discreet inquiry.", "synonyms": ["careful", "cautious", "reserved"], "antonyms": ["open", "obvious", "indiscreet"] },
+      { "word": "Dogmatic", "type": "adjective", "ipa": "/dɒɡˈmætɪk/", "definition": "Strongly asserting opinions as truth without evidence.", "example": "He has a dogmatic view of politics.", "synonyms": ["authoritative", "rigid", "assertive"], "antonyms": ["open-minded", "flexible", "tolerant"] }
+    ]
+  },
+
+  {
+    "day": 7,
+    "words": [
+      { "word": "Eccentric", "type": "adjective", "ipa": "/ɪkˈsentrɪk/", "definition": "Unconventional or slightly strange.", "example": "He has an eccentric personality.", "synonyms": ["odd", "quirky", "unusual"], "antonyms": ["normal", "conventional", "typical"] },
+      { "word": "Eloquent", "type": "adjective", "ipa": "/ˈeləkwənt/", "definition": "Fluent and persuasive in speaking.", "example": "She gave an eloquent speech.", "synonyms": ["articulate", "expressive", "fluent"], "antonyms": ["inarticulate", "awkward", "unclear"] },
+      { "word": "Empathy", "type": "noun", "ipa": "/ˈempəθi/", "definition": "Ability to understand others' feelings.", "example": "Teachers need empathy for students.", "synonyms": ["compassion", "understanding", "sympathy"], "antonyms": ["indifference", "apathy", "coldness"] },
+      { "word": "Endorse", "type": "verb", "ipa": "/ɪnˈdɔːrs/", "definition": "To support or approve publicly.", "example": "She endorsed the proposal.", "synonyms": ["support", "approve", "recommend"], "antonyms": ["reject", "oppose", "condemn"] },
+      { "word": "Enigma", "type": "noun", "ipa": "/ɪˈnɪɡmə/", "definition": "Something mysterious or hard to understand.", "example": "The problem remains an enigma.", "synonyms": ["mystery", "puzzle", "riddle"], "antonyms": ["clarity", "solution", "explanation"] },
+      { "word": "Erroneous", "type": "adjective", "ipa": "/ɪˈroʊniəs/", "definition": "Incorrect or mistaken.", "example": "The answer was erroneous.", "synonyms": ["wrong", "false", "incorrect"], "antonyms": ["correct", "accurate", "true"] },
+      { "word": "Fervent", "type": "adjective", "ipa": "/ˈfɜːrvənt/", "definition": "Having strong and sincere feelings.", "example": "He is a fervent supporter of education.", "synonyms": ["passionate", "intense", "enthusiastic"], "antonyms": ["apathetic", "indifferent", "cold"] },
+      { "word": "Fortify", "type": "verb", "ipa": "/ˈfɔːrtɪfaɪ/", "definition": "To strengthen or reinforce.", "example": "Exercise fortifies the body.", "synonyms": ["strengthen", "reinforce", "secure"], "antonyms": ["weaken", "undermine", "damage"] },
+      { "word": "Frivolous", "type": "adjective", "ipa": "/ˈfrɪvələs/", "definition": "Not having serious purpose.", "example": "He made a frivolous complaint.", "synonyms": ["trivial", "silly", "unimportant"], "antonyms": ["serious", "important", "significant"] },
+      { "word": "Guile", "type": "noun", "ipa": "/ɡaɪl/", "definition": "Sly or cunning intelligence.", "example": "He used guile to win the debate.", "synonyms": ["cunning", "deceit", "craftiness"], "antonyms": ["honesty", "sincerity", "frankness"] },
+      { "word": "Hinder", "type": "verb", "ipa": "/ˈhɪndər/", "definition": "To create difficulties for someone.", "example": "Noise can hinder concentration.", "synonyms": ["obstruct", "block", "delay"], "antonyms": ["help", "assist", "facilitate"] },
+      { "word": "Illicit", "type": "adjective", "ipa": "/ɪˈlɪsɪt/", "definition": "Forbidden by law or rules.", "example": "Illicit activities were reported.", "synonyms": ["illegal", "unlawful", "prohibited"], "antonyms": ["legal", "lawful", "allowed"] },
+      { "word": "Imminent", "type": "adjective", "ipa": "/ˈɪmɪnənt/", "definition": "About to happen soon.", "example": "A storm is imminent.", "synonyms": ["approaching", "near", "impending"], "antonyms": ["distant", "remote", "delayed"] },
+      { "word": "Inadvertent", "type": "adjective", "ipa": "/ˌɪnədˈvɜːrtənt/", "definition": "Not intentional; accidental.", "example": "It was an inadvertent mistake.", "synonyms": ["unintentional", "accidental", "unplanned"], "antonyms": ["intentional", "deliberate", "planned"] },
+      { "word": "Indifferent", "type": "adjective", "ipa": "/ɪnˈdɪfərənt/", "definition": "Having no strong feeling.", "example": "He is indifferent to politics.", "synonyms": ["uncaring", "apathetic", "neutral"], "antonyms": ["concerned", "interested", "passionate"] },
+      { "word": "Insipid", "type": "adjective", "ipa": "/ɪnˈsɪpɪd/", "definition": "Lacking flavor or interest.", "example": "The speech was insipid.", "synonyms": ["boring", "dull", "flat"], "antonyms": ["exciting", "interesting", "vivid"] },
+      { "word": "Lucid", "type": "adjective", "ipa": "/ˈluːsɪd/", "definition": "Clear and easy to understand.", "example": "Her explanation was lucid.", "synonyms": ["clear", "simple", "intelligible"], "antonyms": ["confusing", "unclear", "obscure"] },
+      { "word": "Magnanimous", "type": "adjective", "ipa": "/mæɡˈnænɪməs/", "definition": "Generous and forgiving.", "example": "He was magnanimous in victory.", "synonyms": ["generous", "kind", "forgiving"], "antonyms": ["selfish", "vindictive", "cruel"] },
+      { "word": "Meticulous", "type": "adjective", "ipa": "/məˈtɪkjələs/", "definition": "Very careful and precise.", "example": "She is meticulous in her work.", "synonyms": ["careful", "precise", "thorough"], "antonyms": ["careless", "sloppy", "negligent"] },
+      { "word": "Jovial", "type": "adjective", "ipa": "/ˈdʒoʊviəl/", "definition": "Cheerful and friendly.", "example": "She was in a jovial mood after receiving the good news.", "synonyms": ["cheerful", "friendly", "jolly"], "antonyms": ["gloomy", "morose", "sad"] }
+    ]
+  },
+
+  {
+    "day": 8,
+    "words": [
+      { "word": "Nostalgia", "type": "noun", "ipa": "/nɒˈstældʒə/", "definition": "A sentimental longing for the past.", "example": "He felt nostalgia for his childhood.", "synonyms": ["longing", "sentiment", "remembrance"], "antonyms": ["indifference", "present-focus", "forgetfulness"] },
+      { "word": "Obsolete", "type": "adjective", "ipa": "/ˈɒbsəliːt/", "definition": "No longer in use.", "example": "The system is obsolete.", "synonyms": ["outdated", "old", "defunct"], "antonyms": ["modern", "current", "new"] },
+      { "word": "Opaque", "type": "adjective", "ipa": "/oʊˈpeɪk/", "definition": "Not transparent or hard to understand.", "example": "The rules were opaque.", "synonyms": ["unclear", "vague", "clouded"], "antonyms": ["clear", "transparent", "obvious"] },
+      { "word": "Ostentatious", "type": "adjective", "ipa": "/ˌɒstənˈteɪʃəs/", "definition": "Showy and designed to impress.", "example": "He lives in an ostentatious house.", "synonyms": ["showy", "flashy", "lavish"], "antonyms": ["modest", "simple", "humble"] },
+      { "word": "Paradox", "type": "noun", "ipa": "/ˈpærədɒks/", "definition": "A statement that seems contradictory but may be true.", "example": "It is a paradox that less is more.", "synonyms": ["contradiction", "puzzle", "riddle"], "antonyms": ["clarity", "logic", "consistency"] },
+      { "word": "Perceive", "type": "verb", "ipa": "/pərˈsiːv/", "definition": "To become aware of something.", "example": "She perceived a change in tone.", "synonyms": ["notice", "detect", "observe"], "antonyms": ["ignore", "miss", "overlook"] },
+      { "word": "Prudent", "type": "adjective", "ipa": "/ˈpruːdənt/", "definition": "Acting with care and thought.", "example": "It is prudent to save money.", "synonyms": ["wise", "careful", "sensible"], "antonyms": ["reckless", "careless", "foolish"] },
+      { "word": "Ravenous", "type": "adjective", "ipa": "/ˈrævənəs/", "definition": "Extremely hungry.", "example": "He was ravenous after the exam.", "synonyms": ["hungry", "starving", "famished"], "antonyms": ["full", "satisfied", "content"] },
+      { "word": "Reconcile", "type": "verb", "ipa": "/ˈrekənsaɪl/", "definition": "To restore friendly relations.", "example": "They reconciled after the argument.", "synonyms": ["resolve", "settle", "restore"], "antonyms": ["separate", "divide", "conflict"] },
+      { "word": "Refute", "type": "verb", "ipa": "/rɪˈfjuːt/", "definition": "To prove wrong.", "example": "He refuted the claim.", "synonyms": ["disprove", "deny", "reject"], "antonyms": ["confirm", "support", "prove"] },
+      { "word": "Reluctant", "type": "adjective", "ipa": "/rɪˈlʌktənt/", "definition": "Unwilling or hesitant.", "example": "She was reluctant to answer.", "synonyms": ["hesitant", "unwilling", "resistant"], "antonyms": ["willing", "eager", "ready"] },
+      { "word": "Rescind", "type": "verb", "ipa": "/rɪˈsɪnd/", "definition": "To cancel or repeal.", "example": "The rule was rescinded.", "synonyms": ["revoke", "cancel", "withdraw"], "antonyms": ["enforce", "approve", "confirm"] },
+      { "word": "Sagacious", "type": "adjective", "ipa": "/səˈɡeɪʃəs/", "definition": "Wise and insightful.", "example": "A sagacious leader.", "synonyms": ["wise", "clever", "intelligent"], "antonyms": ["foolish", "ignorant", "naive"] },
+      { "word": "Scrupulous", "type": "adjective", "ipa": "/ˈskruːpjələs/", "definition": "Very careful about ethics and details.", "example": "He is scrupulous in his work.", "synonyms": ["ethical", "careful", "meticulous"], "antonyms": ["careless", "dishonest", "negligent"] },
+      { "word": "Spontaneous", "type": "adjective", "ipa": "/spɒnˈteɪniəs/", "definition": "Done without planning.", "example": "A spontaneous decision.", "synonyms": ["impulsive", "natural", "unplanned"], "antonyms": ["planned", "calculated", "deliberate"] },
+      { "word": "Succinct", "type": "adjective", "ipa": "/səkˈsɪŋkt/", "definition": "Brief and clearly expressed.", "example": "A succinct summary.", "synonyms": ["concise", "short", "brief"], "antonyms": ["verbose", "lengthy", "wordy"] },
+      { "word": "Tacit", "type": "adjective", "ipa": "/ˈtæsɪt/", "definition": "Understood without being stated.", "example": "There was tacit agreement.", "synonyms": ["implied", "unspoken", "implicit"], "antonyms": ["explicit", "stated", "clear"] },
+      { "word": "Trivial", "type": "adjective", "ipa": "/ˈtrɪviəl/", "definition": "Of little importance.", "example": "A trivial issue.", "synonyms": ["minor", "insignificant", "small"], "antonyms": ["important", "major", "significant"] },
+      { "word": "Vindicate", "type": "verb", "ipa": "/ˈvɪndɪkeɪt/", "definition": "To clear from blame or suspicion.", "example": "The evidence vindicated him.", "synonyms": ["justify", "clear", "exonerate"], "antonyms": ["accuse", "blame", "convict"] },
+      { "word": "Relinquish", "type": "verb", "ipa": "/rɪˈlɪŋkwɪʃ/", "definition": "Voluntarily cease to keep or claim; give up.", "example": "He was forced to relinquish his control of the company.", "synonyms": ["surrender", "give up", "cede"], "antonyms": ["keep", "retain", "claim"] }
+    ]
+  },
+
+  {
+    "day": 9,
+    "words": [
+      { "word": "Whimsical", "type": "adjective", "ipa": "/ˈwɪmzɪkl/", "definition": "Playfully unusual or fanciful.", "example": "A whimsical design.", "synonyms": ["quirky", "fanciful", "playful"], "antonyms": ["serious", "plain", "ordinary"] },
+      { "word": "Zeal", "type": "noun", "ipa": "/ziːl/", "definition": "Great enthusiasm or energy.", "example": "He studied with zeal.", "synonyms": ["passion", "enthusiasm", "fervor"], "antonyms": ["apathy", "indifference", "laziness"] },
+      { "word": "Abhor", "type": "verb", "ipa": "/əbˈhɔːr/", "definition": "To hate deeply.", "example": "She abhors cheating.", "synonyms": ["hate", "detest", "despise"], "antonyms": ["love", "like", "admire"] },
+      { "word": "Benevolent", "type": "adjective", "ipa": "/bəˈnevələnt/", "definition": "Kind and generous.", "example": "A benevolent leader.", "synonyms": ["kind", "charitable", "generous"], "antonyms": ["cruel", "selfish", "harsh"] },
+      { "word": "Convoluted", "type": "adjective", "ipa": "/ˈkɒnvəluːtɪd/", "definition": "Extremely complex and difficult to follow.", "example": "A convoluted explanation.", "synonyms": ["complex", "complicated", "confusing"], "antonyms": ["simple", "clear", "direct"] },
+      { "word": "Debunk", "type": "verb", "ipa": "/diːˈbʌŋk/", "definition": "To expose as false.", "example": "Scientists debunked the myth.", "synonyms": ["refute", "disprove", "expose"], "antonyms": ["support", "confirm", "validate"] },
+      { "word": "Eclectic", "type": "adjective", "ipa": "/ɪˈklektɪk/", "definition": "Derived from diverse sources.", "example": "An eclectic mix of ideas.", "synonyms": ["varied", "diverse", "mixed"], "antonyms": ["uniform", "single", "similar"] },
+      { "word": "Frugal", "type": "adjective", "ipa": "/ˈfruːɡl/", "definition": "Careful with money.", "example": "A frugal lifestyle.", "synonyms": ["thrifty", "economical", "careful"], "antonyms": ["wasteful", "extravagant", "lavish"] },
+      { "word": "Guileless", "type": "adjective", "ipa": "/ˈɡaɪlləs/", "definition": "Devoid of cunning or deceit.", "example": "A guileless child.", "synonyms": ["innocent", "honest", "pure"], "antonyms": ["deceitful", "cunning", "sly"] },
+      { "word": "Haphazard", "type": "adjective", "ipa": "/ˈhæphæzəd/", "definition": "Lacking organization or order.", "example": "A haphazard arrangement.", "synonyms": ["random", "messy", "unplanned"], "antonyms": ["organized", "structured", "orderly"] },
+      { "word": "Impeccable", "type": "adjective", "ipa": "/ɪmˈpekəbl/", "definition": "Flawless.", "example": "Impeccable grammar.", "synonyms": ["perfect", "excellent", "faultless"], "antonyms": ["flawed", "poor", "imperfect"] },
+      { "word": "Lethargic", "type": "adjective", "ipa": "/ləˈθɑːrdʒɪk/", "definition": "Lacking energy.", "example": "Feeling lethargic after studying.", "synonyms": ["lazy", "sluggish", "inactive"], "antonyms": ["energetic", "active", "alert"] },
+      { "word": "Mundane", "type": "adjective", "ipa": "/mʌnˈdeɪn/", "definition": "Ordinary and dull.", "example": "Mundane daily tasks.", "synonyms": ["boring", "ordinary", "routine"], "antonyms": ["exciting", "extraordinary", "interesting"] },
+      { "word": "Nuance", "type": "noun", "ipa": "/ˈnjuːɑːns/", "definition": "A subtle difference in meaning.", "example": "The nuance in meaning was important.", "synonyms": ["subtlety", "distinction", "shade"], "antonyms": ["obviousness", "clarity", "simplicity"] },
+      { "word": "Obnoxious", "type": "adjective", "ipa": "/əbˈnɒkʃəs/", "definition": "Extremely unpleasant.", "example": "Obnoxious behavior.", "synonyms": ["offensive", "annoying", "rude"], "antonyms": ["pleasant", "nice", "polite"] },
+      { "word": "Plausible", "type": "adjective", "ipa": "/ˈplɔːzəbl/", "definition": "Seemingly reasonable or believable.", "example": "A plausible explanation.", "synonyms": ["believable", "possible", "likely"], "antonyms": ["unlikely", "implausible", "false"] },
+      { "word": "Rescind", "type": "verb", "ipa": "/rɪˈsɪnd/", "definition": "To cancel or revoke.", "example": "The rule was rescinded.", "synonyms": ["cancel", "revoke", "withdraw"], "antonyms": ["enforce", "approve", "confirm"] },
+      { "word": "Stoic", "type": "adjective", "ipa": "/ˈstəʊɪk/", "definition": "Enduring pain without showing emotion.", "example": "He remained stoic.", "synonyms": ["calm", "unemotional", "composed"], "antonyms": ["emotional", "expressive", "reactive"] },
+      { "word": "Transient", "type": "adjective", "ipa": "/ˈtrænziənt/", "definition": "Lasting briefly.", "example": "Transient happiness.", "synonyms": ["temporary", "short-lived", "brief"], "antonyms": ["permanent", "lasting", "enduring"] },
+      { "word": "Urbane", "type": "adjective", "ipa": "/ɜːˈbeɪn/", "definition": "Polished and sophisticated.", "example": "An urbane gentleman.", "synonyms": ["polished", "cultured", "refined"], "antonyms": ["uncultured", "rude", "rough"] }
+    ]
+  },
+
+  {
+    "day": 10,
+    "words": [
+      { "word": "Aberrant", "type": "adjective", "ipa": "/æˈbɛrənt/", "definition": "Departing from an accepted standard; unusual or deviant.", "example": "The auditor flagged several aberrant entries in the financial report.", "synonyms": ["deviant", "anomalous", "atypical"], "antonyms": ["normal", "typical", "conventional"] },
+      { "word": "Abstain", "type": "verb", "ipa": "/əbˈsteɪn/", "definition": "To restrain oneself from doing or enjoying something.", "example": "Three board members chose to abstain from the final vote.", "synonyms": ["refrain", "forgo", "desist"], "antonyms": ["indulge", "participate", "engage"] },
+      { "word": "Acrimony", "type": "noun", "ipa": "/ˈækrɪməni/", "definition": "Bitterness or ill feeling, especially in speech or manner.", "example": "The labor dispute ended with considerable acrimony between both sides.", "synonyms": ["bitterness", "hostility", "rancor"], "antonyms": ["goodwill", "amicability", "warmth"] },
+      { "word": "Acquiesce", "type": "verb", "ipa": "/ˌækwiˈɛs/", "definition": "To accept something reluctantly but without protest.", "example": "She acquiesced to the committee's decision despite her reservations.", "synonyms": ["comply", "concede", "yield"], "antonyms": ["resist", "protest", "refuse"] },
+      { "word": "Admonish", "type": "verb", "ipa": "/ədˈmɒnɪʃ/", "definition": "To warn or reprimand someone firmly.", "example": "The supervisor admonished the staff for repeated tardiness.", "synonyms": ["reprimand", "rebuke", "caution"], "antonyms": ["praise", "commend", "approve"] },
+      { "word": "Affluent", "type": "adjective", "ipa": "/ˈæfluənt/", "definition": "Having a great deal of wealth; prosperous.", "example": "The program was designed to bridge the gap between affluent and low-income communities.", "synonyms": ["wealthy", "prosperous", "opulent"], "antonyms": ["impoverished", "destitute", "poor"] },
+      { "word": "Aggravate", "type": "verb", "ipa": "/ˈæɡrəveɪt/", "definition": "To make a problem or offense worse or more serious.", "example": "Delays in relief delivery only served to aggravate the crisis.", "synonyms": ["worsen", "intensify", "exacerbate"], "antonyms": ["alleviate", "improve", "soothe"] },
+      { "word": "Ambivalent", "type": "adjective", "ipa": "/æmˈbɪvələnt/", "definition": "Having mixed feelings or contradictory ideas about something.", "example": "Citizens were ambivalent about the proposed infrastructure bill.", "synonyms": ["uncertain", "indecisive", "conflicted"], "antonyms": ["certain", "decisive", "resolute"] },
+      { "word": "Ameliorate", "type": "verb", "ipa": "/əˈmiːliəreɪt/", "definition": "To make something bad or unsatisfactory better.", "example": "New policies were enacted to ameliorate the living conditions in rural areas.", "synonyms": ["improve", "better", "enhance"], "antonyms": ["worsen", "deteriorate", "aggravate"] },
+      { "word": "Anachronism", "type": "noun", "ipa": "/əˈnækrənɪzəm/", "definition": "A thing belonging or appropriate to a period other than the one in which it exists.", "example": "Using typewriters in a digital office seems like an anachronism.", "synonyms": ["archaism", "relic", "incongruity"], "antonyms": ["modernity", "innovation", "currency"] },
+      { "word": "Antagonize", "type": "verb", "ipa": "/ænˈtæɡənaɪz/", "definition": "To cause someone to become hostile; to provoke opposition.", "example": "The manager's condescending tone only antagonized the staff.", "synonyms": ["provoke", "alienate", "irritate"], "antonyms": ["placate", "conciliate", "appease"] },
+      { "word": "Appease", "type": "verb", "ipa": "/əˈpiːz/", "definition": "To pacify or placate someone by acceding to their demands.", "example": "The governor tried to appease protesters by launching an investigation.", "synonyms": ["pacify", "mollify", "placate"], "antonyms": ["provoke", "antagonize", "aggravate"] },
+      { "word": "Apprehensive", "type": "adjective", "ipa": "/ˌæprɪˈhɛnsɪv/", "definition": "Anxious or fearful that something bad will happen.", "example": "Employees were apprehensive about the outcome of the performance review.", "synonyms": ["anxious", "uneasy", "fearful"], "antonyms": ["confident", "assured", "fearless"] },
+      { "word": "Articulate", "type": "adjective", "ipa": "/ɑːˈtɪkjʊlət/", "definition": "Having or showing the ability to speak fluently and coherently.", "example": "The candidate gave an articulate response to every policy question.", "synonyms": ["eloquent", "fluent", "expressive"], "antonyms": ["inarticulate", "incoherent", "unclear"] },
+      { "word": "Aspire", "type": "verb", "ipa": "/əˈspaɪər/", "definition": "To direct one's hopes or ambitions toward achieving something.", "example": "She aspired to lead the agency's national reform program.", "synonyms": ["aim", "strive", "seek"], "antonyms": ["abandon", "neglect", "disregard"] },
+      { "word": "Assiduous", "type": "adjective", "ipa": "/əˈsɪdjuəs/", "definition": "Showing great care and perseverance in one's work.", "example": "His assiduous preparation paid off during the board examination.", "synonyms": ["diligent", "industrious", "tireless"], "antonyms": ["negligent", "lazy", "careless"] },
+      { "word": "Atrophy", "type": "verb", "ipa": "/ˈætrəfi/", "definition": "To gradually decline in effectiveness or vigor due to underuse.", "example": "Critical thinking skills can atrophy without regular practice.", "synonyms": ["deteriorate", "wither", "degenerate"], "antonyms": ["grow", "strengthen", "flourish"] },
+      { "word": "Auspicious", "type": "adjective", "ipa": "/ɔːˈspɪʃəs/", "definition": "Giving or suggesting a sign of future success; favorable.", "example": "An auspicious start to the fiscal year boosted investor confidence.", "synonyms": ["favorable", "promising", "propitious"], "antonyms": ["inauspicious", "unfavorable", "ominous"] },
+      { "word": "Autonomous", "type": "adjective", "ipa": "/ɔːˈtɒnəməs/", "definition": "Having the freedom to act independently; self-governing.", "example": "The commission was designed to be autonomous from political influence.", "synonyms": ["independent", "self-governing", "sovereign"], "antonyms": ["dependent", "controlled", "subordinate"] },
+      { "word": "Avarice", "type": "noun", "ipa": "/ˈævərɪs/", "definition": "Extreme greed for wealth or material gain.", "example": "His avarice led him to falsify procurement documents for personal gain.", "synonyms": ["greed", "cupidity", "covetousness"], "antonyms": ["generosity", "altruism", "benevolence"] }
+    ]
+  },
+
+  {
+    "day": 11,
+    "words": [
+      { "word": "Bastion", "type": "noun", "ipa": "/ˈbæstiən/", "definition": "A stronghold or a place or system providing safety or defense.", "example": "The organization became a bastion of democratic principles.", "synonyms": ["stronghold", "fortress", "bulwark"], "antonyms": ["vulnerability", "weakness", "exposure"] },
+      { "word": "Beguile", "type": "verb", "ipa": "/bɪˈɡaɪl/", "definition": "To charm or enchant someone in a deceptive way.", "example": "The diplomat's smooth talk beguiled foreign observers.", "synonyms": ["deceive", "charm", "mislead"], "antonyms": ["repel", "disenchant", "enlighten"] },
+      { "word": "Belabor", "type": "verb", "ipa": "/bɪˈleɪbər/", "definition": "To argue or elaborate a point excessively; to overwork a subject.", "example": "The senator tended to belabor minor points, prolonging the session unnecessarily.", "synonyms": ["overstate", "dwell on", "harp on"], "antonyms": ["summarize", "condense", "overlook"] },
+      { "word": "Benign", "type": "adjective", "ipa": "/bɪˈnaɪn/", "definition": "Gentle and kindly; not harmful in effect.", "example": "The inspector gave a benign assessment of the school's compliance.", "synonyms": ["harmless", "gentle", "kind"], "antonyms": ["harmful", "malignant", "hostile"] },
+      { "word": "Blatant", "type": "adjective", "ipa": "/ˈbleɪtənt/", "definition": "Done openly and unashamedly; conspicuously obvious.", "example": "The official's blatant disregard for protocol caused a public outcry.", "synonyms": ["obvious", "flagrant", "glaring"], "antonyms": ["subtle", "concealed", "discreet"] },
+      { "word": "Bogus", "type": "adjective", "ipa": "/ˈboʊɡəs/", "definition": "Not genuine or true; counterfeit or fake.", "example": "The agency rejected the bogus credentials submitted by the applicant.", "synonyms": ["fake", "fraudulent", "counterfeit"], "antonyms": ["genuine", "authentic", "legitimate"] },
+      { "word": "Bucolic", "type": "adjective", "ipa": "/bjuːˈkɒlɪk/", "definition": "Relating to the pleasant aspects of the countryside and rural life.", "example": "The project aimed to preserve the bucolic character of the province.", "synonyms": ["rural", "pastoral", "rustic"], "antonyms": ["urban", "metropolitan", "industrial"] },
+      { "word": "Bureaucratic", "type": "adjective", "ipa": "/ˌbjʊərəˈkrætɪk/", "definition": "Relating to or characteristic of a system of rigid rules and procedures.", "example": "Excessive bureaucratic red tape slowed down the relief operations.", "synonyms": ["administrative", "procedural", "rigid"], "antonyms": ["flexible", "informal", "streamlined"] },
+      { "word": "Buoyant", "type": "adjective", "ipa": "/ˈbɔɪənt/", "definition": "Cheerful and optimistic; able to keep afloat or recover quickly.", "example": "The team remained buoyant despite the early setbacks in the project.", "synonyms": ["optimistic", "cheerful", "resilient"], "antonyms": ["despondent", "pessimistic", "depressed"] },
+      { "word": "Cacophony", "type": "noun", "ipa": "/kæˈkɒfəni/", "definition": "A harsh, discordant mixture of sounds.", "example": "The meeting devolved into a cacophony of competing voices and objections.", "synonyms": ["discord", "din", "clamor"], "antonyms": ["harmony", "melody", "silence"] },
+      { "word": "Callous", "type": "adjective", "ipa": "/ˈkæləs/", "definition": "Showing or having an insensitive and cruel disregard for others.", "example": "The callous response of officials to the flood victims drew widespread criticism.", "synonyms": ["insensitive", "heartless", "cold"], "antonyms": ["compassionate", "empathetic", "humane"] },
+      { "word": "Capricious", "type": "adjective", "ipa": "/kəˈprɪʃəs/", "definition": "Given to sudden changes of mood or behavior; unpredictable.", "example": "His capricious management style made long-term planning difficult.", "synonyms": ["fickle", "impulsive", "erratic"], "antonyms": ["consistent", "steady", "predictable"] },
+      { "word": "Catalyst", "type": "noun", "ipa": "/ˈkætəlɪst/", "definition": "A person or thing that causes a change; an accelerating agent.", "example": "The whistleblower's report served as a catalyst for sweeping reforms.", "synonyms": ["stimulus", "impetus", "trigger"], "antonyms": ["deterrent", "hindrance", "inhibitor"] },
+      { "word": "Caustic", "type": "adjective", "ipa": "/ˈkɔːstɪk/", "definition": "Sarcastic in a scathing and bitter way; able to burn or corrode.", "example": "Her caustic remarks during the hearing embarrassed her entire department.", "synonyms": ["scathing", "acerbic", "biting"], "antonyms": ["mild", "gentle", "complimentary"] },
+      { "word": "Circumvent", "type": "verb", "ipa": "/ˌsɜːkəmˈvɛnt/", "definition": "To find a way around an obstacle; to evade a rule or restriction.", "example": "The contractor tried to circumvent procurement regulations for personal gain.", "synonyms": ["bypass", "evade", "sidestep"], "antonyms": ["comply", "follow", "obey"] },
+      { "word": "Clandestine", "type": "adjective", "ipa": "/klænˈdɛstɪn/", "definition": "Kept secret or done in a hidden manner.", "example": "A clandestine agreement between officials undermined the bidding process.", "synonyms": ["secret", "covert", "hidden"], "antonyms": ["open", "public", "transparent"] },
+      { "word": "Clemency", "type": "noun", "ipa": "/ˈklɛmənsi/", "definition": "Mercy and leniency, especially toward an offender or enemy.", "example": "The prisoner appealed for clemency based on good behavior.", "synonyms": ["mercy", "leniency", "pardon"], "antonyms": ["harshness", "severity", "cruelty"] },
+      { "word": "Coalesce", "type": "verb", "ipa": "/ˌkoʊəˈlɛs/", "definition": "To come together to form one mass or whole; to merge.", "example": "The various factions coalesced into a unified bloc before the election.", "synonyms": ["merge", "unite", "converge"], "antonyms": ["divide", "separate", "fragment"] },
+      { "word": "Cogitate", "type": "verb", "ipa": "/ˈkɒdʒɪteɪt/", "definition": "To think deeply about something; to meditate or ponder.", "example": "The committee took a week to cogitate before issuing a formal recommendation.", "synonyms": ["ponder", "contemplate", "deliberate"], "antonyms": ["ignore", "neglect", "dismiss"] },
+      { "word": "Commensurate", "type": "adjective", "ipa": "/kəˈmɛnʃərɪt/", "definition": "Corresponding in size or degree; proportionate.", "example": "Salary increases should be commensurate with performance and contributions.", "synonyms": ["proportionate", "equivalent", "corresponding"], "antonyms": ["disproportionate", "unequal", "inadequate"] }
+    ]
+  },
+
+  {
+    "day": 12,
+    "words": [
+      { "word": "Compel", "type": "verb", "ipa": "/kəmˈpɛl/", "definition": "To force or oblige someone to do something.", "example": "The new regulation compelled all agencies to submit quarterly reports.", "synonyms": ["force", "oblige", "coerce"], "antonyms": ["allow", "permit", "dissuade"] },
+      { "word": "Competent", "type": "adjective", "ipa": "/ˈkɒmpɪtənt/", "definition": "Having the necessary ability or skill to do something successfully.", "example": "Only competent personnel were assigned to handle classified documents.", "synonyms": ["capable", "qualified", "proficient"], "antonyms": ["incompetent", "inept", "unqualified"] },
+      { "word": "Complacency", "type": "noun", "ipa": "/kəmˈpleɪsənsi/", "definition": "A feeling of smug or uncritical satisfaction with oneself or one's achievements.", "example": "Complacency among inspectors allowed the violations to go unnoticed for months.", "synonyms": ["self-satisfaction", "smugness", "indifference"], "antonyms": ["vigilance", "diligence", "concern"] },
+      { "word": "Complicit", "type": "adjective", "ipa": "/kəmˈplɪsɪt/", "definition": "Involved in or responsible for a wrongdoing.", "example": "Several officials were found complicit in the fraudulent bidding scheme.", "synonyms": ["involved", "culpable", "implicated"], "antonyms": ["innocent", "uninvolved", "blameless"] },
+      { "word": "Concede", "type": "verb", "ipa": "/kənˈsiːd/", "definition": "To admit that something is true or valid after first denying it; to yield.", "example": "The department head was forced to concede errors in the annual report.", "synonyms": ["acknowledge", "admit", "yield"], "antonyms": ["deny", "refuse", "contest"] },
+      { "word": "Condescend", "type": "verb", "ipa": "/ˌkɒndɪˈsɛnd/", "definition": "To act in a way that betrays a feeling of superiority toward others.", "example": "The senior official condescended to his subordinates during the briefing.", "synonyms": ["patronize", "belittle", "demean"], "antonyms": ["respect", "esteem", "uplift"] },
+      { "word": "Connotation", "type": "noun", "ipa": "/ˌkɒnəˈteɪʃən/", "definition": "An idea or feeling that a word invokes beyond its literal meaning.", "example": "The word 'discipline' carries different connotations depending on cultural context.", "synonyms": ["implication", "suggestion", "undertone"], "antonyms": ["denotation", "literal meaning", "definition"] },
+      { "word": "Conscript", "type": "verb", "ipa": "/kənˈskrɪpt/", "definition": "To enlist someone compulsorily for state service, especially military service.", "example": "Citizens were conscripted during the national emergency.", "synonyms": ["draft", "enlist", "recruit"], "antonyms": ["discharge", "exempt", "release"] },
+      { "word": "Contemplate", "type": "verb", "ipa": "/ˈkɒntəmpleɪt/", "definition": "To think about something carefully before making a decision.", "example": "The committee paused to contemplate the long-term impact of the proposed bill.", "synonyms": ["ponder", "consider", "deliberate"], "antonyms": ["ignore", "disregard", "dismiss"] },
+      { "word": "Contentious", "type": "adjective", "ipa": "/kənˈtɛnʃəs/", "definition": "Causing or likely to cause controversy or argument.", "example": "The budget reallocation became one of the most contentious issues of the session.", "synonyms": ["controversial", "disputed", "divisive"], "antonyms": ["uncontroversial", "agreeable", "settled"] },
+      { "word": "Contrite", "type": "adjective", "ipa": "/ˈkɒntraɪt/", "definition": "Feeling or expressing remorse at the recognition of one's wrongdoing.", "example": "The official issued a contrite public apology following the misconduct findings.", "synonyms": ["remorseful", "repentant", "penitent"], "antonyms": ["unrepentant", "indifferent", "shameless"] },
+      { "word": "Conundrum", "type": "noun", "ipa": "/kəˈnʌndrəm/", "definition": "A confusing and difficult problem or question.", "example": "Balancing transparency with confidentiality posed a conundrum for the committee.", "synonyms": ["dilemma", "puzzle", "quandary"], "antonyms": ["solution", "certainty", "clarity"] },
+      { "word": "Conviction", "type": "noun", "ipa": "/kənˈvɪkʃən/", "definition": "A firmly held belief or opinion; a formal declaration of guilt.", "example": "She spoke with deep conviction about the need for systemic reform.", "synonyms": ["belief", "certainty", "principle"], "antonyms": ["doubt", "uncertainty", "disbelief"] },
+      { "word": "Cordial", "type": "adjective", "ipa": "/ˈkɔːdiəl/", "definition": "Warm and friendly in manner.", "example": "The two agencies maintained a cordial relationship despite differing mandates.", "synonyms": ["warm", "friendly", "affable"], "antonyms": ["hostile", "cold", "unfriendly"] },
+      { "word": "Correlate", "type": "verb", "ipa": "/ˈkɒrəleɪt/", "definition": "To have a mutual relationship or connection with something else.", "example": "Researchers found that poverty levels correlate strongly with low literacy rates.", "synonyms": ["correspond", "relate", "connect"], "antonyms": ["differ", "diverge", "contradict"] },
+      { "word": "Credulous", "type": "adjective", "ipa": "/ˈkrɛdjʊləs/", "definition": "Too willing to believe things without sufficient evidence.", "example": "A credulous public made it easier for misinformation to spread rapidly.", "synonyms": ["gullible", "naive", "trusting"], "antonyms": ["skeptical", "cynical", "suspicious"] },
+      { "word": "Culpable", "type": "adjective", "ipa": "/ˈkʌlpəbəl/", "definition": "Deserving blame or censure for a fault or wrong.", "example": "The auditor was found culpable for overlooking irregularities in the accounts.", "synonyms": ["blameworthy", "guilty", "liable"], "antonyms": ["innocent", "blameless", "absolved"] },
+      { "word": "Cursory", "type": "adjective", "ipa": "/ˈkɜːsəri/", "definition": "Hasty and therefore not thorough or detailed.", "example": "A cursory review of the application failed to catch the forged signatures.", "synonyms": ["superficial", "hasty", "perfunctory"], "antonyms": ["thorough", "meticulous", "detailed"] },
+      { "word": "Cynical", "type": "adjective", "ipa": "/ˈsɪnɪkəl/", "definition": "Believing that people are motivated purely by self-interest; distrustful.", "example": "Years of unresolved corruption cases left citizens increasingly cynical about reform.", "synonyms": ["skeptical", "distrustful", "pessimistic"], "antonyms": ["optimistic", "trusting", "idealistic"] },
+      { "word": "Dearth", "type": "noun", "ipa": "/dɜːθ/", "definition": "A scarcity or lack of something.", "example": "The dearth of qualified applicants delayed the agency's hiring process.", "synonyms": ["scarcity", "shortage", "deficiency"], "antonyms": ["abundance", "surplus", "excess"] }
+    ]
+  },
+
+  {
+    "day": 13,
+    "words": [
+      { "word": "Debacle", "type": "noun", "ipa": "/dɪˈbɑːkəl/", "definition": "A sudden disastrous collapse or failure; a complete fiasco.", "example": "The mismanaged evacuation became a national debacle covered by international media.", "synonyms": ["disaster", "fiasco", "catastrophe"], "antonyms": ["triumph", "success", "achievement"] },
+      { "word": "Decorum", "type": "noun", "ipa": "/dɪˈkɔːrəm/", "definition": "Behavior in keeping with good taste and propriety.", "example": "All employees were expected to maintain decorum during official proceedings.", "synonyms": ["propriety", "dignity", "etiquette"], "antonyms": ["impropriety", "rudeness", "indecency"] },
+      { "word": "Deficient", "type": "adjective", "ipa": "/dɪˈfɪʃənt/", "definition": "Not having enough of a specified quality or ingredient; lacking.", "example": "The submitted report was deficient in supporting data and citations.", "synonyms": ["lacking", "inadequate", "insufficient"], "antonyms": ["adequate", "sufficient", "complete"] },
+      { "word": "Defunct", "type": "adjective", "ipa": "/dɪˈfʌŋkt/", "definition": "No longer existing or functioning.", "example": "The defunct agency's responsibilities were transferred to a newly created body.", "synonyms": ["obsolete", "extinct", "inactive"], "antonyms": ["active", "operational", "functioning"] },
+      { "word": "Deliberate", "type": "adjective", "ipa": "/dɪˈlɪbərɪt/", "definition": "Done consciously and intentionally; careful and unhurried.", "example": "The omission of key data from the report appeared to be deliberate.", "synonyms": ["intentional", "calculated", "purposeful"], "antonyms": ["accidental", "unintentional", "impulsive"] },
+      { "word": "Demeanor", "type": "noun", "ipa": "/dɪˈmiːnər/", "definition": "Outward behavior or bearing; the way a person appears to others.", "example": "Her calm demeanor during the crisis inspired confidence in her team.", "synonyms": ["bearing", "manner", "conduct"], "antonyms": ["agitation", "disorder", "misconduct"] },
+      { "word": "Denounce", "type": "verb", "ipa": "/dɪˈnaʊns/", "definition": "To publicly declare something to be wrong or evil; to condemn formally.", "example": "The senator denounced the corrupt practices exposed in the audit report.", "synonyms": ["condemn", "censure", "criticize"], "antonyms": ["praise", "endorse", "commend"] },
+      { "word": "Deplete", "type": "verb", "ipa": "/dɪˈpliːt/", "definition": "To use up or reduce the supply of a resource significantly.", "example": "Unchecked spending rapidly depleted the department's annual budget.", "synonyms": ["exhaust", "drain", "reduce"], "antonyms": ["replenish", "restore", "increase"] },
+      { "word": "Derogatory", "type": "adjective", "ipa": "/dɪˈrɒɡətəri/", "definition": "Showing a critical or disrespectful attitude; belittling.", "example": "The use of derogatory language in official communications is grounds for disciplinary action.", "synonyms": ["disparaging", "demeaning", "disrespectful"], "antonyms": ["complimentary", "respectful", "flattering"] },
+      { "word": "Deter", "type": "verb", "ipa": "/dɪˈtɜː/", "definition": "To discourage someone from doing something by making it seem difficult or unpleasant.", "example": "Strict penalties were imposed to deter future violations of procurement rules.", "synonyms": ["discourage", "dissuade", "prevent"], "antonyms": ["encourage", "motivate", "persuade"] },
+      { "word": "Devious", "type": "adjective", "ipa": "/ˈdiːviəs/", "definition": "Showing a skillful use of underhanded tactics to achieve goals.", "example": "The devious scheme was uncovered during a routine compliance audit.", "synonyms": ["cunning", "deceitful", "scheming"], "antonyms": ["honest", "straightforward", "transparent"] },
+      { "word": "Diffident", "type": "adjective", "ipa": "/ˈdɪfɪdənt/", "definition": "Modest or shy due to a lack of self-confidence.", "example": "Despite his expertise, he was too diffident to advocate for himself during the review.", "synonyms": ["timid", "shy", "reserved"], "antonyms": ["confident", "assertive", "bold"] },
+      { "word": "Digress", "type": "verb", "ipa": "/daɪˈɡrɛs/", "definition": "To leave the main subject temporarily in speech or writing.", "example": "The presenter tended to digress, making it hard to follow the main argument.", "synonyms": ["deviate", "stray", "wander"], "antonyms": ["focus", "stay on topic", "proceed"] },
+      { "word": "Diligence", "type": "noun", "ipa": "/ˈdɪlɪdʒəns/", "definition": "Careful and persistent work or effort.", "example": "The clerk's diligence in verifying documents prevented a costly procurement error.", "synonyms": ["industriousness", "perseverance", "assiduity"], "antonyms": ["laziness", "negligence", "carelessness"] },
+      { "word": "Discredit", "type": "verb", "ipa": "/dɪsˈkrɛdɪt/", "definition": "To harm the reputation or standing of someone; to cause to be doubted.", "example": "The fabricated allegations were designed to discredit the whistleblower.", "synonyms": ["defame", "undermine", "tarnish"], "antonyms": ["validate", "praise", "honor"] },
+      { "word": "Disdain", "type": "noun", "ipa": "/dɪsˈdeɪn/", "definition": "The feeling that something is unworthy of consideration; contempt.", "example": "She regarded the baseless accusations with open disdain.", "synonyms": ["contempt", "scorn", "derision"], "antonyms": ["respect", "admiration", "esteem"] },
+      { "word": "Disparity", "type": "noun", "ipa": "/dɪˈspærɪti/", "definition": "A great difference between things; inequality.", "example": "The report highlighted the growing disparity between urban and rural service delivery.", "synonyms": ["inequality", "gap", "imbalance"], "antonyms": ["equality", "parity", "balance"] },
+      { "word": "Dissent", "type": "noun", "ipa": "/dɪˈsɛnt/", "definition": "The expression of disagreement with prevailing opinion or official policy.", "example": "One commissioner filed a formal dissent against the majority ruling.", "synonyms": ["disagreement", "objection", "opposition"], "antonyms": ["agreement", "consensus", "conformity"] },
+      { "word": "Distort", "type": "verb", "ipa": "/dɪˈstɔːt/", "definition": "To give a misleading account of something; to twist out of original shape.", "example": "The report accused the agency of distorting the statistical findings.", "synonyms": ["misrepresent", "twist", "falsify"], "antonyms": ["clarify", "correct", "represent accurately"] },
+      { "word": "Diverge", "type": "verb", "ipa": "/daɪˈvɜːdʒ/", "definition": "To develop in a different direction; to deviate from a standard or course.", "example": "The two investigators' conclusions began to diverge after reviewing separate sets of evidence.", "synonyms": ["differ", "deviate", "separate"], "antonyms": ["converge", "agree", "align"] }
+    ]
+  },
+
+  {
+    "day": 14,
+    "words": [
+      { "word": "Elucidate", "type": "verb", "ipa": "/ɪˈluːsɪdeɪt/", "definition": "To make something clear; explain.", "example": "The speaker was asked to elucidate his points on foreign policy.", "synonyms": ["explain", "clarify", "expound"], "antonyms": ["confuse", "obscure", "muddle"] },
+      { "word": "Equivocal", "type": "adjective", "ipa": "/ɪˈkwɪvəkəl/", "definition": "Open to more than one interpretation; ambiguous.", "example": "The politician gave an equivocal answer to avoid taking a side.", "synonyms": ["ambiguous", "vague", "uncertain"], "antonyms": ["clear", "unequivocal", "unambiguous"] },
+      { "word": "Exigency", "type": "noun", "ipa": "/ˈɛksɪdʒənsi/", "definition": "An urgent need or demand.", "example": "The exigencies of the war required immediate mobilization.", "synonyms": ["emergency", "urgency", "necessity"], "antonyms": ["ease", "superfluity", "luxury"] },
+      { "word": "Fastidious", "type": "adjective", "ipa": "/fæˈstɪdiəs/", "definition": "Very attentive to and concerned about accuracy and detail.", "example": "He was fastidious about keeping his desk organized.", "synonyms": ["meticulous", "scrupulous", "exacting"], "antonyms": ["careless", "sloppy", "easygoing"] },
+      { "word": "Fortuitous", "type": "adjective", "ipa": "/fɔːˈtjuːɪtəs/", "definition": "Happening by accident or chance rather than design; lucky.", "example": "Their meeting at the airport was entirely fortuitous.", "synonyms": ["accidental", "chance", "unexpected"], "antonyms": ["intentional", "planned", "deliberate"] },
+      { "word": "Garrulous", "type": "adjective", "ipa": "/ˈɡærələs/", "definition": "Excessively talkative, especially on trivial matters.", "example": "The garrulous passenger kept talking for the entire flight.", "synonyms": ["talkative", "loquacious", "verbose"], "antonyms": ["taciturn", "quiet", "silent"] },
+      { "word": "Grievous", "type": "adjective", "ipa": "/ˈɡriːvəs/", "definition": "Very severe or serious.", "example": "The country suffered a grievous blow with the loss of its leader.", "synonyms": ["severe", "grave", "serious"], "antonyms": ["slight", "trivial", "minor"] },
+      { "word": "Impediment", "type": "noun", "ipa": "/ɪmˈpɛdɪmənt/", "definition": "A hindrance or obstruction in doing something.", "example": "Lack of funding was a major impediment to the project.", "synonyms": ["hindrance", "obstacle", "barrier"], "antonyms": ["assistance", "aid", "benefit"] },
+      { "word": "Impervious", "type": "adjective", "ipa": "/ɪmˈpɜːviəs/", "definition": "Unable to be affected by; not allowing fluid to pass through.", "example": "She seemed impervious to the harsh criticism of the press.", "synonyms": ["unaffected", "immune", "impenetrable"], "antonyms": ["susceptible", "vulnerable", "penetrable"] },
+      { "word": "Inadvertent", "type": "adjective", "ipa": "/ˌɪnədˈvɜːtənt/", "definition": "Not resulting from or achieved through deliberate planning; unintentional.", "example": "An inadvertent administrative error led to the wrong applicant being hired.", "synonyms": ["unintentional", "accidental", "unplanned"], "antonyms": ["deliberate", "intentional", "planned"] },
+      { "word": "Incongruous", "type": "adjective", "ipa": "/ɪnˈkɒŋɡrʊəs/", "definition": "Not in harmony or keeping with the surroundings or other aspects.", "example": "A modern glass building looked incongruous in the historic old town.", "synonyms": ["out of place", "incompatible", "jarring"], "antonyms": ["harmonious", "compatible", "consistent"] },
+      { "word": "Incorrigible", "type": "adjective", "ipa": "/ɪnˈkɒrɪdʒəbəl/", "definition": "Not able to be corrected, improved, or reformed.", "example": "He was an incorrigible offender who refused to change his ways.", "synonyms": ["habitual", "inveterate", "unreformable"], "antonyms": ["reformable", "manageable", "repentant"] },
+      { "word": "Indignation", "type": "noun", "ipa": "/ˌɪndɪɡˈneɪʃən/", "definition": "Anger or annoyance provoked by what is perceived as unfair treatment.", "example": "The public's indignation grew as more details of the scandal emerged.", "synonyms": ["resentment", "anger", "outrage"], "antonyms": ["pleasure", "delight", "satisfaction"] },
+      { "word": "Ineffable", "type": "adjective", "ipa": "/ɪnˈɛfəbəl/", "definition": "Too great or extreme to be expressed or described in words.", "example": "The beauty of the mountain sunset filled them with ineffable joy.", "synonyms": ["indescribable", "inexpressible", "unspeakable"], "antonyms": ["definable", "describable", "utterable"] },
+      { "word": "Inexorable", "type": "adjective", "ipa": "/ɪnˈɛksərəbəl/", "definition": "Impossible to stop or prevent; relentless.", "example": "Nothing could halt the inexorable rise of the sea level.", "synonyms": ["relentless", "unstoppable", "unavoidable"], "antonyms": ["preventable", "flexible", "merciful"] },
+      { "word": "Ingenuous", "type": "adjective", "ipa": "/ɪnˈdʒɛnjʊəs/", "definition": "Innocent, unsuspecting, and naive.", "example": "Her ingenuous nature made her easy prey for scammers.", "synonyms": ["naive", "innocent", "trusting"], "antonyms": ["disingenuous", "crafty", "sophisticated"] },
+      { "word": "Inimical", "type": "adjective", "ipa": "/ɪˈnɪmɪkəl/", "definition": "Tending to obstruct or harm; unfriendly or hostile.", "example": "Excessive regulations are inimical to economic growth.", "synonyms": ["harmful", "hostile", "adverse"], "antonyms": ["favorable", "friendly", "advantageous"] },
+      { "word": "Inscrutable", "type": "adjective", "ipa": "/ɪnˈskruːtəbəl/", "definition": "Impossible to understand or interpret.", "example": "He stared back with an inscrutable expression.", "synonyms": ["mysterious", "unexplainable", "cryptic"], "antonyms": ["transparent", "clear", "understandable"] },
+      { "word": "Insidious", "type": "adjective", "ipa": "/ɪnˈsɪdiəs/", "definition": "Proceeding in a gradual, subtle way, but with harmful effects.", "example": "The disease was insidious, showing no symptoms until it was advanced.", "synonyms": ["stealthy", "subtle", "treacherous"], "antonyms": ["straightforward", "harmless", "obvious"] },
+      { "word": "Intrepid", "type": "adjective", "ipa": "/ɪnˈtrɛpɪd/", "definition": "Fearless; adventurous.", "example": "The intrepid reporter traveled to the front lines of the conflict.", "synonyms": ["fearless", "brave", "courageous"], "antonyms": ["cowardly", "fearful", "timid"] }
+    ]
+  },
+
+  {
+    "day": 15,
+    "words": [
+      { "word": "Juxtapose", "type": "verb", "ipa": "/ˌdʒʌkstəˈpoʊz/", "definition": "To place close together or side by side, especially for comparison or contrast.", "example": "The exhibition Juxtaposed modern art with traditional sculptures.", "synonyms": ["contrast", "collocate", "compare"], "antonyms": ["separate", "detach", "disconnect"] },
+      { "word": "Lament", "type": "verb", "ipa": "/ləˈmɛnt/", "definition": "To express passionate grief, sorrow, or regret about something.", "example": "He lamented the fact that they had not started the project sooner.", "synonyms": ["mourn", "grieve", "regret"], "antonyms": ["celebrate", "rejoice", "cheer"] },
+      { "word": "Laudable", "type": "adjective", "ipa": "/ˈlɔːdəbəl/", "definition": "Deserving praise and commendation; praiseworthy.", "example": "Her efforts to improve public services were highly laudable.", "synonyms": ["praiseworthy", "admirable", "commendable"], "antonyms": ["blameworthy", "reprehensible", "shameful"] },
+      { "word": "Loquacious", "type": "adjective", "ipa": "/loʊˈkweɪʃəs/", "definition": "Tending to talk a great deal; talkative.", "example": "The loquacious host kept the guests entertained all evening.", "synonyms": ["talkative", "garrulous", "chatty"], "antonyms": ["taciturn", "silent", "quiet"] },
+      { "word": "Lucrative", "type": "adjective", "ipa": "/ˈluːkrətɪv/", "definition": "Producing a great deal of profit or wealth.", "example": "The merger turned out to be a highly lucrative business deal.", "synonyms": ["profitable", "rewarding", "remunerative"], "antonyms": ["unprofitable", "worthless", "losing"] },
+      { "word": "Magnanimous", "type": "adjective", "ipa": "/mæɡˈnænɪməs/", "definition": "Very generous or forgiving, especially toward a rival or less powerful person.", "example": "The victor was magnanimous in defeat, praising his opponent's skills.", "synonyms": ["generous", "noble-minded", "forgiving"], "antonyms": ["petty", "mean-spirited", "vindictive"] },
+      { "word": "Malevolent", "type": "adjective", "ipa": "/məˈlɛvələnt/", "definition": "Having or showing a wish to do evil to others.", "example": "She felt a malevolent presence watching her in the dark alley.", "synonyms": ["malicious", "hostile", "spiteful"], "antonyms": ["benevolent", "kind", "friendly"] },
+      { "word": "Manifest", "type": "verb", "ipa": "/ˈmænɪfɛst/", "definition": "To display or show by one's acts or appearance; demonstrate.", "example": "The disease began to manifest symptoms after two weeks.", "synonyms": ["display", "show", "exhibit"], "antonyms": ["hide", "conceal", "obscure"] },
+      { "word": "Meticulous", "type": "adjective", "ipa": "/mɪˈtɪkjʊləs/", "definition": "Showing great attention to detail; very careful and precise.", "example": "The archivist was meticulous in cataloging the old manuscripts.", "synonyms": ["careful", "detailed", "scrupulous"], "antonyms": ["careless", "sloppy", "slapdash"] },
+      { "word": "Mollify", "type": "verb", "ipa": "/ˈmɒlɪfaɪ/", "definition": "To appease the anger or anxiety of someone; pacify.", "example": "The manager offered a refund to mollify the angry customer.", "synonyms": ["pacify", "appease", "placate"], "antonyms": ["provoke", "infuriate", "enrage"] },
+      { "word": "Morose", "type": "adjective", "ipa": "/məˈroʊs/", "definition": "Sullen and ill-tempered; gloomy.", "example": "After losing the match, he fell into a morose silence.", "synonyms": ["sullen", "gloomy", "melancholy"], "antonyms": ["cheerful", "happy", "joyful"] },
+      { "word": "Munificent", "type": "adjective", "ipa": "/mjuːˈnɪfɪsənt/", "definition": "Larger or more generous than is usual or necessary.", "example": "A munificent donation from a wealthy alumnus funded the new library.", "synonyms": ["generous", "bountiful", "magnanimous"], "antonyms": ["stingy", "parsimonious", "greedy"] },
+      { "word": "Nefarious", "type": "adjective", "ipa": "/nɪˈfɛəriəs/", "definition": "Wicked, villainous, or criminal.", "example": "The hacker's nefarious activities were stopped by the cyber security team.", "synonyms": ["wicked", "evil", "villainous"], "antonyms": ["noble", "good", "righteous"] },
+      { "word": "Negligible", "type": "adjective", "ipa": "/ˈnɛɡlɪdʒəbəl/", "definition": "So small or unimportant as to be not worth considering; insignificant.", "example": "The cost difference between the two options was negligible.", "synonyms": ["insignificant", "minor", "trivial"], "antonyms": ["significant", "important", "substantial"] },
+      { "word": "Novice", "type": "noun", "ipa": "/ˈnɒvɪs/", "definition": "A person new to and inexperienced in a job or situation.", "example": "As a novice in the IT department, she had a lot of protocols to learn.", "synonyms": ["beginner", "learner", "rookie"], "antonyms": ["expert", "veteran", "master"] },
+      { "word": "Obdurate", "type": "adjective", "ipa": "/ˈɒbdjʊərət/", "definition": "Stubbornly refusing to change one's opinion or course of action.", "example": "The management remained obdurate in their refusal to raise wages.", "synonyms": ["stubborn", "obstinate", "unyielding"], "antonyms": ["flexible", "yielding", "compliant"] },
+      { "word": "Obliterate", "type": "verb", "ipa": "/əˈblɪtəreɪt/", "definition": "To destroy utterly; wipe out.", "example": "The explosion obliterated the old warehouse.", "synonyms": ["destroy", "annihilate", "erase"], "antonyms": ["create", "build", "preserve"] },
+      { "word": "Obscure", "type": "adjective", "ipa": "/əbˈskjʊər/", "definition": "Not discovered or known about; uncertain.", "example": "The origins of the ancient custom remain obscure.", "synonyms": ["uncertain", "unclear", "unknown"], "antonyms": ["famous", "clear", "obvious"] },
+      { "word": "Obsequious", "type": "adjective", "ipa": "/əbˈsiːkwiəs/", "definition": "Obedient or attentive to an excessive or servile degree.", "example": "The waiter's obsequious behavior made the guests uncomfortable.", "synonyms": ["servile", "fawning", "submissive"], "antonyms": ["domineering", "assertive", "independent"] },
+      { "word": "Ominous", "type": "adjective", "ipa": "/ˈɒmɪnəs/", "definition": "Giving the impression that something bad or unpleasant is going to happen.", "example": "The dark, ominous clouds suggested a severe storm was coming.", "synonyms": ["threatening", "menacing", "forboding"], "antonyms": ["promising", "auspicious", "favorable"] }
+    ]
+  },
+
+  {
+    "day": 16,
+    "words": [
+      { "word": "Opaque", "type": "adjective", "ipa": "/oʊˈpeɪk/", "definition": "Not able to be seen through; not transparent.", "example": "The bathroom window was made of opaque glass for privacy.", "synonyms": ["impenetrable", "cloudy", "non-transparent"], "antonyms": ["transparent", "clear", "translucent"] },
+      { "word": "Ostentatious", "type": "adjective", "ipa": "/ˌɒstɛnˈteɪʃəs/", "definition": "Characterized by vulgar or pretentious display; designed to impress or attract notice.", "example": "She wore an ostentatious diamond necklace to the casual lunch.", "synonyms": ["showy", "pretentious", "gaudy"], "antonyms": ["modest", "unpretentious", "simple"] },
+      { "word": "Palpable", "type": "adjective", "ipa": "/ˈpælpəbəl/", "definition": "So intense as to seem almost tangible; able to be touched or felt.", "example": "The tension in the courtroom was palpable as the verdict was read.", "synonyms": ["tangible", "noticeable", "detectable"], "antonyms": ["intangible", "imperceptible", "subtle"] },
+      { "word": "Panacea", "type": "noun", "ipa": "/ˌpænəˈsiːə/", "definition": "A solution or remedy for all difficulties or diseases.", "example": "Technology is not a panacea for all societal problems.", "synonyms": ["cure-all", "universal remedy", "solution"], "antonyms": ["toxin", "poison", "harm"] },
+      { "word": "Paradox", "type": "noun", "ipa": "/ˈpærədɒks/", "definition": "A seemingly absurd or self-contradictory statement or proposition that when investigated or explained may prove to be well founded or true.", "example": "The paradox of saving money is that you have to spend less to have more.", "synonyms": ["contradiction", "inconsistency", "puzzle"], "antonyms": ["consistency", "normality", "certainty"] },
+      { "word": "Paragon", "type": "noun", "ipa": "/ˈpærəɡən/", "definition": "A person or thing regarded as a perfect example of a particular quality.", "example": "The administrator was viewed as a paragon of integrity and honesty.", "synonyms": ["model", "epitome", "exemplar"], "antonyms": ["flaw", "imperfection", "worst example"] },
+      { "word": "Paucity", "type": "noun", "ipa": "/ˈpɔːsɪti/", "definition": "The presence of something only in small or insufficient quantities or amounts; scarcity.", "example": "There is a paucity of reliable data on this newly discovered virus.", "synonyms": ["scarcity", "dearth", "shortage"], "antonyms": ["abundance", "plenty", "surplus"] },
+      { "word": "Pedantic", "type": "adjective", "ipa": "/pɪˈdæntɪk/", "definition": "Excessively concerned with minor details and rules or with displaying academic learning.", "example": "The editor's pedantic comments annoyed the authors of the essay.", "synonyms": ["meticulous", "precise", "nitpicking"], "antonyms": ["easygoing", "careless", "broad-minded"] },
+      { "word": "Penury", "type": "noun", "ipa": "/ˈpɛnjʊri/", "definition": "Extreme poverty; destitution.", "example": "He rose from childhood penury to become a successful entrepreneur.", "synonyms": ["poverty", "destitution", "impoverishment"], "antonyms": ["wealth", "affluence", "prosperity"] },
+      { "word": "Perfunctory", "type": "adjective", "ipa": "/pəˈfʌŋktəri/", "definition": "Carried out with a minimum of effort or reflection.", "example": "He gave a perfunctory nod before turning back to his computer.", "synonyms": ["superficial", "hasty", "careless"], "antonyms": ["thorough", "meticulous", "careful"] },
+      { "word": "Pervasive", "type": "adjective", "ipa": "/pəˈveɪsɪv/", "definition": "Spreading widely throughout an area or a group of people.", "example": "The pervasive smell of fresh paint filled the entire office corridor.", "synonyms": ["widespread", "prevalent", "ubiquitous"], "antonyms": ["limited", "isolated", "rare"] },
+      { "word": "Pique", "type": "verb", "ipa": "/piːk/", "definition": "To stimulate interest or curiosity; to feel irritated or resentful.", "example": "The unusual headline piqued my curiosity, so I read the article.", "synonyms": ["stimulate", "arouse", "provoke"], "antonyms": ["bore", "dull", "pacify"] },
+      { "word": "Placid", "type": "adjective", "ipa": "/ˈplæsɪd/", "definition": "Not easily upset or excited; calm and peaceful.", "example": "The lake was placid and still in the early morning.", "synonyms": ["calm", "tranquil", "peaceful"], "antonyms": ["turbulent", "agitated", "stormy"] },
+      { "word": "Plethora", "type": "noun", "ipa": "/ˈplɛθərə/", "definition": "A large or excessive amount of something.", "example": "The internet provides a plethora of information on almost any topic.", "synonyms": ["excess", "abundance", "surplus"], "antonyms": ["scarcity", "lack", "dearth"] },
+      { "word": "Precipitous", "type": "adjective", "ipa": "/prɪˈsɪpɪtəs/", "definition": "Dangerously high or steep; sudden and dramatic.", "example": "The economic crisis led to a precipitous drop in stock prices.", "synonyms": ["abrupt", "sharp", "sudden"], "antonyms": ["gradual", "gentle", "slow"] },
+      { "word": "Precursor", "type": "noun", "ipa": "/priːˈkɜːsər/", "definition": "A person or thing that comes before another of the same kind; a forerunner.", "example": "The small protests were a precursor to the nationwide revolution.", "synonyms": ["forerunner", "predecessor", "harbinger"], "antonyms": ["successor", "follower", "result"] },
+      { "word": "Predilection", "type": "noun", "ipa": "/ˌpriːdɪˈlɛkʃən/", "definition": "A preference or special liking for something; a bias in favor of something.", "example": "He has a predilection for classical music.", "synonyms": ["preference", "liking", "fondness"], "antonyms": ["dislike", "aversion", "antipathy"] },
+      { "word": "Pretentious", "type": "adjective", "ipa": "/prɪˈtɛnʃəs/", "definition": "Attempting to impress by affecting greater importance, talent, or culture than is actually possessed.", "example": "The pretentious speech was filled with obscure words and self-praise.", "synonyms": ["showy", "affected", "ostentatious"], "antonyms": ["modest", "humble", "unpretentious"] },
+      { "word": "Prevalent", "type": "adjective", "ipa": "/ˈprɛvələnt/", "definition": "Widespread in a particular area or at a particular time.", "example": "Flu infections are more prevalent during the cold winter months.", "synonyms": ["widespread", "common", "dominant"], "antonyms": ["rare", "uncommon", "scarce"] },
+      { "word": "Pristine", "type": "adjective", "ipa": "/ˈprɪstiːn/", "definition": "In its original condition; unspoiled; clean and fresh as if new.", "example": "The forest was in a pristine state, untouched by human development.", "synonyms": ["unspoiled", "immaculate", "pure"], "antonyms": ["spoiled", "contaminated", "dirty"] }
+    ]
+  },
+
+  {
+    "day": 17,
+    "words": [
+      { "word": "Proclivity", "type": "noun", "ipa": "/prəˈklɪvɪti/", "definition": "An inclination or predisposition toward a particular thing.", "example": "He has a proclivity for getting into trouble.", "synonyms": ["inclination", "tendency", "propensity"], "antonyms": ["aversion", "dislike", "antipathy"] },
+      { "word": "Prodigal", "type": "adjective", "ipa": "/ˈprɒdɪɡəl/", "definition": "Wastefully extravagant; spending money or resources freely and recklessly.", "example": "The prodigal heir spent his entire inheritance within a year.", "synonyms": ["wasteful", "extravagant", "spendthrift"], "antonyms": ["frugal", "thrifty", "economical"] },
+      { "word": "Profound", "type": "adjective", "ipa": "/prəˈfaʊnd/", "definition": "Very great or intense; having or showing great knowledge or insight.", "example": "The book had a profound influence on his philosophical outlook.", "synonyms": ["deep", "intense", "insightful"], "antonyms": ["superficial", "shallow", "trivial"] },
+      { "word": "Prolix", "type": "adjective", "ipa": "/ˈproʊlɪks/", "definition": "Using or containing too many words; tediously lengthy.", "example": "The speaker's prolix presentation bored the audience.", "synonyms": ["verbose", "wordy", "lengthy"], "antonyms": ["concise", "succinct", "brief"] },
+      { "word": "Promulgate", "type": "verb", "ipa": "/ˈprɒməlɡeɪt/", "definition": "To promote or make widely known; to put a law or decree into effect.", "example": "The new safety regulations were promulgated by the board yesterday.", "synonyms": ["publish", "announce", "implement"], "antonyms": ["suppress", "hide", "repeal"] },
+      { "word": "Propensity", "type": "noun", "ipa": "/prəˈpɛnsɪti/", "definition": "An inclination or natural tendency to behave in a particular way.", "example": "She has a propensity to exaggerate when telling stories.", "synonyms": ["inclination", "tendency", "proclivity"], "antonyms": ["aversion", "dislike", "antipathy"] },
+      { "word": "Prudent", "type": "adjective", "ipa": "/ˈpruːdənt/", "definition": "Acting with or showing care and thought for the future.", "example": "It is prudent to save a portion of your salary for emergencies.", "synonyms": ["wise", "cautious", "careful"], "antonyms": ["reckless", "foolish", "careless"] },
+      { "word": "Pugnacious", "type": "adjective", "ipa": "/pʌɡˈneɪʃəs/", "definition": "Eager or quick to argue, quarrel, or fight.", "example": "The pugnacious employee was constantly getting into conflicts with coworkers.", "synonyms": ["combative", "aggressive", "quarrelsome"], "antonyms": ["peaceful", "friendly", "amicable"] },
+      { "word": "Punctilious", "type": "adjective", "ipa": "/pʌŋkˈtɪliəs/", "definition": "Showing great attention to detail or correct behavior.", "example": "He was punctilious in executing every step of the laboratory protocol.", "synonyms": ["meticulous", "scrupulous", "precise"], "antonyms": ["careless", "sloppy", "easygoing"] },
+      { "word": "Quell", "type": "verb", "ipa": "/kwɛl/", "definition": "To put an end to a rebellion or other disorder, typically by force; to suppress a feeling.", "example": "Extra troops were deployed to quell the violent riots in the capital.", "synonyms": ["suppress", "extinguish", "subdue"], "antonyms": ["instigate", "provoke", "encourage"] },
+      { "word": "Querulous", "type": "adjective", "ipa": "/ˈkwɛrʊləs/", "definition": "Complaining in a petulant or whining manner.", "example": "The querulous customer demanded to speak with the store manager immediately.", "synonyms": ["complaining", "peevish", "whiny"], "antonyms": ["cheerful", "content", "satisfied"] },
+      { "word": "Quiescent", "type": "adjective", "ipa": "/kwiˈɛsənt/", "definition": "In a state or period of inactivity or dormancy.", "example": "The volcano has been quiescent for over a century.", "synonyms": ["inactive", "dormant", "passive"], "antonyms": ["active", "dynamic", "operational"] },
+      { "word": "Rancor", "type": "noun", "ipa": "/ˈræŋkər/", "definition": "Bitterness or resentfulness, especially when long-standing.", "example": "He spoke without rancor, despite having been wrongfully dismissed.", "synonyms": ["bitterness", "resentment", "malice"], "antonyms": ["goodwill", "friendliness", "kindness"] },
+      { "word": "Recalcitrant", "type": "adjective", "ipa": "/rɪˈkælsɪtrənt/", "definition": "Stubbornly disobedient, resisting authority or control.", "example": "The class was difficult to manage due to a few recalcitrant students.", "synonyms": ["unruly", "disobedient", "obstinate"], "antonyms": ["obedient", "compliant", "tractable"] },
+      { "word": "Recondite", "type": "adjective", "ipa": "/ˈrɛkəndaɪt/", "definition": "Little known; abstruse or obscure.", "example": "The professor specialized in recondite areas of medieval history.", "synonyms": ["abstruse", "obscure", "esoteric"], "antonyms": ["simple", "obvious", "well-known"] },
+      { "word": "Redoubtable", "type": "adjective", "ipa": "/rɪˈdaʊtəbəl/", "definition": "Formidable, especially as an opponent.", "example": "The champion was a redoubtable opponent who had never lost a match.", "synonyms": ["formidable", "intimidating", "awe-inspiring"], "antonyms": ["weak", "frail", "comforting"] },
+      { "word": "Refute", "type": "verb", "ipa": "/rɪˈfjuːt/", "definition": "To prove a statement or theory to be wrong or false; disprove.", "example": "The defense attorney presented evidence to refute the prosecution's claims.", "synonyms": ["disprove", "debunk", "invalidate"], "antonyms": ["prove", "confirm", "support"] },
+      { "word": "Reiterate", "type": "verb", "ipa": "/riːˈɪtəreɪt/", "definition": "To say or do something again or repeatedly, typically for emphasis or clarity.", "example": "Let me reiterate that safety is our absolute priority.", "synonyms": ["repeat", "restate", "recapitulate"], "antonyms": ["withdraw", "retract", "recant"] },
+      { "word": "Relegate", "type": "verb", "ipa": "/ˈrɛlɪɡeɪt/", "definition": "To consign or dismiss to an inferior rank or position.", "example": "After the reorganization, he was relegated to a minor advisory role.", "synonyms": ["demote", "downgrade", "banish"], "antonyms": ["promote", "elevate", "upgrade"] },
+      { "word": "Remiss", "type": "adjective", "ipa": "/rɪˈmɪs/", "definition": "Lacking care or attention to duty; negligent.", "example": "It would be remiss of me not to mention the contribution of our volunteers.", "synonyms": ["negligent", "neglectful", "careless"], "antonyms": ["diligent", "careful", "attentive"] }
+    ]
+  },
+
+  {
+    "day": 18,
+    "words": [
+      { "word": "Renounce", "type": "verb", "ipa": "/rɪˈnaʊns/", "definition": "Formally declare one's abandonment of a claim, right, or possession.", "example": "The king was forced to renounce his claim to the throne.", "synonyms": ["relinquish", "give up", "surrender"], "antonyms": ["claim", "assert", "keep"] },
+      { "word": "Reprehensible", "type": "adjective", "ipa": "/ˌrɛprɪˈhɛnsɪbəl/", "definition": "Deserving censure or condemnation.", "example": "His behavior during the emergency was reprehensible and unprofessional.", "synonyms": ["deplorable", "blameworthy", "disgraceful"], "antonyms": ["laudable", "praiseworthy", "creditable"] },
+      { "word": "Reprove", "type": "verb", "ipa": "/rɪˈpruːv/", "definition": "To reprimand or censure someone, especially gently.", "example": "The teacher gently reproved the students for whispering during the lecture.", "synonyms": ["reprimand", "rebuke", "admonish"], "antonyms": ["praise", "commend", "applaud"] },
+      { "word": "Pervade", "type": "verb", "ipa": "/pərˈveɪd/", "definition": "To spread through and be perceived in every part of.", "example": "A sense of optimism pervaded the department after the successful launch.", "synonyms": ["permeate", "penetrate", "fill"], "antonyms": ["leave", "exit", "empty"] },
+      { "word": "Resolute", "type": "adjective", "ipa": "/ˈrɛzəluːt/", "definition": "Admirably purposeful, determined, and unwavering.", "example": "She remained resolute in her decision to complete the degree.", "synonyms": ["determined", "unwavering", "firm"], "antonyms": ["irresolute", "wavering", "weak"] },
+      { "word": "Reticent", "type": "adjective", "ipa": "/ˈrɛtɪsənt/", "definition": "Not revealing one's thoughts or feelings readily; reserved.", "example": "She was reticent about her personal life, preferring to focus on work.", "synonyms": ["reserved", "uncommunicative", "taciturn"], "antonyms": ["outgoing", "loquacious", "talkative"] },
+      { "word": "Revere", "type": "verb", "ipa": "/rɪˈvɪər/", "definition": "To feel deep respect or admiration for something.", "example": "The tribal elders are revered for their wisdom.", "synonyms": ["respect", "admire", "venerate"], "antonyms": ["despise", "scorn", "disdain"] },
+      { "word": "Robust", "type": "adjective", "ipa": "/roʊˈbʌst/", "definition": "Strong and healthy; vigorous; sturdy in construction.", "example": "The company implemented a robust security system to protect client data.", "synonyms": ["strong", "sturdy", "vigorous"], "antonyms": ["weak", "fragile", "delicate"] },
+      { "word": "Rudimentary", "type": "adjective", "ipa": "/ˌruːdɪˈmɛntəri/", "definition": "Involving or relating to an immature, undeveloped, or basic form.", "example": "He had only a rudimentary knowledge of French when he arrived in Paris.", "synonyms": ["basic", "elementary", "fundamental"], "antonyms": ["advanced", "sophisticated", "complex"] },
+      { "word": "Sagacious", "type": "adjective", "ipa": "/səˈɡeɪʃəs/", "definition": "Having or showing keen mental discernment and good judgment; shrewd.", "example": "The advisor offered sagacious counsel that helped avoid a political crisis.", "synonyms": ["wise", "shrewd", "astute"], "antonyms": ["foolish", "unwise", "silly"] },
+      { "word": "Salubrious", "type": "adjective", "ipa": "/səˈluːbriəs/", "definition": "Health-giving; healthy.", "example": "The mountain air is known for its salubrious qualities.", "synonyms": ["healthy", "beneficial", "wholesome"], "antonyms": ["unhealthy", "noxious", "harmful"] },
+      { "word": "Sanction", "type": "verb", "ipa": "/ˈsæŋkʃən/", "definition": "To give official permission or approval for an action.", "example": "The government sanctioned the construction of the new highway.", "synonyms": ["approve", "authorize", "permit"], "antonyms": ["forbid", "ban", "prohibit"] },
+      { "word": "Scrupulous", "type": "adjective", "ipa": "/ˈskruːpjʊləs/", "definition": "Diligent, thorough, and extremely attentive to details; very concerned to avoid doing wrong.", "example": "She was scrupulous in maintaining research records.", "synonyms": ["meticulous", "honest", "principled"], "antonyms": ["dishonest", "careless", "unprincipled"] },
+      { "word": "Scrutiny", "type": "noun", "ipa": "/ˈskruːtɪni/", "definition": "Critical observation or examination.", "example": "The agency's spending came under close public scrutiny.", "synonyms": ["examination", "inspection", "analysis"], "antonyms": ["neglect", "disregard", "ignorance"] },
+      { "word": "Sedentary", "type": "adjective", "ipa": "/ˈsɛdəntəri/", "definition": "Spending much time seated; inactive.", "example": "A sedentary lifestyle can lead to various health issues.", "synonyms": ["inactive", "stationary", "seated"], "antonyms": ["active", "mobile", "energetic"] },
+      { "word": "Solicitous", "type": "adjective", "ipa": "/səˈlɪsɪtəs/", "definition": "Showing interest or concern.", "example": "She was solicitous about her mother's health.", "synonyms": ["concerned", "attentive", "caring"], "antonyms": ["indifferent", "careless", "unconcerned"] },
+      { "word": "Sovereign", "type": "noun", "ipa": "/ˈsɒvrɪn/", "definition": "A supreme ruler, especially a monarch; possessing supreme or ultimate power.", "example": "The constitution declares the people as the sovereign authority.", "synonyms": ["ruler", "monarch", "supreme"], "antonyms": ["subject", "subordinate", "dependent"] },
+      { "word": "Spurious", "type": "adjective", "ipa": "/ˈspjʊəriəs/", "definition": "Not being what it purports to be; false or fake.", "example": "The company was fined for making spurious claims about its products.", "synonyms": ["false", "fake", "bogus"], "antonyms": ["genuine", "authentic", "real"] },
+      { "word": "Squander", "type": "verb", "ipa": "/ˈskwɒndər/", "definition": "To waste something in a reckless and foolish manner.", "example": "Don't squander your time on social media before the exam.", "synonyms": ["waste", "misspend", "dissipate"], "antonyms": ["save", "preserve", "husband"] },
+      { "word": "Stagnant", "type": "adjective", "ipa": "/ˈstæɡnənt/", "definition": "Having no current or flow and often having an unpleasant smell; showing no activity.", "example": "The economy remained stagnant during the recession.", "synonyms": ["still", "inactive", "sluggish"], "antonyms": ["flowing", "active", "dynamic"] }
+    ]
+  },
+
+  {
+    "day": 19,
+    "words": [
+      { "word": "Subjugate", "type": "verb", "ipa": "/ˈsʌbdʒʊɡeɪt/", "definition": "To bring under domination or control, especially by conquest.", "example": "The empire sought to subjugate the neighboring tribes.", "synonyms": ["conquer", "vanquish", "subdue"], "antonyms": ["liberate", "free", "release"] },
+      { "word": "Subvert", "type": "verb", "ipa": "/səbˈvɜːt/", "definition": "To undermine the power and authority of an established system or institution.", "example": "They were accused of plotting to subvert the government.", "synonyms": ["undermine", "overthrow", "sabotage"], "antonyms": ["support", "uphold", "bolster"] },
+      { "word": "Succinct", "type": "adjective", "ipa": "/səkˈsɪŋkt/", "definition": "Briefly and clearly expressed; concise.", "example": "The executive summary must be succinct and to the point.", "synonyms": ["brief", "concise", "succinct"], "antonyms": ["verbose", "wordy", "lengthy"] },
+      { "word": "Superfluous", "type": "adjective", "ipa": "/suːˈpɜːfluəs/", "definition": "Unnecessary, especially through being more than enough.", "example": "Avoid adding superfluous details that distract from the main thesis.", "synonyms": ["unnecessary", "redundant", "excess"], "antonyms": ["necessary", "essential", "required"] },
+      { "word": "Surreptitious", "type": "adjective", "ipa": "/ˌsʌrəpˈtɪʃəs/", "definition": "Kept secret, especially because it would not be approved of.", "example": "He cast a surreptitious glance at his watch during the meeting.", "synonyms": ["secret", "clandestine", "stealthy"], "antonyms": ["open", "public", "blatant"] },
+      { "word": "Sycophant", "type": "noun", "ipa": "/ˈsɪkəfænt/", "definition": "A person who acts obsequiously toward someone important in order to gain advantage; a flatterer.", "example": "The manager was surrounded by sycophants who praised his every decision.", "synonyms": ["flatterer", "toady", "yes-man"], "antonyms": ["critic", "independent thinker", "detractor"] },
+      { "word": "Taciturn", "type": "adjective", "ipa": "/ˈtæsɪtɜːn/", "definition": "Reserved or uncommunicative in speech; saying little.", "example": "The director was a taciturn man who rarely spoke in public.", "synonyms": ["reserved", "quiet", "reticent"], "antonyms": ["talkative", "garrulous", "loquacious"] },
+      { "word": "Temerity", "type": "noun", "ipa": "/tɪˈmɛrɪti/", "definition": "Excessive confidence or boldness; audacity.", "example": "No one had the temerity to question the director's decision.", "synonyms": ["audacity", "boldness", "nerve"], "antonyms": ["caution", "timidity", "modesty"] },
+      { "word": "Tenuous", "type": "adjective", "ipa": "/ˈtɛnjʊəs/", "definition": "Very weak, slight, or fragile.", "example": "The coalition government held a tenuous lead in the parliament.", "synonyms": ["weak", "slight", "fragile"], "antonyms": ["strong", "firm", "substantial"] },
+      { "word": "Tirade", "type": "noun", "ipa": "/taɪˈreɪd/", "definition": "A long, angry speech of criticism or accusation.", "example": "The supervisor launched into a tirade about the department's performance.", "synonyms": ["diatribe", "rant", "harangue"], "antonyms": ["praise", "encomium", "compliment"] },
+      { "word": "Tractable", "type": "adjective", "ipa": "/ˈtræktəbəl/", "definition": "Easy to control, influence, or manage.", "example": "The new recruits were tractable and eager to follow instructions.", "synonyms": ["manageable", "compliant", "docile"], "antonyms": ["stubborn", "recalcitrant", "unmanageable"] },
+      { "word": "Tranquil", "type": "adjective", "ipa": "/ˈtræŋkwɪl/", "definition": "Free from disturbance; calm.", "example": "The park offers a tranquil escape from the busy city streets.", "synonyms": ["calm", "peaceful", "serene"], "antonyms": ["turbulent", "chaotic", "noisy"] },
+      { "word": "Trepidation", "type": "noun", "ipa": "/ˌtrɛpɪˈdeɪʃən/", "definition": "A feeling of fear or agitation about something that may happen.", "example": "She walked into the examination room with some trepidation.", "synonyms": ["fear", "anxiety", "apprehension"], "antonyms": ["confidence", "calmness", "assurance"] },
+      { "word": "Trite", "type": "adjective", "ipa": "/traɪt/", "definition": "Lacking originality or freshness; dull on account of overuse.", "example": "The essay was filled with trite phrases and cliches.", "synonyms": ["banal", "cliched", "commonplace"], "antonyms": ["original", "fresh", "novel"] },
+      { "word": "Truncate", "type": "verb", "ipa": "/trʌŋˈkeɪt/", "definition": "To shorten something by cutting off the top or the end.", "example": "The discussion was truncated due to a lack of time.", "synonyms": ["shorten", "crop", "abbreviate"], "antonyms": ["lengthen", "extend", "prolong"] },
+      { "word": "Turbulent", "type": "adjective", "ipa": "/ˈtɜːbjʊlənt/", "definition": "Characterized by conflict, disorder, or confusion; not controlled or calm.", "example": "The country went through a turbulent transition period after the coup.", "synonyms": ["chaotic", "unruly", "unstable"], "antonyms": ["calm", "stable", "peaceful"] },
+      { "word": "Ubiquity", "type": "noun", "ipa": "/juːˈbɪkwɪti/", "definition": "The state of being everywhere at once; omnipresence.", "example": "The ubiquity of smartphones has changed communication forever.", "synonyms": ["omnipresence", "prevalence", "pervasiveness"], "antonyms": ["rarity", "scarcity", "absence"] },
+      { "word": "Uncanny", "type": "adjective", "ipa": "/ʌnˈkæni/", "definition": "Strange or mysterious, especially in an unsettling way.", "example": "She has an uncanny ability to predict exam questions.", "synonyms": ["strange", "eerie", "mysterious"], "antonyms": ["ordinary", "normal", "commonplace"] },
+      { "word": "Unctuous", "type": "adjective", "ipa": "/ˈʌŋktjʊəs/", "definition": "Excessively flattering or oily in speech or manner; sycophantic.", "example": "His unctuous compliments made his coworkers suspicious of his motives.", "synonyms": ["sycophantic", "insincere", "fawning"], "antonyms": ["sincere", "honest", "blunt"] },
+      { "word": "Untenable", "type": "adjective", "ipa": "/ʌnˈtɛnəbəl/", "definition": "Not able to be maintained or defended against attack or objection.", "example": "The minister's position became untenable after the scandal was exposed.", "synonyms": ["indefensible", "unjustifiable", "weak"], "antonyms": ["defensible", "tenable", "strong"] }
+    ]
+  },
+
+  {
+    "day": 20,
+    "words": [
+      { "word": "Vacillate", "type": "verb", "ipa": "/ˈvæsɪleɪt/", "definition": "To alternate or waver between different opinions or actions; be indecisive.", "example": "The manager vacillated for days before choosing a marketing strategy.", "synonyms": ["waver", "hesitate", "fluctuate"], "antonyms": ["decide", "resolve", "remain firm"] },
+      { "word": "Venerate", "type": "verb", "ipa": "/ˈvɛnəreɪt/", "definition": "To regard with great respect; revere.", "example": "Many cultures venerate their ancestors through annual rituals.", "synonyms": ["revere", "worship", "respect"], "antonyms": ["despise", "scorn", "disdain"] },
+      { "word": "Veracity", "type": "noun", "ipa": "/vəˈræsɪti/", "definition": "Conformity to facts; accuracy; truthfulness.", "example": "The official questioned the veracity of the witness's statement.", "synonyms": ["truthfulness", "accuracy", "credibility"], "antonyms": ["deceit", "falsehood", "dishonesty"] },
+      { "word": "Verbose", "type": "adjective", "ipa": "/vɜːˈboʊs/", "definition": "Using or expressed in more words than are needed.", "example": "He wrote a verbose report that could have been summarized in two pages.", "synonyms": ["wordy", "loquacious", "prolix"], "antonyms": ["concise", "succinct", "laconic"] },
+      { "word": "Vex", "type": "verb", "ipa": "/vɛks/", "definition": "To make someone feel annoyed, frustrated, or worried.", "example": "The recurring administrative delays continued to vex the project team.", "synonyms": ["annoy", "frustrate", "provoke"], "antonyms": ["please", "delight", "soothe"] },
+      { "word": "Viability", "type": "noun", "ipa": "/ˌvaɪəˈbɪlɪti/", "definition": "Ability to work successfully; feasibility.", "example": "The committee is reviewing the commercial viability of the proposed project.", "synonyms": ["feasibility", "practicability", "effectiveness"], "antonyms": ["impossibility", "futility", "unworkability"] },
+      { "word": "Vicarious", "type": "adjective", "ipa": "/vɪˈkɛəriəs/", "definition": "Experienced in the imagination through the feelings or actions of another person.", "example": "She took vicarious pleasure in her son's achievements.", "synonyms": ["indirect", "secondhand", "imagined"], "antonyms": ["direct", "firsthand", "personal"] },
+      { "word": "Vigilance", "type": "noun", "ipa": "/ˈvɪdʒɪləns/", "definition": "The action or state of keeping careful watch for possible danger or difficulties.", "example": "Security forces maintained constant vigilance during the summit.", "synonyms": ["watchfulness", "alertness", "caution"], "antonyms": ["negligence", "carelessness", "indifference"] },
+      { "word": "Vilify", "type": "verb", "ipa": "/ˈvɪlɪfaɪ/", "definition": "To speak or write about in an abusively disparaging manner.", "example": "He was vilified by the press after his controversial remarks.", "synonyms": ["defame", "slander", "disparage"], "antonyms": ["praise", "commend", "acclaim"] },
+      { "word": "Vindicated", "type": "verb", "ipa": "/ˈvɪndɪkeɪtɪd/", "definition": "Cleared of blame or suspicion; proven to be right or justified.", "example": "He was vindicated when new evidence emerged proving his innocence.", "synonyms": ["exonerated", "cleared", "justified"], "antonyms": ["accused", "condemned", "blamed"] },
+      { "word": "Vindictive", "type": "adjective", "ipa": "/vɪnˈdɪktɪv/", "definition": "Having or showing a strong or unreasoning desire for revenge.", "example": "The vindictive manager went out of his way to ruin his former employee's reputation.", "synonyms": ["spiteful", "revengeful", "malicious"], "antonyms": ["forgiving", "magnanimous", "merciful"] },
+      { "word": "Virtuoso", "type": "noun", "ipa": "/ˌvɜːtʃʊˈoʊsoʊ/", "definition": "A person highly skilled in music or another artistic pursuit.", "example": "The violinist proved to be a virtuoso, playing the complex piece flawlessly.", "synonyms": ["expert", "master", "genius"], "antonyms": ["amateur", "novice", "beginner"] },
+      { "word": "Virulent", "type": "adjective", "ipa": "/ˈvɪrjʊlənt/", "definition": "Extremely severe or harmful in its effects; toxic; bitterly hostile.", "example": "The lab is studying a virulent strain of the influenza virus.", "synonyms": ["toxic", "hostile", "lethal"], "antonyms": ["harmless", "benign", "gentle"] },
+      { "word": "Volatile", "type": "adjective", "ipa": "/ˈvɒlətaɪl/", "definition": "Liable to change rapidly and unpredictably, especially for the worse.", "example": "The political situation in the region remains highly volatile.", "synonyms": ["unstable", "unpredictable", "erratic"], "antonyms": ["stable", "predictable", "steady"] },
+      { "word": "Voracious", "type": "adjective", "ipa": "/vəˈreɪʃəs/", "definition": "Having a very eager approach to an activity; devouring great quantities of food.", "example": "She was a voracious reader, consuming several books a week.", "synonyms": ["insatiable", "greedy", "eager"], "antonyms": ["satisfied", "indifferent", "apathetic"] },
+      { "word": "Wane", "type": "verb", "ipa": "/weɪn/", "definition": "To decrease in vigor, power, or size; become weaker.", "example": "Public interest in the scandal began to wane after a few weeks.", "synonyms": ["decrease", "decline", "diminish"], "antonyms": ["wax", "increase", "grow"] },
+      { "word": "Wary", "type": "adjective", "ipa": "/ˈwɛəri/", "definition": "Feeling or showing caution about possible dangers or problems.", "example": "Consumers should be wary of deals that sound too good to be true.", "synonyms": ["cautious", "careful", "alert"], "antonyms": ["reckless", "careless", "trusting"] },
+      { "word": "Wither", "type": "verb", "ipa": "/ˈwɪðər/", "definition": "To become dry and shriveled; to fall into decay or decline.", "example": "The plant withered due to lack of water, and his career withered after the scandal.", "synonyms": ["shrivel", "fade", "decline"], "antonyms": ["flourish", "grow", "thrive"] },
+      { "word": "Zealot", "type": "noun", "ipa": "/ˈzɛlət/", "definition": "A person who is fanatical and uncompromising in pursuit of their religious, political, or other ideals.", "example": "He was a political zealot who refused to listen to opposing viewpoints.", "synonyms": ["fanatic", "extremist", "radical"], "antonyms": ["moderate", "compromiser", "apathetic"] },
+      { "word": "Zenith", "type": "noun", "ipa": "/ˈzɛnɪθ/", "definition": "The time at which something is most powerful or successful; peak.", "example": "The empire reached its zenith in the second century.", "synonyms": ["peak", "pinnacle", "apex"], "antonyms": ["nadir", "bottom", "lowest point"] }
     ]
   }
 ]

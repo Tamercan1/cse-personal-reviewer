@@ -1,13 +1,19 @@
-/**
- * Full Exam Simulation Engine.
- */
+const limits = {
+    EXAM_LIMIT: 40,
+    TIME_LIMIT: 11400,
+    numerical: 45,
+    verbal: 45,
+    analytical: 45,
+    clerical: 15,
+    genInfo: 20
+}
 
 const examState = {
     questions: [],
     selectedAnswers: [],
     markedForReview: [],
     currentQuestion: 0,
-    timeRemaining: 11400, // 2 hours 30 minutes in seconds
+    timeRemaining: limits.TIME_LIMIT,
     finished: false
 };
 
@@ -18,6 +24,121 @@ const categoryLabels = {
     'cler': 'Clerical Ability',
     'gen': 'General Information'
 };
+
+function saveExamProgress() {
+    if (examState.finished || examState.questions.length === 0) return;
+    
+    let score = 0;
+    examState.questions.forEach((q, idx) => {
+        if (examState.selectedAnswers[idx] === q.answer) {
+            score++;
+        }
+    });
+
+    const progress = {
+        currentQuestion: examState.currentQuestion,
+        score: score,
+        selectedAnswers: examState.selectedAnswers,
+        timeRemaining: examState.timeRemaining,
+        markedForReview: examState.markedForReview,
+        status: 'in-progress',
+        questionIds: examState.questions.map(q => q.id)
+    };
+    save('cse_exam_progress', progress);
+}
+
+function disableExamInteraction() {
+    const choices = document.querySelectorAll('#choices-container button');
+    choices.forEach(btn => btn.disabled = true);
+
+    const prevBtn = document.getElementById('prev-question-btn');
+    const nextBtn = document.getElementById('next-question-btn');
+    if (prevBtn) prevBtn.disabled = true;
+    if (nextBtn) nextBtn.disabled = true;
+
+    const flagBtn = document.getElementById('flag-review-btn');
+    if (flagBtn) flagBtn.disabled = true;
+
+    const submitBtn = document.getElementById('submit-exam-btn');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    }
+
+    const gridBtns = document.querySelectorAll('#question-grid button');
+    gridBtns.forEach(btn => btn.disabled = true);
+}
+
+function enableExamInteraction() {
+    const submitBtn = document.getElementById('submit-exam-btn');
+    if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+    }
+    const flagBtn = document.getElementById('flag-review-btn');
+    if (flagBtn) {
+        flagBtn.disabled = false;
+    }
+}
+
+function resumeExam(savedState) {
+    const resumeCard = document.getElementById('resume-card');
+    if (resumeCard) resumeCard.classList.add('hidden');
+
+    enableExamInteraction();
+
+    examState.selectedAnswers = savedState.selectedAnswers || Array(examState.questions.length).fill(null);
+    examState.markedForReview = savedState.markedForReview || Array(examState.questions.length).fill(false);
+    examState.currentQuestion = savedState.currentQuestion || 0;
+    examState.timeRemaining = savedState.timeRemaining;
+
+    renderGrid();
+    showQuestion(examState.currentQuestion);
+
+    startTimer(
+        examState.timeRemaining,
+        (remaining) => {
+            examState.timeRemaining = remaining;
+            const timerEl = document.getElementById('exam-timer');
+            if (timerEl) {
+                timerEl.textContent = formatTimer(remaining);
+                if (remaining <= 600) {
+                    timerEl.className = "text-xl font-bold font-mono text-rose-600 animate-pulse";
+                } else {
+                    timerEl.className = "text-xl font-bold font-mono text-slate-700";
+                }
+            }
+            saveExamProgress();
+        },
+        () => {
+            showToast("Time is up! Submitting exam automatically.", "error");
+            submitExam(true);
+        }
+    );
+
+    saveExamProgress();
+}
+
+function startOverExam() {
+    localStorage.removeItem('cse_exam_progress');
+    const resumeCard = document.getElementById('resume-card');
+    if (resumeCard) resumeCard.classList.add('hidden');
+
+    enableExamInteraction();
+
+    examState.currentQuestion = 0;
+    examState.timeRemaining = limits.TIME_LIMIT;
+
+    loadExam();
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 async function loadExam() {
     // Show loading indicator
@@ -37,31 +158,117 @@ async function loadExam() {
 
     try {
         const results = await Promise.all(files.map(f => fetchJSON(f.url)));
-        
+
         // Flatten questions and inject category tag
         let allQuestions = [];
         results.forEach((qList, index) => {
             if (qList) {
                 const categoryName = files[index].cat;
                 qList.forEach(q => {
-                    allQuestions.push({
-                        ...q,
-                        category: categoryName
-                    });
+                    allQuestions.push({...q, category: categoryName});
                 });
             }
         });
-        
-        examState.questions = allQuestions;
-        examState.selectedAnswers = Array(allQuestions.length).fill(null);
-        examState.markedForReview = Array(allQuestions.length).fill(false);
         
         if (container) {
             container.classList.remove('opacity-50');
         }
 
-        if (examState.questions.length > 0) {
-            initExamUI();
+        if (allQuestions.length > 0) {
+            const savedState = load('cse_exam_progress', null);
+
+            // check if exam previously in progress
+            if (savedState && savedState.status === 'in-progress') {
+                const resumeCard = document.getElementById('resume-card');
+                const timeEl = document.getElementById('resume-time-left');
+                if (timeEl) timeEl.textContent = formatTimer(savedState.timeRemaining);
+                if (resumeCard) resumeCard.classList.remove('hidden');
+
+                // Reorder questions to match savedState.questionIds if available
+                if (savedState.questionIds && Array.isArray(savedState.questionIds)) {
+                    const questionMap = {};
+                    allQuestions.forEach(q => {
+                        questionMap[q.id] = q;
+                    });
+                    const reorderedQuestions = [];
+                    savedState.questionIds.forEach(id => {
+                        if (questionMap[id]) {
+                            reorderedQuestions.push(questionMap[id]);
+                        }
+                    });
+                    examState.questions = reorderedQuestions;
+                } else {
+                    examState.questions = allQuestions.slice(0, limits.EXAM_LIMIT);
+                }
+
+                examState.selectedAnswers = savedState.selectedAnswers || Array(examState.questions.length).fill(null);
+                examState.markedForReview = savedState.markedForReview || Array(examState.questions.length).fill(false);
+                examState.currentQuestion = savedState.currentQuestion || 0;
+                examState.timeRemaining = savedState.timeRemaining;
+
+                const resumeBtn = document.getElementById('resume-btn');
+                if (resumeBtn) {
+                    resumeBtn.onclick = () => resumeExam(savedState);
+                }
+                const startOverBtn = document.getElementById('start-over-btn');
+                if (startOverBtn) {
+                    startOverBtn.onclick = () => startOverExam();
+                }
+
+                renderGrid();
+                showQuestion(examState.currentQuestion);
+
+                const timerEl = document.getElementById('exam-timer');
+                if (timerEl) {
+                    timerEl.textContent = formatTimer(examState.timeRemaining);
+                }
+
+                disableExamInteraction();
+            } 
+            // else just shuffle question and start exam
+            else {
+                // Group questions by category to slice and shuffle individually
+                const categoriesMap = {
+                    'Numerical': [],
+                    'Verbal': [],
+                    'Analytical': [],
+                    'Clerical': [],
+                    'General Information': []
+                };
+                allQuestions.forEach(q => {
+                    if (categoriesMap[q.category]) {
+                        categoriesMap[q.category].push(q);
+                    }
+                });
+
+                // Shuffle and slice each category's database pool
+                let selectedQuestions = [];
+                
+                shuffleArray(categoriesMap['Numerical']);
+                selectedQuestions = selectedQuestions.concat(categoriesMap['Numerical'].slice(0, limits.numerical));
+                
+                shuffleArray(categoriesMap['Verbal']);
+                selectedQuestions = selectedQuestions.concat(categoriesMap['Verbal'].slice(0, limits.verbal));
+                
+                shuffleArray(categoriesMap['Analytical']);
+                selectedQuestions = selectedQuestions.concat(categoriesMap['Analytical'].slice(0, limits.analytical));
+                
+                shuffleArray(categoriesMap['Clerical']);
+                selectedQuestions = selectedQuestions.concat(categoriesMap['Clerical'].slice(0, limits.clerical));
+                
+                shuffleArray(categoriesMap['General Information']);
+                selectedQuestions = selectedQuestions.concat(categoriesMap['General Information'].slice(0, limits.genInfo));
+
+                // Shuffle the combined questions so categories are mixed randomly
+                shuffleArray(selectedQuestions);
+                
+                // Limit the total count to EXAM_LIMIT
+                examState.questions = selectedQuestions.slice(0, limits.EXAM_LIMIT);
+
+                examState.selectedAnswers = Array(examState.questions.length).fill(null);
+                examState.markedForReview = Array(examState.questions.length).fill(false);
+                initExamUI();
+            }
         } else {
             document.getElementById('exam-card-body').innerHTML = `
                 <div class="text-center py-12 text-rose-500 font-semibold">
@@ -76,7 +283,7 @@ async function loadExam() {
 
 function initExamUI() {
     renderGrid();
-    showQuestion(examState.currentQuestion); // changed 0 => examState.currentQuestion
+    showQuestion(examState.currentQuestion);
     
     // Start count down
     startTimer(
@@ -94,6 +301,7 @@ function initExamUI() {
                     timerEl.className = "text-xl font-bold font-mono text-slate-700";
                 }
             }
+            saveExamProgress(); // save exam timer progress
         },
         // Finished callback
         () => {
@@ -156,6 +364,30 @@ function updateGridBtnClass(btn, index) {
     btn.className = baseClass;
 }
 
+function scrollContainerToElement(container, element) {
+    if (!container || !element) return;
+    
+    const containerRect = container.getBoundingClientRect();
+    const elemRect = element.getBoundingClientRect();
+    
+    let newScrollTop = container.scrollTop;
+    
+    if (elemRect.top < containerRect.top) {
+        // Scroll up to reveal the hidden top of the button
+        newScrollTop -= (containerRect.top - elemRect.top);
+    } else if (elemRect.bottom > containerRect.bottom) {
+        // Scroll down to reveal the hidden bottom of the button
+        newScrollTop += (elemRect.bottom - containerRect.bottom);
+    }
+    
+    if (newScrollTop !== container.scrollTop) {
+        container.scrollTo({
+            top: newScrollTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
 function showQuestion(index) {
     // Save current active index
     const prevActive = examState.currentQuestion;
@@ -168,7 +400,9 @@ function showQuestion(index) {
     if (newBtn) {
         updateGridBtnClass(newBtn, index);
         // Automatically scroll the active question button into view inside the scrollable container
-        newBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // using container-only scrolling to prevent the outer window from jumping on mobile
+        const scrollContainer = newBtn.closest('.overflow-y-auto');
+        scrollContainerToElement(scrollContainer, newBtn);
     }
     
     const question = examState.questions[index];
@@ -226,7 +460,7 @@ function showQuestion(index) {
     if (flagCheckbox) {
         const isFlagged = examState.markedForReview[index];
         if (isFlagged) {
-            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 text-sm font-semibold transition-all select-none";
+            flagCheckbox.className = "flex items-center space-x-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 text-sm font-semibold transition-all cursor-pointer hover:bg-amber-100 hover:border-amber-300 hover:text-amber-800 select-none";
             flagCheckbox.innerHTML = `
                 <svg class="w-4 h-4 text-amber-600 fill-current" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
@@ -266,6 +500,8 @@ function showQuestion(index) {
             nextBtn.className = "px-4 py-2.5 bg-white text-slate-655 rounded-xl border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition-all text-sm font-semibold flex items-center space-x-1 cursor-pointer";
         }
     }
+
+    saveExamProgress();
 }
 
 function selectAnswer(choice, index) {
@@ -290,6 +526,8 @@ function selectAnswer(choice, index) {
     // Update navigation grid item state
     const gridBtn = document.getElementById(`grid-btn-${qIndex}`);
     if (gridBtn) updateGridBtnClass(gridBtn, qIndex);
+
+    saveExamProgress();
 }
 
 function toggleFlag() {
@@ -350,6 +588,7 @@ function submitExam(force = false) {
     examState.finished = true;
     
     stopTimer();
+    localStorage.removeItem('cse_exam_progress');
     
     // Close modal
     closeSubmitModal();
