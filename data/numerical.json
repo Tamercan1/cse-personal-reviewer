@@ -348,5 +348,355 @@
     "choices": ["30", "35", "25", "40"],
     "answer": "30",
     "explanation": "Find the total units of parts in the ratio: 5 + 2 = 7 units. Calculate value per unit: 105 / 7 = 15 people. Since children comprise 2 units of the ratio, multiply 2 × 15 = 30 children."
+  },
+  {
+    "id": "num_51",
+    "question": "Which of the following numbers is divisible by 3?",
+    "choices": ["121", "123", "125", "127"],
+    "answer": "123",
+    "explanation": "A number is divisible by 3 if the sum of its digits is divisible by 3. 1+2+3=6, which is divisible by 3."
+  },
+  {
+    "id": "num_52",
+    "question": "What is the least common multiple (LCM) of 6 and 8?",
+    "choices": ["12", "24", "36", "48"],
+    "answer": "24",
+    "explanation": "Multiples of 6: 6,12,18,24... Multiples of 8: 8,16,24... First common multiple is 24."
+  },
+  {
+    "id": "num_53",
+    "question": "What is the greatest common factor (GCF) of 18 and 24?",
+    "choices": ["6", "8", "12", "18"],
+    "answer": "6",
+    "explanation": "Factors of 18: 1,2,3,6,9,18. Factors of 24: 1,2,3,4,6,8,12,24. Greatest common factor is 6."
+  },
+  {
+    "id": "num_54",
+    "question": "Evaluate: -5 + 12 - 4",
+    "choices": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "-5 + 12 = 7; 7 - 4 = 3."
+  },
+  {
+    "id": "num_55",
+    "question": "Evaluate: 3 × (4 + 2) ÷ 2",
+    "choices": ["6", "8", "9", "12"],
+    "answer": "9",
+    "explanation": "(4+2)=6; 3×6=18; 18÷2=9."
+  },
+  {
+    "id": "num_56",
+    "question": "Convert 0.75 to fraction in simplest form.",
+    "choices": ["1/2", "3/4", "2/3", "5/6"],
+    "answer": "3/4",
+    "explanation": "0.75 = 75/100 = 3/4."
+  },
+  {
+    "id": "num_57",
+    "question": "What is 2/3 + 1/6?",
+    "choices": ["1/2", "2/3", "5/6", "1"],
+    "answer": "5/6",
+    "explanation": "Convert 2/3 = 4/6; 4/6 + 1/6 = 5/6."
+  },
+  {
+    "id": "num_58",
+    "question": "What is 40% of 250?",
+    "choices": ["90", "100", "110", "120"],
+    "answer": "100",
+    "explanation": "40% = 0.40; 0.40 × 250 = 100."
+  },
+  {
+    "id": "num_59",
+    "question": "A shirt costs 500 pesos and is discounted by 20%. What is the sale price?",
+    "choices": ["400", "420", "450", "480"],
+    "answer": "400",
+    "explanation": "20% of 500 = 100; 500 - 100 = 400."
+  },
+  {
+    "id": "num_60",
+    "question": "Find the ratio of 12 to 18 in simplest form.",
+    "choices": ["2:3", "3:2", "4:6", "6:8"],
+    "answer": "2:3",
+    "explanation": "Divide both terms by 6: 12÷6 = 2, 18÷6 = 3."
+  },
+  {
+    "id": "num_61",
+    "question": "Find the average of 10, 20, 30, 40.",
+    "choices": ["20", "25", "30", "35"],
+    "answer": "25",
+    "explanation": "Sum = 100; 100 ÷ 4 = 25."
+  },
+  {
+    "id": "num_62",
+    "question": "Solve for x: x + 7 = 15",
+    "choices": ["6", "7", "8", "9"],
+    "answer": "8",
+    "explanation": "x = 15 - 7 = 8."
+  },
+  {
+    "id": "num_63",
+    "question": "Solve for x: 3x = 27",
+    "choices": ["7", "8", "9", "10"],
+    "answer": "9",
+    "explanation": "x = 27 ÷ 3 = 9."
+  },
+  {
+    "id": "num_64",
+    "question": "What is the next odd number after 19?",
+    "choices": ["20", "21", "22", "23"],
+    "answer": "21",
+    "explanation": "Odd numbers increase by 2; 19 + 2 = 21."
+  },
+  {
+    "id": "num_65",
+    "question": "What is the sum of two consecutive integers if the smaller is x?",
+    "choices": ["2x", "2x+1", "2x+2", "x+1"],
+    "answer": "2x+1",
+    "explanation": "Consecutive integers are x and x+1; sum = 2x+1."
+  },
+  {
+    "id": "num_66",
+    "question": "A number increased by 15 equals 40. What is the number?",
+    "choices": ["20", "25", "30", "35"],
+    "answer": "25",
+    "explanation": "x + 15 = 40; x = 25."
+  },
+  {
+    "id": "num_67",
+    "question": "A train travels 60 km in 2 hours. What is its speed?",
+    "choices": ["20 km/h", "25 km/h", "30 km/h", "35 km/h"],
+    "answer": "30 km/h",
+    "explanation": "Speed = distance ÷ time = 60 ÷ 2 = 30 km/h."
+  },
+  {
+    "id": "num_68",
+    "question": "If 5 workers can finish a job in 10 days, how many days for 10 workers (same rate)?",
+    "choices": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Work is inversely proportional: doubling workers halves time → 5 days."
+  },
+  {
+    "id": "num_69",
+    "question": "What is 1/2 of 3/4?",
+    "choices": ["1/4", "3/8", "2/3", "5/8"],
+    "answer": "3/8",
+    "explanation": "(1/2) × (3/4) = 3/8."
+  },
+  {
+    "id": "num_70",
+    "question": "Which is greater?",
+    "choices": ["0.5", "1/3", "2/5", "0.4"],
+    "answer": "0.5",
+    "explanation": "0.5 = 1/2 which is greater than 0.4, 1/3 (~0.33), and 2/5 (0.4)."
+  },
+  {
+    "id": "num_71",
+    "question": "A rectangle has length 10 and width 5. What is its area?",
+    "choices": ["15", "25", "50", "60"],
+    "answer": "50",
+    "explanation": "Area = length × width = 10 × 5 = 50."
+  },
+  {
+    "id": "num_72",
+    "question": "What is 15% of 200?",
+    "choices": ["25", "30", "35", "40"],
+    "answer": "30",
+    "explanation": "0.15 × 200 = 30."
+  },
+  {
+    "id": "num_73",
+    "question": "Simplify: 8/12",
+    "choices": ["1/2", "2/3", "3/4", "4/5"],
+    "answer": "2/3",
+    "explanation": "Divide numerator and denominator by 4 → 2/3."
+  },
+  {
+    "id": "num_74",
+    "question": "What is 7 × 6 ÷ 3?",
+    "choices": ["10", "12", "14", "16"],
+    "answer": "14",
+    "explanation": "7×6=42; 42÷3=14."
+  },
+  {
+    "id": "num_75",
+    "question": "A father is 40 years old and his son is 10. In how many years will the father be twice the son's age?",
+    "choices": ["10", "15", "20", "25"],
+    "answer": "20",
+    "explanation": "Let x = years. 40+x = 2(10+x). Solve: 40+x = 20+2x → x=20."
+  },
+  {
+    "id": "num_76",
+    "question": "What is the value of 5² + 3²?",
+    "choices": ["25", "34", "30", "28"],
+    "answer": "34",
+    "explanation": "5²=25; 3²=9; 25+9=34."
+  },
+  {
+    "id": "num_77",
+    "question": "What is the next multiple of 9 after 81?",
+    "choices": ["82", "88", "90", "99"],
+    "answer": "90",
+    "explanation": "Multiples of 9 increase by 9; 81+9=90."
+  },
+  {
+    "id": "num_78",
+    "question": "A car travels 120 km in 3 hours. What is its speed?",
+    "choices": ["30 km/h", "40 km/h", "50 km/h", "60 km/h"],
+    "answer": "40 km/h",
+    "explanation": "Speed = 120 ÷ 3 = 40 km/h."
+  },
+  {
+    "id": "num_79",
+    "question": "What is 3/5 of 100?",
+    "choices": ["50", "60", "70", "80"],
+    "answer": "60",
+    "explanation": "3/5 × 100 = 60."
+  },
+  {
+    "id": "num_80",
+    "question": "Which is the smallest number?",
+    "choices": ["-3", "-1", "0", "2"],
+    "answer": "-3",
+    "explanation": "Negative numbers are smaller than zero and positive numbers."
+  },
+  {
+    "id": "num_81",
+    "question": "What is the value of 100 ÷ (5 × 2)?",
+    "choices": ["5", "10", "15", "20"],
+    "answer": "10",
+    "explanation": "5×2=10; 100÷10=10."
+  },
+  {
+    "id": "num_82",
+    "question": "If x = 4, what is 2x + 3?",
+    "choices": ["9", "10", "11", "12"],
+    "answer": "11",
+    "explanation": "2(4)+3=8+3=11."
+  },
+  {
+    "id": "num_83",
+    "question": "A tank is filled in 6 hours. What fraction is filled in 1 hour?",
+    "choices": ["1/4", "1/5", "1/6", "1/7"],
+    "answer": "1/6",
+    "explanation": "1 full tank ÷ 6 hours = 1/6 per hour."
+  },
+  {
+    "id": "num_84",
+    "question": "What is the sum of 1/4 and 1/2?",
+    "choices": ["1/2", "3/4", "2/3", "1"],
+    "answer": "3/4",
+    "explanation": "1/2 = 2/4; 2/4 + 1/4 = 3/4."
+  },
+  {
+    "id": "num_85",
+    "question": "A price increased from 200 to 250. What is the percent increase?",
+    "choices": ["20%", "25%", "30%", "35%"],
+    "answer": "25%",
+    "explanation": "Increase = 50; 50/200 = 0.25 = 25%."
+  },
+  {
+    "id": "num_86",
+    "question": "Find the mean of 5, 10, 15, 20, 25.",
+    "choices": ["10", "15", "20", "25"],
+    "answer": "15",
+    "explanation": "Sum = 75; 75 ÷ 5 = 15."
+  },
+  {
+    "id": "num_87",
+    "question": "If 3x = 18, what is x?",
+    "choices": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "x = 18 ÷ 3 = 6."
+  },
+  {
+    "id": "num_88",
+    "question": "What is the product of -3 and 4?",
+    "choices": ["-12", "12", "-7", "7"],
+    "answer": "-12",
+    "explanation": "Negative × positive = negative; 3×4=12."
+  },
+  {
+    "id": "num_89",
+    "question": "What is 9 squared minus 5 squared?",
+    "choices": ["56", "60", "64", "70"],
+    "answer": "56",
+    "explanation": "81 - 25 = 56."
+  },
+  {
+    "id": "num_90",
+    "question": "A triangle has sides 3, 4, 5. What type is it?",
+    "choices": ["Equilateral", "Isosceles", "Scalene", "Right triangle"],
+    "answer": "Right triangle",
+    "explanation": "3-4-5 is a Pythagorean triple."
+  },
+  {
+    "id": "num_91",
+    "question": "What is 2/3 of 90?",
+    "choices": ["50", "55", "60", "65"],
+    "answer": "60",
+    "explanation": "90 × 2/3 = 60."
+  },
+  {
+    "id": "num_92",
+    "question": "What is the value of -10 + 7?",
+    "choices": ["-17", "-3", "3", "17"],
+    "answer": "-3",
+    "explanation": "Move toward zero: -10 + 7 = -3."
+  },
+  {
+    "id": "num_93",
+    "question": "If 4 pens cost 100 pesos, how much for 1 pen?",
+    "choices": ["20", "25", "30", "35"],
+    "answer": "25",
+    "explanation": "100 ÷ 4 = 25."
+  },
+  {
+    "id": "num_94",
+    "question": "What is 1/3 of 1/2?",
+    "choices": ["1/6", "1/5", "1/4", "1/3"],
+    "answer": "1/6",
+    "explanation": "(1/3) × (1/2) = 1/6."
+  },
+  {
+    "id": "num_95",
+    "question": "A rectangle perimeter is 30. If length is 10, what is width?",
+    "choices": ["3", "5", "7", "10"],
+    "answer": "5",
+    "explanation": "2(L+W)=30 → L+W=15 → W=5."
+  },
+  {
+    "id": "num_96",
+    "question": "What is the value of 6 × (2 + 3)?",
+    "choices": ["20", "25", "30", "35"],
+    "answer": "30",
+    "explanation": "2+3=5; 6×5=30."
+  },
+  {
+    "id": "num_97",
+    "question": "Which is a factor of 36?",
+    "choices": ["7", "8", "9", "13"],
+    "answer": "9",
+    "explanation": "36 ÷ 9 = 4, so 9 is a factor."
+  },
+  {
+    "id": "num_98",
+    "question": "What is 0.2 × 0.5?",
+    "choices": ["0.01", "0.1", "0.2", "0.5"],
+    "answer": "0.1",
+    "explanation": "2 × 5 = 10; two decimal places → 0.1."
+  },
+  {
+    "id": "num_99",
+    "question": "If x + 5 = 12, what is x?",
+    "choices": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "x = 12 - 5 = 7."
+  },
+  {
+    "id": "num_100",
+    "question": "What is the next number in the sequence: 2, 4, 8, 16, ?",
+    "choices": ["18", "20", "24", "32"],
+    "answer": "32",
+    "explanation": "Each number is multiplied by 2."
   }
 ]

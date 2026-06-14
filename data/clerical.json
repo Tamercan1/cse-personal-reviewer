@@ -1,42 +1,352 @@
 [
   {
     "id": "cler_1",
-    "question": "Which of the following words is spelled correctly?",
-    "choices": ["Accomodate", "Accommadate", "Accommodate", "Acommodate"],
-    "answer": "Accommodate",
-    "explanation": "The correct spelling is 'accommodate' with a double 'c' and double 'm'. It is one of the most commonly misspelled words in spelling subtests."
+    "question": "Which word should come FIRST in alphabetical order?",
+    "choices": ["Calendar", "Camera", "Campus", "Cancel"],
+    "answer": "Calendar",
+    "explanation": "Alphabetical order: Cal- comes before Cam-, Can-, and Can- variants."
   },
   {
     "id": "cler_2",
-    "question": "If the names [Santos, A.], [Santos, B.], [San Diego, M.], and [Santiago, J.] are arranged alphabetically, which name will come third?",
-    "choices": ["San Diego, M.", "Santiago, J.", "Santos, A.", "Santos, B."],
-    "answer": "Santos, A.",
-    "explanation": "To arrange them alphabetically: (1) San Diego, M. [begins with 'San '], (2) Santiago, J. [begins with 'Santia'], (3) Santos, A. [begins with 'Santo' followed by 'A'], (4) Santos, B. [begins with 'Santo' followed by 'B']. Therefore, 'Santos, A.' is third."
+    "question": "Which word should come LAST in alphabetical order?",
+    "choices": ["Apple", "Apricot", "Apply", "Appraise"],
+    "answer": "Appraise",
+    "explanation": "Alphabetical order: Appraise comes after Apple, Apply, and Apricot."
   },
   {
     "id": "cler_3",
-    "question": "What is the correct filing order for the following government offices: (1) Department of Education (2) Bureau of Internal Revenue (3) Commission on Audit?",
-    "choices": ["2, 3, 1", "3, 2, 1", "2, 1, 3", "1, 2, 3"],
-    "answer": "2, 3, 1",
-    "explanation": "In filing, names are indexed alphabetically by their key words. Ordering the first words: 'Bureau' (2) comes first, 'Commission' (3) comes second, and 'Department' (1) comes third. So, the correct filing order is 2, 3, 1."
+    "question": "Which entry is correctly alphabetized?",
+    "choices": [
+      "Brown, Alice",
+      "Alice Brown",
+      "Brown Alice",
+      "Alice, Brown"
+    ],
+    "answer": "Brown, Alice",
+    "explanation": "Standard filing format uses LAST NAME first."
   },
   {
     "id": "cler_4",
-    "question": "Compare the two lists. How many differences can you find between List A and List B?\nList A: [PX-2098, 98-XQ-30, AB-7019, 12-YY-09]\nList B: [PX-2089, 98-XQ-30, AB-7019, 12-YY-90]",
-    "choices": ["0", "1", "2", "3"],
-    "answer": "2",
-    "explanation": "Compare item-by-item:\n1. PX-2098 vs PX-2089 (Difference 1)\n2. 98-XQ-30 vs 98-XQ-30 (Same)\n3. AB-7019 vs AB-7019 (Same)\n4. 12-YY-09 vs 12-YY-90 (Difference 2)\nThere are exactly 2 differences."
+    "question": "In filing, which comes first?",
+    "choices": ["Smith, Ana", "Smith, Andrew", "Smith, Ann", "Smith, Andy"],
+    "answer": "Smith, Ana",
+    "explanation": "Alphabetical order by first name after identical surnames."
   },
   {
     "id": "cler_5",
-    "question": "Choose the correctly punctuated sentence.",
+    "question": "Which number is smallest?",
+    "choices": ["0.45", "0.405", "0.54", "0.5"],
+    "answer": "0.405",
+    "explanation": "0.405 < 0.45 < 0.5 < 0.54."
+  },
+  {
+    "id": "cler_6",
+    "question": "Which entry is correctly spelled for clerical record?",
+    "choices": ["Reciept", "Receipt", "Receit", "Recipt"],
+    "answer": "Receipt",
+    "explanation": "Correct spelling is 'Receipt'."
+  },
+  {
+    "id": "cler_7",
+    "question": "Which pair is identical?",
     "choices": [
-      "Please submit your documents by Friday, June 12.",
-      "Please submit your documents by Friday June 12.",
-      "Please, submit your documents by Friday June 12.",
-      "Please submit your documents by Friday; June 12."
+      "AB123 - AB132",
+      "CD45 - CD45",
+      "EF789 - EF798",
+      "GH12 - GH21"
     ],
-    "answer": "Please submit your documents by Friday, June 12.",
-    "explanation": "A comma is used to separate the day of the week from the calendar date, and a period ends a statement. 'Friday, June 12.' is correct."
+    "answer": "CD45 - CD45",
+    "explanation": "Only identical codes match exactly."
+  },
+  {
+    "id": "cler_8",
+    "question": "Which is correctly ordered by date?",
+    "choices": [
+      "March 3, March 1, March 2",
+      "March 1, March 2, March 3",
+      "March 2, March 3, March 1",
+      "March 3, March 2, March 1"
+    ],
+    "answer": "March 1, March 2, March 3",
+    "explanation": "Chronological order from earliest to latest."
+  },
+  {
+    "id": "cler_9",
+    "question": "Which number is incorrect in sequence: 10, 20, 30, 50, 40?",
+    "choices": ["10", "20", "50", "40"],
+    "answer": "50",
+    "explanation": "Correct pattern is increments of 10; 50 breaks the sequence."
+  },
+  {
+    "id": "cler_10",
+    "question": "Which name is correctly filed?",
+    "choices": [
+      "de la Cruz, Juan",
+      "Juan de la Cruz",
+      "De La Cruz Juan",
+      "Juan De la Cruz"
+    ],
+    "answer": "de la Cruz, Juan",
+    "explanation": "Prefix 'de la' is part of surname in filing systems."
+  },
+  {
+    "id": "cler_11",
+    "question": "Which entry comes FIRST alphabetically?",
+    "choices": ["Anderson", "Andrews", "Andrewson", "Ander"],
+    "answer": "Ander",
+    "explanation": "Shorter prefix 'Ander' comes first."
+  },
+  {
+    "id": "cler_12",
+    "question": "Which number is correctly ordered?",
+    "choices": ["102, 120, 201, 210", "120, 102, 210, 201", "201, 210, 102, 120", "210, 201, 120, 102"],
+    "answer": "102, 120, 201, 210",
+    "explanation": "Ascending numerical order."
+  },
+  {
+    "id": "cler_13",
+    "question": "Which entry has a clerical error?",
+    "choices": ["Address: 12 Main St.", "Address: 12 Main Street", "Adress: 12 Main St.", "Address: 12 Main St"],
+    "answer": "Adress: 12 Main St.",
+    "explanation": "'Address' is misspelled as 'Adress'."
+  },
+  {
+    "id": "cler_14",
+    "question": "Which code is valid if rule is LETTER-3 DIGITS?",
+    "choices": ["A123", "AB12", "A12B", "123A"],
+    "answer": "A123",
+    "explanation": "One letter followed by 3 digits."
+  },
+  {
+    "id": "cler_15",
+    "question": "Which entry is duplicated?",
+    "choices": [
+      "ID-1001",
+      "ID-1002",
+      "ID-1001",
+      "ID-1003"
+    ],
+    "answer": "ID-1001",
+    "explanation": "ID-1001 appears twice."
+  },
+  {
+    "id": "cler_16",
+    "question": "Which is correctly sorted alphabetically?",
+    "choices": [
+      "Banana, Apple, Carrot",
+      "Apple, Banana, Carrot",
+      "Carrot, Banana, Apple",
+      "Banana, Carrot, Apple"
+    ],
+    "answer": "Apple, Banana, Carrot",
+    "explanation": "A → B → C order."
+  },
+  {
+    "id": "cler_17",
+    "question": "Which number is OUT OF ORDER: 5, 10, 15, 25, 20?",
+    "choices": ["5", "10", "25", "20"],
+    "answer": "25",
+    "explanation": "Sequence should increase by 5."
+  },
+  {
+    "id": "cler_18",
+    "question": "Which entry is correctly formatted?",
+    "choices": [
+      "12-05-2024",
+      "2024/05/12",
+      "May 12, 2024",
+      "All are correct"
+    ],
+    "answer": "All are correct",
+    "explanation": "All are valid date formats depending on system."
+  },
+  {
+    "id": "cler_19",
+    "question": "Which code is incorrect if format is AAA-999?",
+    "choices": ["ABC-123", "AB-123", "XYZ-999", "AAA-111"],
+    "answer": "AB-123",
+    "explanation": "Must be 3 letters before dash."
+  },
+  {
+    "id": "cler_20",
+    "question": "Which comes FIRST alphabetically?",
+    "choices": ["Zebra", "Apple", "Monkey", "Lion"],
+    "answer": "Apple",
+    "explanation": "A comes before L, M, Z."
+  },
+  {
+    "id": "cler_21",
+    "question": "Which entry is inconsistent?",
+    "choices": [
+      "Item: Pen - Price: 10",
+      "Item: Pencil - Price: 5",
+      "Item: Eraser - Price: five",
+      "Item: Marker - Price: 20"
+    ],
+    "answer": "Item: Eraser - Price: five",
+    "explanation": "Price must be numeric."
+  },
+  {
+    "id": "cler_22",
+    "question": "Which number is smallest?",
+    "choices": ["0.09", "0.9", "0.19", "0.109"],
+    "answer": "0.09",
+    "explanation": "0.09 is the smallest decimal."
+  },
+  {
+    "id": "cler_23",
+    "question": "Which entry is correctly capitalized?",
+    "choices": [
+      "manila city hall",
+      "Manila City Hall",
+      "manila City hall",
+      "MANILA city hall"
+    ],
+    "answer": "Manila City Hall",
+    "explanation": "Proper nouns must be capitalized."
+  },
+  {
+    "id": "cler_24",
+    "question": "Which sequence is correct?",
+    "choices": ["1, 3, 5, 7", "1, 2, 4, 6", "2, 4, 6, 9", "3, 6, 9, 12"],
+    "answer": "1, 3, 5, 7",
+    "explanation": "Odd number sequence."
+  },
+  {
+    "id": "cler_25",
+    "question": "Which entry is NOT alphabetically correct?",
+    "choices": [
+      "Alpha, Beta, Gamma",
+      "Apple, Banana, Cherry",
+      "Dog, Cat, Elephant",
+      "Ant, Bear, Cat"
+    ],
+    "answer": "Dog, Cat, Elephant",
+    "explanation": "Not in alphabetical order."
+  },
+  {
+    "id": "cler_26",
+    "question": "Which code follows pattern LETTER-NUMBER-NUMBER?",
+    "choices": ["A12", "B123", "C45", "D67"],
+    "answer": "A12",
+    "explanation": "One letter followed by two numbers."
+  },
+  {
+    "id": "cler_27",
+    "question": "Which entry is correct filing order?",
+    "choices": [
+      "Garcia, Ana",
+      "Garcia, Anna",
+      "Garcia, Anne",
+      "Garcia, An"
+    ],
+    "answer": "Garcia, An",
+    "explanation": "Shorter name comes first when prefixes match."
+  },
+  {
+    "id": "cler_28",
+    "question": "Which is a clerical inconsistency?",
+    "choices": [
+      "Date: 01/02/2024",
+      "Date: 1/2/2024",
+      "Date: 01-02-2024",
+      "Date: February 1, 2024"
+    ],
+    "answer": "Date: February 1, 2024",
+    "explanation": "Mixed formatting compared to numeric-only system."
+  },
+  {
+    "id": "cler_29",
+    "question": "Which number is largest?",
+    "choices": ["0.8", "0.88", "0.808", "0.9"],
+    "answer": "0.9",
+    "explanation": "0.9 is greater than all others."
+  },
+  {
+    "id": "cler_30",
+    "question": "Which entry is correct alphabetical order?",
+    "choices": [
+      "Zebra, Yak, X-ray",
+      "X-ray, Yak, Zebra",
+      "Yak, Zebra, X-ray",
+      "Zebra, X-ray, Yak"
+    ],
+    "answer": "X-ray, Yak, Zebra",
+    "explanation": "X → Y → Z order."
+  },
+  {
+    "id": "cler_31",
+    "question": "Which entry contains a spelling error?",
+    "choices": ["Calendar", "Calender", "Camera", "Campus"],
+    "answer": "Calender",
+    "explanation": "Correct spelling is 'Calendar'."
+  },
+  {
+    "id": "cler_32",
+    "question": "Which is correctly coded if rule is 2 letters + 2 numbers?",
+    "choices": ["AB12", "A12B", "ABC1", "1234"],
+    "answer": "AB12",
+    "explanation": "Two letters followed by two numbers."
+  },
+  {
+    "id": "cler_33",
+    "question": "Which is correctly ordered numerically?",
+    "choices": ["11, 2, 21, 3", "2, 3, 11, 21", "21, 11, 3, 2", "3, 2, 11, 21"],
+    "answer": "2, 3, 11, 21",
+    "explanation": "Ascending order."
+  },
+  {
+    "id": "cler_34",
+    "question": "Which entry is duplicated?",
+    "choices": ["File A", "File B", "File A", "File C"],
+    "answer": "File A",
+    "explanation": "File A appears twice."
+  },
+  {
+    "id": "cler_35",
+    "question": "Which entry is incorrect format?",
+    "choices": ["ID-001", "ID-002", "ID-AB1", "ID-003"],
+    "answer": "ID-AB1",
+    "explanation": "Format requires numbers only after ID-."
+  },
+  {
+    "id": "cler_36",
+    "question": "Which comes first alphabetically?",
+    "choices": ["Zoo", "Apple", "Book", "Car"],
+    "answer": "Apple",
+    "explanation": "A comes first in alphabetical order."
+  },
+  {
+    "id": "cler_37",
+    "question": "Which entry is inconsistent?",
+    "choices": ["Price: 10", "Price: 20", "Price: twenty", "Price: 30"],
+    "answer": "Price: twenty",
+    "explanation": "Values must be numeric."
+  },
+  {
+    "id": "cler_38",
+    "question": "Which is correctly sorted?",
+    "choices": ["Cat, Ant, Dog", "Ant, Cat, Dog", "Dog, Cat, Ant", "Cat, Dog, Ant"],
+    "answer": "Ant, Cat, Dog",
+    "explanation": "Alphabetical order A → C → D."
+  },
+  {
+    "id": "cler_39",
+    "question": "Which number is incorrect in sequence: 2, 4, 6, 9, 8?",
+    "choices": ["2", "4", "9", "8"],
+    "answer": "9",
+    "explanation": "Sequence should increase by 2."
+  },
+  {
+    "id": "cler_40",
+    "question": "Which entry follows correct filing order?",
+    "choices": [
+      "Lopez, Ana",
+      "Lopez, Ann",
+      "Lopez, Andrew",
+      "Lopez, Andy"
+    ],
+    "answer": "Lopez, Ana",
+    "explanation": "Alphabetical order by first name after same surname."
   }
 ]

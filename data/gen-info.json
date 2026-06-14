@@ -1,42 +1,352 @@
 [
   {
     "id": "gen_1",
-    "question": "Under the 1987 Philippine Constitution, what is the maximum term of office allowed for the President of the Philippines?",
-    "choices": ["4 years with one re-election", "5 years without re-election", "6 years without re-election", "6 years with one re-election"],
-    "answer": "6 years without re-election",
-    "explanation": "According to Article VII, Section 4 of the 1987 Philippine Constitution, the President shall be elected by a direct vote of the people for a single term of six years and shall not be eligible for any re-election."
+    "question": "Whose guidance and assistance do the Filipino people invoke in the Preamble of the 1987 Philippine Constitution?",
+    "choices": ["The Supreme Court", "The Congress", "Almighty God", "The Armed Forces"],
+    "answer": "Almighty God",
+    "explanation": "The Preamble explicitly states that the sovereign Filipino people implore the aid of Almighty God to build a just and humane society."
   },
   {
     "id": "gen_2",
-    "question": "Which Republic Act is officially known as the 'Code of Conduct and Ethical Standards for Public Officials and Employees'?",
-    "choices": ["Republic Act No. 3019", "Republic Act No. 6713", "Republic Act No. 9485", "Republic Act No. 7160"],
-    "answer": "Republic Act No. 6713",
-    "explanation": "Republic Act No. 6713 establishes the code of conduct, ethical standards, duties, and responsibilities of public officials and employees, promoting integrity, efficiency, and accountability in government service."
+    "question": "According to Section 6, Article II of the Constitution, the separation of Church and State is explicitly declared to be what?",
+    "choices": ["Subject to local ordinance", "Decided by Congress every year", "Inviolable", "Temporarily suspended during elections"],
+    "answer": "Inviolable",
+    "explanation": "Article II, Section 6 provides that 'The separation of Church and State shall be inviolable,' meaning it cannot be broken or infringed upon."
   },
   {
     "id": "gen_3",
-    "question": "Which of the following is declared as a state policy regarding social justice in the 1987 Constitution?",
-    "choices": [
-      "The State shall promote social justice in all phases of national development.",
-      "Social justice shall be implemented only in urban industrial sectors.",
-      "The state shall prioritize business profits over employee welfare.",
-      "Social justice is secondary to defense spending."
-    ],
-    "answer": "The State shall promote social justice in all phases of national development.",
-    "explanation": "Article II, Section 10 of the Declaration of Principles and State Policies states: 'The State shall promote social justice in all phases of national development.'"
+    "question": "Which specific constitutional tenet guarantees that the armed forces remain subordinate to civil leadership?",
+    "choices": ["The military controls local governments", "The judiciary commands the armed forces", "The armed forces may legislate in emergencies", "Civilian authority is supreme over the military"],
+    "answer": "Civilian authority is supreme over the military",
+    "explanation": "Article II, Section 3 confirms that civilian authority is, at all times, supreme over the military, establishing civilian control over defense institutions."
   },
   {
     "id": "gen_4",
-    "question": "What is the national flower of the Philippines, representing purity and simplicity?",
-    "choices": ["Sampaguita", "Orchid", "Waling-waling", "Rose"],
-    "answer": "Sampaguita",
-    "explanation": "Sampaguita was declared the national flower of the Philippines in 1934 by Governor-General Frank Murphy. It is a sweet-smelling white flower associated with purity, simplicity, and strength."
+    "question": "The 1987 Constitution formally states that the Philippines rejects war as an instrument of which policy?",
+    "choices": ["National policy", "Economic planning", "Local autonomy", "Judicial review"],
+    "answer": "National policy",
+    "explanation": "Article II, Section 2 states that the Philippines renounces war as an instrument of national policy and adopts the generally accepted principles of international law."
   },
   {
     "id": "gen_5",
-    "question": "Under RA 6713, public officials and employees are required to file a Statement of Assets, Liabilities, and Net Worth (SALN) within how many days after assumption of office?",
-    "choices": ["15 days", "30 days", "45 days", "60 days"],
-    "answer": "30 days",
-    "explanation": "Under Section 8 of RA 6713, the Statement of Assets, Liabilities and Net Worth (SALN) must be filed within thirty (30) days after assumption of office, on or before April 30 of every year thereafter, and within thirty (30) days after resignation or separation from the service."
+    "question": "What is the total number of Senators designated to serve in the Senate of the Philippines under the current Constitution?",
+    "choices": ["18", "30", "12", "24"],
+    "answer": "24",
+    "explanation": "The legislative department provisions of the 1987 Constitution outline that the Senate shall be composed of twenty-four Senators elected at large."
+  },
+  {
+    "id": "gen_6",
+    "question": "What proportion of the total seats in the House of Representatives must be filled by party-list representatives?",
+    "choices": ["10 percent", "20 percent", "25 percent", "15 percent"],
+    "answer": "20 percent",
+    "explanation": "The Constitution mandates that party-list representatives shall constitute twenty percent (20%) of the total number of representatives in the lower house."
+  },
+  {
+    "id": "gen_7",
+    "question": "To legally convene and conduct administrative business, each House of Congress requires a majority of its members to form a:",
+    "choices": ["Plebiscite", "Veto", "Treaty", "Quorum"],
+    "answer": "Quorum",
+    "explanation": "A quorum, defined as a simple majority of all the elected members of a respective house, is strictly necessary to transact congressional activities."
+  },
+  {
+    "id": "gen_8",
+    "question": "If a bill is presented to the President and no veto is communicated within thirty days, what is the automated outcome for that bill?",
+    "choices": ["Automatically returns to committee", "Is permanently archived", "Becomes a law as if signed", "Must be approved by the Supreme Court"],
+    "answer": "Becomes a law as if signed",
+    "explanation": "Under the constitutional rules of lawmaking, a bill lapses into law if the President fails to act on or veto it within 30 days of receipt."
+  },
+  {
+    "id": "gen_9",
+    "question": "The Supreme Court of the Philippines is structurally comprised of a Chief Justice and how many Associate Justices?",
+    "choices": ["12", "16", "10", "14"],
+    "answer": "14",
+    "explanation": "Article VIII, Section 4 mandates that the Supreme Court consist of a Chief Justice and fourteen Associate Justices, totaling fifteen members."
+  },
+  {
+    "id": "gen_10",
+    "question": "Judicial power covers the obligation of the court system to adjudicate actual disputes regarding rights that are legally what?",
+    "choices": ["Demandable and enforceable", "Foreign and ceremonial", "Political and secret", "Optional and advisory"],
+    "answer": "Demandable and enforceable",
+    "explanation": "The Constitution defines judicial power as the duty to settle conflicts involving rights that are legally demandable and enforceable by law."
+  },
+  {
+    "id": "gen_11",
+    "question": "Which autonomous constitutional commission is designated as the core personnel management system of the government?",
+    "choices": ["Civil Service Commission", "Commission on Audit", "Commission on Human Rights", "Commission on Elections"],
+    "answer": "Civil Service Commission",
+    "explanation": "The Civil Service Commission (CSC) operates as the central personnel agency responsible for career standards and human resource administration across government offices."
+  },
+  {
+    "id": "gen_12",
+    "question": "Which constitutional body is explicitly vested with the power to supervise, manage, and execute election regulations?",
+    "choices": ["Civil Service Commission", "Commission on Elections", "Office of the Solicitor General", "Commission on Audit"],
+    "answer": "Commission on Elections",
+    "explanation": "The Commission on Elections (COMELEC) is the independent body tasked with enforcing and administering all laws relating to the conduct of regular or special elections."
+  },
+  {
+    "id": "gen_13",
+    "question": "Which independent constitutional organ is responsible for checking, analyzing, and settling all financial accounts belonging to the government?",
+    "choices": ["Commission on Elections", "Judicial and Bar Council", "Civil Service Commission", "Commission on Audit"],
+    "answer": "Commission on Audit",
+    "explanation": "The Commission on Audit (COA) is constitutionally empowered to examine, audit, and settle all public revenues, expenditures, and state property uses."
+  },
+  {
+    "id": "gen_14",
+    "choices": ["Bicol Region", "Cordilleras", "Eastern Visayas", "Zamboanga Peninsula"],
+    "question": "The 1987 Philippine Constitution outlines the establishment of autonomous regions exclusively for Muslim Mindanao and the:",
+    "answer": "Cordilleras",
+    "explanation": "Article X, Section 15 notes that autonomous regions shall be created in Muslim Mindanao and in the Cordilleras due to shared historical and cultural backgrounds."
+  },
+  {
+    "id": "gen_15",
+    "question": "Which civic process gives the electorate the structural mechanism to directly draft and pass statutory laws outside of the legislature?",
+    "choices": ["Contempt", "Certiorari", "Impeachment", "Initiative"],
+    "answer": "Initiative",
+    "explanation": "Through the system of initiative, registered citizens can directly propose amendments or entire laws via a formal, certified petition process."
+  },
+  {
+    "id": "gen_16",
+    "question": "The formal definition stating that a natural-born citizen is someone who holds Philippine citizenship from birth without needing additional actions is located in:",
+    "choices": ["Article VI", "Article IV", "Article XI", "Article XVII"],
+    "answer": "Article IV",
+    "explanation": "Article IV of the Philippine Constitution contains all the fundamental legal rules regarding the acquisition and definition of citizenship."
+  },
+  {
+    "id": "gen_17",
+    "question": "The national territory of the state includes the geographic archipelago and all other maritime or terrestrial zones over which the country possesses:",
+    "choices": ["Treaty friendship only", "Commercial trade", "Historical influence", "Sovereignty or jurisdiction"],
+    "answer": "Sovereignty or jurisdiction",
+    "explanation": "Article I defines the national territory as comprising the archipelago, its waters, and all other territories over which the Philippines has sovereignty or jurisdiction."
+  },
+  {
+    "id": "gen_18",
+    "question": "The public policy regarding full public disclosure is strictly applied by the state to all official matters involving:",
+    "choices": ["Private family records", "Personal bank passwords", "Public interest", "Classified military tactics only"],
+    "answer": "Public interest",
+    "explanation": "The Constitution guarantees full public disclosure of state transactions that involve public interest to promote transparency and fight corruption."
+  },
+  {
+    "id": "gen_19",
+    "question": "According to the Bill of Rights, under what precise condition can a person charged with a crime carrying the penalty of reclusion perpetua be legally denied bail?",
+    "choices": ["The trial has not started", "Evidence of guilt is strong", "The complainant requests it", "The accused has no lawyer"],
+    "answer": "Evidence of guilt is strong",
+    "explanation": "Bail is a matter of right for all individuals, unless the individual is facing a charge carrying reclusion perpetua and the accompanying evidence of guilt is evaluated as strong."
+  },
+  {
+    "id": "gen_20",
+    "question": "Which of the following legal enactments is fundamentally prohibited by Section 22, Article III of the Philippine Constitution?",
+    "choices": ["Public bidding", "Judicial review", "Ex post facto law or bill of attainder", "Freedom of speech"],
+    "answer": "Ex post facto law or bill of attainder",
+    "explanation": "Article III, Section 22 explicitly protections individual rights by stating that 'No ex post facto law or bill of attainder shall be enacted.'"
+  },
+  {
+    "id": "gen_21",
+    "question": "The Bill of Rights guarantees that access to judicial systems and quasi-judicial bodies cannot be restricted to an individual due to:",
+    "choices": ["Election season", "Poverty", "Age alone", "Residence abroad"],
+    "answer": "Poverty",
+    "explanation": "Section 11, Article III rules that 'Free access to the courts and quasi-judicial bodies and adequate legal assistance shall not be denied to any person by reason of poverty.'"
+  },
+  {
+    "id": "gen_22",
+    "question": "The constitutional freedom and liberty of abode may be lawfully altered or restricted only when there is a:",
+    "choices": ["Lawful order of the court", "News report", "Private agreement", "Oral instruction from any official"],
+    "answer": "Lawful order of the court",
+    "explanation": "Article III, Section 6 specifies that the liberty of abode and changing the same can only be limited upon a lawful order of the court or for public safety."
+  },
+  {
+    "id": "gen_23",
+    "question": "The State is mandated to defend and advance the educational rights of citizens, making high-quality instruction at all levels:",
+    "choices": ["Limited to adults", "Optional for all schools", "Available only in cities", "Accessible to all"],
+    "answer": "Accessible to all",
+    "explanation": "The state is constitutionally required to take appropriate operational steps to make quality education readily accessible to all citizens."
+  },
+  {
+    "id": "gen_24",
+    "question": "As structurally declared in the provisions of the 1987 Philippine Constitution, the national language of the country is:",
+    "choices": ["English", "Spanish", "Cebuano", "Filipino"],
+    "answer": "Filipino",
+    "explanation": "Article XIV, Section 6 explicitly dictates that the official national language of the Republic of the Philippines is Filipino."
+  },
+  {
+    "id": "gen_25",
+    "question": "Under RA 6713, which behavioral norm instructs civil servants to execute tasks with peak competence, professionalism, intelligence, and proper training?",
+    "choices": ["Nationalism and patriotism", "Political neutrality", "Professionalism", "Simple living"],
+    "answer": "Professionalism",
+    "explanation": "The standard of Professionalism mandates that public servants deliver their regular tasks with high capability, expertise, and dedication."
+  },
+  {
+    "id": "gen_26",
+    "question": "Which professional standard in RA 6713 requires public employees to be completely honest with the populace and refrain from showing prejudice or discrimination?",
+    "choices": ["Responsiveness to the public", "Simple living", "Justness and sincerity", "Commitment to democracy"],
+    "answer": "Justness and sincerity",
+    "explanation": "Justness and sincerity mandates that officials must act with true fairness, open honesty, and complete equity without discriminating against any citizen."
+  },
+  {
+    "id": "gen_27",
+    "question": "Under RA 6713, which ethical norm mandates that government workers use public equipment and resources responsibly, avoiding waste or extravagance?",
+    "choices": ["Personal loyalty", "Commitment to public interest", "Ceremonial service", "Private advancement"],
+    "answer": "Commitment to public interest",
+    "explanation": "Commitment to public interest emphasizes using government funds and assets efficiently and effectively for the common good over personal gain."
+  },
+  {
+    "id": "gen_28",
+    "question": "According to RA 6713, a newly appointed public officer must divest any conflicting business or financial interests within how many days of stepping into office?",
+    "choices": ["90 days", "60 days", "30 days", "15 days"],
+    "answer": "60 days",
+    "explanation": "RA 6713 dictates that a civil servant must fully divest from any shares or operational control over a conflicting interest within 60 days of starting their role."
+  },
+  {
+    "id": "gen_29",
+    "question": "RA 6713 legally requires all public officials and working personnel to handle and process government paperwork and files:",
+    "choices": ["Expeditiously", "At their personal discretion", "Only after full payment", "Without keeping any record"],
+    "answer": "Expeditiously",
+    "explanation": "The Code of Conduct mandates that paperwork must be executed expeditiously to prevent delays and improve government efficiency."
+  },
+  {
+    "id": "gen_30",
+    "question": "To speed up public service delivery under RA 6713, documents prepared for official endorsement should ideally limit their maximum required signatures to:",
+    "choices": ["Three", "Five", "Two", "Seven"],
+    "answer": "Three",
+    "explanation": "RA 6713 sets a practice guideline restricting the number of processing signatories to a maximum of three to eliminate excessive bureaucratic steps."
+  },
+  {
+    "id": "gen_31",
+    "question": "Under the current rules of RA 11032, an administrative transaction classified as simple must be resolved within a period of:",
+    "choices": ["Seven working days", "Fortyfive -calendar days", "Twenty working days", "Three working days"],
+    "answer": "Three working days",
+    "explanation": "The Ease of Doing Business Act enforces a strict 3-working-day processing deadline for any transaction defined as a simple process."
+  },
+  {
+    "id": "gen_32",
+    "question": "Republic Act No. 11032 is a piece of legislation widely referred to by the public title of:",
+    "choices": ["Ecological Solid Waste Management Act", "Data Privacy Act", "Clean Water Act", "Ease of Doing Business and Efficient Government Service Delivery Act"],
+    "answer": "Ease of Doing Business and Efficient Government Service Delivery Act",
+    "explanation": "RA 11032 amended the Anti-Red Tape Act to form the 'Ease of Doing Business and Efficient Government Service Delivery Act'."
+  },
+  {
+    "id": "gen_33",
+    "question": "The Data Privacy Act of 2012 mandated the creation of which administrative regulatory body to police and execute the law?",
+    "choices": ["Commission on Audit", "Department of Science and Technology only", "Civil Service Commission", "National Privacy Commission"],
+    "answer": "National Privacy Commission",
+    "explanation": "The National Privacy Commission (NPC) was specifically built to enforce the rules, manage registrations, and process violations concerning data protection."
+  },
+  {
+    "id": "gen_34",
+    "question": "Under the rules of the Data Privacy Act, detailed information concerning a specific individual’s health status, education history, or sexual profile is termed:",
+    "choices": ["Ordinary news clipping", "Corporate property", "Anonymous public notice", "Sensitive personal information"],
+    "answer": "Sensitive personal information",
+    "explanation": "Any records indicating an individual's distinct personal life metrics like health history, education levels, or identity parameters are classified as Sensitive Personal Information."
+  },
+  {
+    "id": "gen_35",
+    "question": "Republic Act No. 9003 is the primary environmental statute known as the:",
+    "choices": ["Climate Change Act of 2009", "Clean Air Act of 1999", "Clean Water Act of 2004", "Ecological Solid Waste Management Act of 2000"],
+    "answer": "Ecological Solid Waste Management Act of 2000",
+    "explanation": "RA 9003 establishes the formal legal structures and municipal requirements to ensure a comprehensive ecological waste program across the Philippines."
+  },
+  {
+    "id": "gen_36",
+    "question": "Which specific law serves as the standard legal guideline for managing air pollution and atmospheric quality in the Philippines?",
+    "choices": ["Flag and Heraldic Code", "Clean Air Act of 1999", "Data Privacy Act of 2012", "Clean Water Act of 2004"],
+    "answer": "Clean Air Act of 1999",
+    "explanation": "Republic Act No. 8749 outlines the air quality framework and targets mobile or stationary environmental emission control under the name 'Philippine Clean Air Act of 1999'."
+  },
+  {
+    "id": "gen_37",
+    "question": "Republic Act No. 9275 is an environmental protective statute widely known as the:",
+    "choices": ["Ecological Solid Waste Management Act", "Philippine Clean Water Act of 2004", "Climate Change Act", "Anti-Red Tape Act"],
+    "answer": "Philippine Clean Water Act of 2004",
+    "explanation": "RA 9275 provides institutional mechanisms to protect marine habitats and regulate water resource cleanliness under the 'Philippine Clean Water Act of 2004'."
+  },
+  {
+    "id": "gen_38",
+    "question": "Republic Act No. 9512 actively targets the long-term protection of the environment by implementing mandatory:",
+    "choices": ["Lower tax rates", "Military training", "Private mining incentives", "Environmental education"],
+    "answer": "Environmental education",
+    "explanation": "RA 9512 integrates comprehensive environmental instruction and awareness initiatives across all academic institutional curricula."
+  },
+  {
+    "id": "gen_39",
+    "question": "What is the proper statutory title given to Republic Act No. 9729, which focuses on integrating risk management into state policy?",
+    "choices": ["Climate Change Act of 2009", "Flag and Heraldic Code", "Data Privacy Act of 2012", "Ease of Doing Business Act"],
+    "answer": "Climate Change Act of 2009",
+    "explanation": "RA 9729 systematically addresses global environment concerns by introducing proactive structural programs under the 'Climate Change Act of 2009'."
+  },
+  {
+    "id": "gen_40",
+    "question": "Which legal mechanism dictates the precise protocols for hoisting the national flag, playing the anthem, and displaying the coat-of-arms?",
+    "choices": ["Administrative Code", "Civil Service Code", "Flag and Heraldic Code of the Philippines", "Local Government Code"],
+    "answer": "Flag and Heraldic Code of the Philippines",
+    "explanation": "Republic Act No. 8491 serves as the national directive clarifying the appropriate codes of conduct and respect due to all Philippine heraldic symbols."
+  },
+  {
+    "id": "gen_41",
+    "question": "According to RA 8491, if the Philippine flag is hoisted horizontally during a state of war, which color band must face upward?",
+    "choices": ["White", "Red", "Yellow", "Blue"],
+    "answer": "Red",
+    "explanation": "The law states that displaying the red stripe of the national flag on top is the official physical manifestation indicating a state of national war."
+  },
+  {
+    "id": "gen_42",
+    "question": "What is the accurate, official legal title of the Philippine National Anthem under the guidelines of RA 8491?",
+    "choices": ["Bayang Magiliw", "Ako ay Pilipino", "Lupang Hinirang", "Pilipinas Kong Mahal"],
+    "answer": "Lupang Hinirang",
+    "explanation": "RA 8491 notes that the musical composition of the national anthem must always be explicitly referred to as 'Lupang Hinirang'."
+  },
+  {
+    "id": "gen_43",
+    "question": "Article 1 of the Universal Declaration of Human Rights rules that all human beings are born:",
+    "choices": ["Subject to one government only", "Without duties to others", "Free and equal in dignity and rights", "With identical income"],
+    "answer": "Free and equal in dignity and rights",
+    "explanation": "The foundational opening clause of the UDHR asserts the global truth that every single person enters the world free and equal in inherent dignity and rights."
+  },
+  {
+    "id": "gen_44",
+    "question": "Article 3 of the Universal Declaration of Human Rights safeguards three fundamental entitlements: life, liberty, and:",
+    "choices": ["Security of person", "Free housing", "Unlimited travel", "Government employment"],
+    "answer": "Security of person",
+    "explanation": "UDHR Article 3 outlines that every human being has a basic protective claim to their own life, freedom, and physical security of person."
+  },
+  {
+    "id": "gen_45",
+    "question": "On which calendar date do nations and populations worldwide annually observe United Nations Day?",
+    "choices": ["August 8", "October 24", "December 10", "June 12"],
+    "answer": "October 24",
+    "explanation": "United Nations Day commemorates the historic operational adoption of the UN Charter, which took effect on October 24, 1945."
+  },
+  {
+    "id": "gen_46",
+    "question": "The Association of Southeast Asian Nations (ASEAN) was initially called into official existence in 1967 via the signing of the:",
+    "choices": ["Treaty of Paris", "Manila Accord", "Bangkok Declaration", "Kyoto Protocol"],
+    "answer": "Bangkok Declaration",
+    "explanation": "The five founding nations signed the Bangkok Declaration on August 8, 1967, establishing the regional alliance known as ASEAN."
+  },
+  {
+    "id": "gen_47",
+    "question": "The global institutional blueprint known as the United Nations Sustainable Development Goals includes a set of how many individual goals?",
+    "choices": ["21", "17", "8", "10"],
+    "answer": "17",
+    "explanation": "The UN 2030 Agenda organizes international sustainability efforts across 17 distinct, interconnected Sustainable Development Goals (SDGs)."
+  },
+  {
+    "id": "gen_48",
+    "question": "In which calendar year did the member states of the United Nations officially approve and establish the Sustainable Development Goals?",
+    "choices": ["2020", "1986", "2015", "1945"],
+    "answer": "2015",
+    "explanation": "The 17 global goals were officially adopted during the United Nations Sustainable Development Summit held in September 2015."
+  },
+  {
+    "id": "gen_49",
+    "question": "The historic proclamation of Philippine independence from Spanish colonial authority on June 12, 1898 occurred in:",
+    "choices": ["Malolos, Bulacan", "Kawit, Cavite", "Davao City", "Cebu City"],
+    "answer": "Kawit, Cavite",
+    "explanation": "General Emilio Aguinaldo led the formal public declaration of national sovereignty at his ancestral home located in Kawit, Cavite."
+  },
+  {
+    "id": "gen_50",
+    "question": "The historical text of the Declaration of Philippine Independence was formally read aloud during the 1898 ceremony by:",
+    "choices": ["Graciano Lopez Jaena", "Ambrosio Rianzares Bautista", "Marcelo H. del Pilar", "Apolinario Mabini"],
+    "answer": "Ambrosio Rianzares Bautista",
+    "explanation": "Ambrosio Rianzares Bautista authored the Act of the Declaration of Independence and read its text during the public event on June 12, 1898."
   }
 ]

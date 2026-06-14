@@ -640,7 +640,7 @@ function submitExam(force = false) {
         total: totalQuestions,
         percentage: percentage,
         passed: passed, // can be true or false
-        timeSpent: 9000 - examState.timeRemaining, // seconds
+        timeSpent: limits.TIME_LIMIT - examState.timeRemaining, // seconds
         categoryStats: categoryStats,
         questionsLog: questionsLog
     };

@@ -1,42 +1,852 @@
 [
   {
     "id": "verb_1",
-    "question": "Choose the word that is most nearly opposite in meaning to the capitalized word: 'The judge was known for his IMPARTIAL decisions.'",
-    "choices": ["Biased", "Fair", "Objective", "Neutral"],
-    "answer": "Biased",
-    "explanation": "'Impartial' means treating all rivals or disputants equally; fair and just. The opposite (antonym) of impartial is 'biased', which means showing an unreasonable preference or prejudice."
+    "question": "Which word is a noun?",
+    "choices": ["Quickly", "Happiness", "Beautiful", "Sing"],
+    "answer": "Happiness",
+    "explanation": "'Happiness' is an abstract noun representing an emotional state. The other options are an adverb (Quickly), an adjective (Beautiful), and a verb (Sing)."
   },
   {
     "id": "verb_2",
-    "question": "Which of the following sentences is grammatically correct?",
-    "choices": [
-      "Neither the director nor the managers has signed the contract.",
-      "Neither the director nor the managers have signed the contract.",
-      "Neither the director or the managers have signed the contract.",
-      "Neither the director nor the managers was signing the contract."
-    ],
-    "answer": "Neither the director nor the managers have signed the contract.",
-    "explanation": "When a subject has two parts connected by 'neither... nor', the verb agrees with the closer subject. 'Managers' is plural and closer to the verb, so the plural verb 'have' is correct."
+    "question": "Which noun is feminine in gender?",
+    "choices": ["Stallion", "Drake", "Mare", "Gander"],
+    "answer": "Mare",
+    "explanation": "A 'Mare' is a female horse. 'Stallion' is a male horse, 'Drake' is a male duck, and 'Gander' is a male goose."
   },
   {
     "id": "verb_3",
-    "question": "Select the word that is closest in meaning to the capitalized word: 'The software update was designed to MITIGATE the system lag.'",
-    "choices": ["Increase", "Alleviate", "Ignore", "Aggravate"],
-    "answer": "Alleviate",
-    "explanation": "'Mitigate' means to make less severe, serious, or painful. 'Alleviate' is a direct synonym meaning to make suffering or a problem less severe."
+    "question": "What is the plural form of \"analysis\"?",
+    "choices": ["Analysises", "Analysises", "Analysi", "Analyses"],
+    "answer": "Analyses",
+    "explanation": "Nouns ending in '-is' derived from Greek change to '-es' in their plural form. Therefore, the plural of analysis is analyses."
   },
   {
     "id": "verb_4",
-    "question": "Fill in the blank with the correct preposition: 'The committee members finally agreed ________ the terms of the proposal.'",
-    "choices": ["to", "on", "in", "with"],
-    "answer": "on",
-    "explanation": "We 'agree on' a plan, topic, or terms after discussion. 'Agree to' is used when giving consent to a proposal/action, and 'agree with' is used when sharing the same opinion as someone else."
+    "question": "Which sentence contains a transitive verb?",
+    "choices": ["The baby slept peacefully.", "The birds fly south.", "Maria wrote a letter.", "The old man smiled."],
+    "answer": "Maria wrote a letter.",
+    "explanation": "A transitive verb requires a direct object to receive the action. In this sentence, 'wrote' is a transitive verb because it acts upon the direct object 'letter'."
   },
   {
     "id": "verb_5",
-    "question": "Identify the relationship in the given analogy: BIRD : FLY :: FISH : ________",
-    "choices": ["Water", "Swim", "Gill", "Scale"],
-    "answer": "Swim",
-    "explanation": "This is an agent-to-action analogy. A bird's primary mode of movement is to fly, and a fish's primary mode of movement is to swim."
+    "question": "Choose the sentence in the simple past tense.",
+    "choices": ["She writes poems.", "She was writing poems.", "She wrote poems.", "She has written poems."],
+    "answer": "She wrote poems.",
+    "explanation": "'She wrote poems' uses the simple past tense form of the irregular verb 'write'."
+  },
+  {
+    "id": "verb_6",
+    "question": "Which pronoun correctly completes the sentence?\nNeither Carlo nor his friends brought _____ notebooks.",
+    "choices": ["his", "their", "our", "your"],
+    "answer": "their",
+    "explanation": "When compound subjects are connected by 'neither... nor', the pronoun must agree with the closer antecedent. Since 'friends' is plural, the plural pronoun 'their' is used."
+  },
+  {
+    "id": "verb_7",
+    "question": "Which word is an adjective?",
+    "choices": ["Carefully", "Bright", "Happily", "Swiftly"],
+    "answer": "Bright",
+    "explanation": "'Bright' is an adjective that can describe a noun. The other three choices are adverbs ending in '-ly'."
+  },
+  {
+    "id": "verb_8",
+    "question": "Which sentence uses the adverb correctly?",
+    "choices": ["She sings beautiful.", "She sings beautifully.", "She beautiful sings.", "She is beautifully singer."],
+    "answer": "She sings beautifully.",
+    "explanation": "The adverb 'beautifully' correctly modifies the action verb 'sings'."
+  },
+  {
+    "id": "verb_9",
+    "question": "Which preposition best completes the sentence?\nThe students walked _____ the bridge.",
+    "choices": ["through", "across", "among", "beside"],
+    "answer": "across",
+    "explanation": "'Across' is the most logical preposition to indicate moving from one side of an elevated structure like a bridge to the other side."
+  },
+  {
+    "id": "verb_10",
+    "question": "Which conjunction best completes the sentence?\nI wanted to go, _____ I was too tired.",
+    "choices": ["because", "but", "or", "so"],
+    "answer": "but",
+    "explanation": "The coordinating conjunction 'but' is used to connect two clauses with contrasting thoughts or realities."
+  },
+  {
+    "id": "verb_11",
+    "question": "Which article correctly completes the sentence?\nShe bought _____ umbrella yesterday.",
+    "choices": ["a", "an", "the", "no article"],
+    "answer": "an",
+    "explanation": "The word 'umbrella' begins with a vowel sound, so it takes the indefinite article 'an'."
+  },
+  {
+    "id": "verb_12",
+    "question": "Choose the sentence with correct subject-verb agreement.",
+    "choices": ["The list of names are on the table.", "The students in the room was noisy.", "Each of the players has a uniform.", "Many of the cake was eaten."],
+    "answer": "Each of the players has a uniform.",
+    "explanation": "'Each' is an indefinite pronoun that is grammatically singular, so it correctly pairs with the singular verb 'has'."
+  },
+  {
+    "id": "verb_13",
+    "question": "Which sentence is correctly constructed?",
+    "choices": ["Running through the field, the flowers looked beautiful.", "The flowers looked beautiful as we ran through the field.", "The flowers, running through the field, looked beautiful.", "Through the field looked beautiful the flowers."],
+    "answer": "The flowers looked beautiful as we ran through the field.",
+    "explanation": "This phrasing avoids the dangling modifier problem found in other options, making it clear that 'we' were the ones running through the field, not the flowers."
+  },
+  {
+    "id": "verb_14",
+    "question": "What is the meaning of the prefix \"inter-\"?",
+    "choices": ["Against", "Between", "Under", "Before"],
+    "answer": "Between",
+    "explanation": "The Latin prefix 'inter-' means 'between', 'among', or 'amidst' (e.g., intermediate, international)."
+  },
+  {
+    "id": "verb_15",
+    "question": "Which sentence uses punctuation correctly?",
+    "choices": ["My favorite colors are red blue and green.", "My favorite colors are: red, blue, and green.", "My favorite colors are red; blue and green.", "My favorite colors are red blue; and green."],
+    "answer": "My favorite colors are: red, blue, and green.",
+    "explanation": "A colon can be used to introduce a series or list, and commas are properly placed to separate the coordinating items."
+  },
+  {
+    "id": "verb_16",
+    "question": "Which sentence is grammatically correct?",
+    "choices": ["He don't like coffee.", "He doesn't likes coffee.", "He doesn't like coffee.", "He not like coffee."],
+    "answer": "He doesn't like coffee.",
+    "explanation": "The third-person singular pronoun 'He' pairs with the contraction 'doesn't' (does not), followed by the base form of the verb 'like'."
+  },
+  {
+    "id": "verb_17",
+    "question": "Identify the error.\nEveryone / in the classroom / have submitted / their projects.",
+    "choices": ["Everyone", "in the classroom", "have submitted", "their projects"],
+    "answer": "have submitted",
+    "explanation": "'Everyone' is a singular indefinite pronoun and must take a singular verb. 'Have submitted' should be changed to 'has submitted'."
+  },
+  {
+    "id": "verb_18",
+    "question": "Choose the synonym of \"diligent.\"",
+    "choices": ["Lazy", "Industrious", "Careless", "Weak"],
+    "answer": "Industrious",
+    "explanation": "Being 'diligent' means showing care and conscientiousness in one's work, which is synonymous with 'industrious'."
+  },
+  {
+    "id": "verb_19",
+    "question": "Choose the antonym of \"scarce.\"",
+    "choices": ["Rare", "Limited", "Abundant", "Small"],
+    "answer": "Abundant",
+    "explanation": "'Scarce' means insufficient or in short supply. Its exact opposite is 'abundant', meaning existing or available in large quantities."
+  },
+  {
+    "id": "verb_20",
+    "question": "BOOK : READ :: FOOD : _____?",
+    "choices": ["Buy", "Cook", "Eat", "Taste"],
+    "answer": "Eat",
+    "explanation": "This represents an item-to-primary action analogy. A book is an object intended to be read, just as food is an object intended to be eaten."
+  },
+  {
+    "id": "verb_21",
+    "question": "Which sentence is in the future perfect tense?",
+    "choices": ["I will travel tomorrow.", "I will have finished the project by Friday.", "I have finished the project.", "I had finished the project."],
+    "answer": "I will have finished the project by Friday.",
+    "explanation": "The future perfect tense is formed using 'will have' followed by the past participle form of the main verb ('finished')."
+  },
+  {
+    "id": "verb_22",
+    "question": "Choose the sentence with the correct pronoun reference.",
+    "choices": ["When Anna met Carla, she was smiling.", "Anna was smiling when she met Carla.", "Carla smiled at Anna because she was happy.", "Anna told Carla that she should study."],
+    "answer": "Anna was smiling when she met Carla.",
+    "explanation": "This structure contains no ambiguous pronoun reference. The pronoun 'she' clearly refers back to 'Anna' without confusion."
+  },
+  {
+    "id": "verb_23",
+    "question": "Which sentence uses the comparative adjective correctly?",
+    "choices": ["This road is more narrower than that one.", "This road is narrower than that one.", "This road is most narrow than that one.", "This road is more narrowest than that one."],
+    "answer": "This road is narrower than that one.",
+    "explanation": "'Narrower' is already the comparative form of the adjective 'narrow'. Adding 'more' creates an incorrect double comparative."
+  },
+  {
+    "id": "verb_24",
+    "question": "Which word contains a suffix?",
+    "choices": ["Rewrite", "Impossible", "Friendship", "Preview"],
+    "answer": "Friendship",
+    "explanation": "'Friendship' consists of the base word 'friend' and the suffix '-ship'. The other choices feature prefixes (re-, im-, pre-)."
+  },
+  {
+    "id": "verb_25",
+    "question": "Choose the sentence with correct usage.",
+    "choices": ["Between you and I, this is difficult.", "Between you and me, this is difficult.", "Between I and you, this is difficult.", "Between me and myself, this is difficult."],
+    "answer": "Between you and me, this is difficult.",
+    "explanation": "'Between' is a preposition and must be followed by objective case pronouns ('you' and 'me'), rather than subjective case pronouns like 'I'."
+  },
+  {
+    "id": "verb_26",
+    "question": "What is the correct order of the following sentences?\nI. Finally, the committee announced the winners.\nII. The judges carefully evaluated every entry.\nIII. Many participants submitted their projects.\nIV. The competition officially began.",
+    "choices": ["IV–III–II–I", "III–IV–II–I", "IV–II–III–I", "II–IV–III–I"],
+    "answer": "IV–III–II–I",
+    "explanation": "The logical and chronological sequence is: the competition starts (IV), participants submit work (III), judges evaluate the submissions (II), and winners are announced at the end (I)."
+  },
+  {
+    "id": "verb_27",
+    "question": "Passage:\nMany students believe that intelligence alone leads to success. However, studies show that discipline and consistent effort often produce better long-term results than talent without hard work.\n\nWhat is the main idea?",
+    "choices": ["Talent is useless.", "Discipline and effort are important for success.", "Intelligence causes failure.", "Hard work is unnecessary."],
+    "answer": "Discipline and effort are important for success.",
+    "explanation": "The passage shifts focus with 'However' to emphasize that discipline and consistent effort are more critical to long-term success than unguided intelligence or talent."
+  },
+  {
+    "id": "verb_28",
+    "question": "According to the passage, what often produces better long-term results?",
+    "choices": ["Luck", "Wealth", "Consistent effort", "Intelligence alone"],
+    "answer": "Consistent effort",
+    "explanation": "The text states explicitly that 'discipline and consistent effort often produce better long-term results'."
+  },
+  {
+    "id": "verb_29",
+    "question": "Which statement is supported by the passage?",
+    "choices": ["All intelligent people succeed.", "Talent always defeats hard work.", "Success may depend on discipline.", "Studies reject the value of effort."],
+    "answer": "Success may depend on discipline.",
+    "explanation": "The text directly establishes a connection between discipline/effort and achieving long-term success."
+  },
+  {
+    "id": "verb_30",
+    "question": "The author's attitude toward hard work can best be described as:",
+    "choices": ["Critical", "Supportive", "Doubtful", "Indifferent"],
+    "answer": "Supportive",
+    "explanation": "The author highlights the positive impact and superiority of hard work over standalone talent, showing a clear supportive stance."
+  },
+  {
+    "id": "verb_31",
+    "question": "Which sentence has the correct subject-verb agreement?",
+    "choices": ["Neither of the applicants are qualified.", "Neither of the applicants is qualified.", "Neither of the applicants were qualified.", "Neither of the applicants have been qualified."],
+    "answer": "Neither of the applicants is qualified.",
+    "explanation": "The indefinite pronoun 'Neither' is singular when acting as the subject of a sentence, requiring the singular verb 'is'."
+  },
+  {
+    "id": "verb_32",
+    "question": "Which sentence is grammatically correct?",
+    "choices": ["Each student must bring their ID.", "Each student must brings his or her ID.", "Each student must bring his or her ID.", "Each student must brought his or her ID."],
+    "answer": "Each student must bring his or her ID.",
+    "explanation": "'Each student' requires a singular pronoun match ('his or her'). Additionally, the modal verb 'must' must be followed by the base form of the verb ('bring')."
+  },
+  {
+    "id": "verb_33",
+    "question": "Choose the sentence in the present perfect tense.",
+    "choices": ["She had left before noon.", "She has left before noon.", "She will leave before noon.", "She left before noon."],
+    "answer": "She has left before noon.",
+    "explanation": "The present perfect tense consists of the auxiliary verb 'has' or 'have' plus the past participle form of the main verb ('left')."
+  },
+  {
+    "id": "verb_34",
+    "question": "Which sentence uses the pronoun correctly?",
+    "choices": ["It is me who called.", "It is I who called.", "Me was the one who called.", "Myself called earlier."],
+    "answer": "It is I who called.",
+    "explanation": "Following a linking verb, a pronoun serving as a subject complement should be in the subjective case ('I'), not the objective case ('me')."
+  },
+  {
+    "id": "verb_35",
+    "question": "Which word is an adverb?",
+    "choices": ["Gentle", "Wisdom", "Extremely", "Kindness"],
+    "answer": "Extremely",
+    "explanation": "'Extremely' is an adverb of degree often used to modify adjectives or other adverbs. 'Gentle' is an adjective, while 'Wisdom' and 'Kindness' are nouns."
+  },
+  {
+    "id": "verb_36",
+    "question": "Choose the correct preposition.\nThe manager divided the work _____ the employees.",
+    "choices": ["between", "among", "over", "across"],
+    "answer": "among",
+    "explanation": "'Between' is generally used for two distinct elements, whereas 'among' is used when distributing or referring to a group of more than two entities (the employees)."
+  },
+  {
+    "id": "verb_37",
+    "question": "Which conjunction best completes the sentence?\nYou may leave now, _____ you can wait for the others.",
+    "choices": ["but", "or", "because", "since"],
+    "answer": "or",
+    "explanation": "The coordinating conjunction 'or' is used to present a choice or alternative option to the person."
+  },
+  {
+    "id": "verb_38",
+    "question": "Which sentence uses the article correctly?",
+    "choices": ["She is a honest woman.", "She is an honest woman.", "She is the honest woman.", "She is honest woman."],
+    "answer": "She is an honest woman.",
+    "explanation": "Although 'honest' begins with the consonant 'h', it has a silent 'h' and starts with a vowel sound, necessitating the use of 'an'."
+  },
+  {
+    "id": "verb_39",
+    "question": "Which sentence is correctly punctuated?",
+    "choices": ["After the meeting we went home.", "After the meeting, we went home.", "After, the meeting we went home.", "After the meeting we, went home."],
+    "answer": "After the meeting, we went home.",
+    "explanation": "An introductory prepositional phrase or adverbial clause ('After the meeting') is properly separated from the main clause by a comma."
+  },
+  {
+    "id": "verb_40",
+    "question": "Which sentence is correctly constructed?",
+    "choices": ["To pass the exam, studying every day is necessary.", "To pass the exam, every day studying is necessary.", "Studying is necessary, to pass the exam every day.", "Necessary studying every day to pass the exam."],
+    "answer": "To pass the exam, studying every day is necessary.",
+    "explanation": "This structure maintains clear parallel logic and logical flow, avoiding any misplaced modifiers or fragments."
+  },
+  {
+    "id": "verb_41",
+    "question": "Identify the error.\nThe committee / have decided / to postpone / the event.",
+    "choices": ["The committee", "have decided", "to postpone", "the event"],
+    "answer": "have decided",
+    "explanation": "'The committee' is acting as a single collective noun unit here, so it requires the singular verb form 'has decided' instead of 'have decided'."
+  },
+  {
+    "id": "verb_42",
+    "question": "Identify the error.\nOne of the teachers / were absent / during / the ceremony.",
+    "choices": ["One of the teachers", "were absent", "during", "the ceremony"],
+    "answer": "were absent",
+    "explanation": "The true subject of the clause is 'One', which is singular. The verb should be changed from the plural 'were' to the singular 'was'."
+  },
+  {
+    "id": "verb_43",
+    "question": "Identify the error.\nShe / don't know / the answer / to the question.",
+    "choices": ["She", "don't know", "the answer", "to the question"],
+    "answer": "don't know",
+    "explanation": "The third-person singular pronoun 'She' requires the singular negative contraction 'doesn't' (does not) instead of 'don't'."
+  },
+  {
+    "id": "verb_44",
+    "question": "Identify the error.\nThe news / are spreading / very quickly / today.",
+    "choices": ["The news", "are spreading", "very quickly", "today"],
+    "answer": "are spreading",
+    "explanation": "The word 'news' is plural in form but singular in construction and meaning. It requires the singular verb 'is spreading'."
+  },
+  {
+    "id": "verb_45",
+    "question": "Identify the error.\nEverybody / in the office / enjoy / the celebration.",
+    "choices": ["Everybody", "in the office", "enjoy", "the celebration"],
+    "answer": "enjoy",
+    "explanation": "'Everybody' is a singular indefinite pronoun. The verb must be singular as well, meaning 'enjoy' should be changed to 'enjoys'."
+  },
+  {
+    "id": "verb_46",
+    "question": "Choose the synonym of \"meticulous.\"",
+    "choices": ["Careful", "Reckless", "Lazy", "Ordinary"],
+    "answer": "Careful",
+    "explanation": "'Meticulous' means showing immense attention to detail and extreme care, making 'careful' its closest synonym."
+  },
+  {
+    "id": "verb_47",
+    "question": "Choose the synonym of \"obsolete.\"",
+    "choices": ["Modern", "Ancient", "Outdated", "Attractive"],
+    "answer": "Outdated",
+    "explanation": "Something that is 'obsolete' is no longer in use or useful because something newer exists, making it 'outdated'."
+  },
+  {
+    "id": "verb_48",
+    "question": "Choose the antonym of \"hostile.\"",
+    "choices": ["Friendly", "Angry", "Violent", "Harsh"],
+    "answer": "Friendly",
+    "explanation": "'Hostile' relates to an aggressive, unfriendly, or antagonistic nature. Its true opposite is 'friendly'."
+  },
+  {
+    "id": "verb_49",
+    "question": "Choose the antonym of \"expand.\"",
+    "choices": ["Increase", "Extend", "Contract", "Develop"],
+    "answer": "Contract",
+    "explanation": "'Expand' means to make larger or more extensive. Its direct physical antonym is 'contract', meaning to decrease in size."
+  },
+  {
+    "id": "verb_50",
+    "question": "Choose the antonym of \"transparent.\"",
+    "choices": ["Clear", "Obvious", "Visible", "Opaque"],
+    "answer": "Opaque",
+    "explanation": "'Transparent' describes material that allows light to pass through clearly. Its opposite is 'opaque', meaning light cannot pass through."
+  },
+  {
+    "id": "verb_51",
+    "question": "DOCTOR : HOSPITAL :: TEACHER : _____?",
+    "choices": ["Library", "Classroom", "Office", "Laboratory"],
+    "answer": "Classroom",
+    "explanation": "This represents a professional-to-workplace relationship. A doctor primarily works inside a hospital, while a teacher primarily works in a classroom."
+  },
+  {
+    "id": "verb_52",
+    "question": "FINGER : HAND :: TOE : _____?",
+    "choices": ["Leg", "Foot", "Heel", "Shoe"],
+    "answer": "Foot",
+    "explanation": "This analogy handles a component-to-body-part relationship. A finger is an extremity attached to a hand, just as a toe is an extremity attached to a foot."
+  },
+  {
+    "id": "verb_53",
+    "question": "AUTHOR : BOOK :: ARCHITECT : _____?",
+    "choices": ["Pencil", "Blueprint", "Building", "Engineer"],
+    "answer": "Building",
+    "explanation": "This shows a creator-to-final-product analogy. An author produces a completed book, while an architect designs a completed building structure."
+  },
+  {
+    "id": "verb_54",
+    "question": "PUPPY : DOG :: KITTEN : _____?",
+    "choices": ["Cub", "Cat", "Lion", "Rabbit"],
+    "answer": "Cat",
+    "explanation": "This follows a young-to-adult animal pairing. A puppy grows into a mature dog, just as a kitten grows into a mature cat."
+  },
+  {
+    "id": "verb_55",
+    "question": "GENEROUS : STINGY :: COURAGEOUS : _____?",
+    "choices": ["Brave", "Heroic", "Fearful", "Loyal"],
+    "answer": "Fearful",
+    "explanation": "This is an antonymous relationship analogy. 'Generous' is the exact opposite of 'stingy', and 'courageous' is the exact opposite of 'fearful'."
+  },
+  {
+    "id": "verb_56",
+    "question": "Arrange the sentences logically.\nI. The residents quickly evacuated the area.\nII. Heavy rain caused the river to overflow.\nIII. Rescue teams arrived to provide assistance.\nIV. Local officials issued a flood warning.",
+    "choices": [
+      "II–IV–I–III",
+      "IV–II–I–III",
+      "II–I–IV–III",
+      "IV–I–II–III"
+    ],
+    "answer": "II–IV–I–III",
+    "explanation": "The heavy rain happened first, causing the river to overflow. Officials then issued a flood warning, prompting residents to evacuate. Finally, rescue teams arrived to assist."
+  },
+  {
+    "id": "verb_57",
+    "question": "Read the passage and answer the question.\n\nReading regularly improves vocabulary, critical thinking, and comprehension skills. People who develop a reading habit often communicate more effectively because they are exposed to different writing styles and ideas.\n\nWhat is the main idea of the passage?",
+    "choices": [
+      "Reading is an expensive hobby.",
+      "Reading develops important language skills.",
+      "Communication is impossible without books.",
+      "Vocabulary is the only benefit of reading."
+    ],
+    "answer": "Reading develops important language skills.",
+    "explanation": "The passage discusses several benefits of reading, including vocabulary, critical thinking, comprehension, and communication skills."
+  },
+  {
+    "id": "verb_58",
+    "question": "Read the passage and answer the question.\n\nReading regularly improves vocabulary, critical thinking, and comprehension skills. People who develop a reading habit often communicate more effectively because they are exposed to different writing styles and ideas.\n\nAccording to the passage, why do regular readers often communicate more effectively?",
+    "choices": [
+      "They memorize dictionaries.",
+      "They read only academic books.",
+      "They encounter different writing styles and ideas.",
+      "They spend more money on books."
+    ],
+    "answer": "They encounter different writing styles and ideas.",
+    "explanation": "The passage directly states that exposure to different writing styles and ideas helps improve communication."
+  },
+  {
+    "id": "verb_59",
+    "question": "Read the passage and answer the question.\n\nReading regularly improves vocabulary, critical thinking, and comprehension skills. People who develop a reading habit often communicate more effectively because they are exposed to different writing styles and ideas.\n\nWhich statement is supported by the passage?",
+    "choices": [
+      "Reading may strengthen critical thinking.",
+      "Reading guarantees success in life.",
+      "Only students should read regularly.",
+      "Reading is less useful than speaking."
+    ],
+    "answer": "Reading may strengthen critical thinking.",
+    "explanation": "The passage explicitly mentions that reading improves critical thinking skills."
+  },
+  {
+    "id": "verb_60",
+    "question": "Read the passage and answer the question.\n\nReading regularly improves vocabulary, critical thinking, and comprehension skills. People who develop a reading habit often communicate more effectively because they are exposed to different writing styles and ideas.\n\nWhat is the author's purpose?",
+    "choices": [
+      "To entertain readers with a story.",
+      "To criticize people who dislike reading.",
+      "To persuade readers about the benefits of reading.",
+      "To compare reading with watching television."
+    ],
+    "answer": "To persuade readers about the benefits of reading.",
+    "explanation": "The author presents positive effects of reading to encourage appreciation of the habit."
+  },
+  {
+    "id": "verb_61",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "She has went to school early.",
+      "She have gone to school early.",
+      "She has gone to school early.",
+      "She is went to school early."
+    ],
+    "answer": "She has gone to school early.",
+    "explanation": "Present perfect tense uses 'has/have + past participle'. 'Gone' is the correct past participle of 'go'."
+  },
+  {
+    "id": "verb_62",
+    "question": "Identify the correct plural form of 'criterion'.",
+    "choices": ["Criterions", "Criteria", "Criterias", "Criteriones"],
+    "answer": "Criteria",
+    "explanation": "'Criterion' is an irregular noun; its correct plural form is 'criteria'."
+  },
+  {
+    "id": "verb_63",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "The team are winning the match.",
+      "The team is winning the match.",
+      "The team were winning the match yesterday.",
+      "The team be winning the match."
+    ],
+    "answer": "The team is winning the match.",
+    "explanation": "Collective nouns like 'team' are generally treated as singular in American English."
+  },
+  {
+    "id": "verb_64",
+    "question": "Which word is the correct synonym of 'benevolent'?",
+    "choices": ["Kind", "Cruel", "Weak", "Angry"],
+    "answer": "Kind",
+    "explanation": "'Benevolent' means showing kindness or goodwill."
+  },
+  {
+    "id": "verb_65",
+    "question": "Choose the correct antonym of 'optimistic'.",
+    "choices": ["Hopeful", "Pessimistic", "Positive", "Cheerful"],
+    "answer": "Pessimistic",
+    "explanation": "'Optimistic' means hopeful; its opposite is 'pessimistic'."
+  },
+  {
+    "id": "verb_66",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "He speak very well English.",
+      "He speaks English very well.",
+      "He speaking English very well.",
+      "He spoken English very well."
+    ],
+    "answer": "He speaks English very well.",
+    "explanation": "Correct subject-verb agreement requires 'speaks' for third-person singular."
+  },
+  {
+    "id": "verb_67",
+    "question": "Which sentence uses correct preposition?",
+    "choices": [
+      "She is good in math.",
+      "She is good at math.",
+      "She is good on math.",
+      "She is good for math."
+    ],
+    "answer": "She is good at math.",
+    "explanation": "The correct collocation is 'good at' when referring to skills."
+  },
+  {
+    "id": "verb_68",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "Neither of them are ready.",
+      "Neither of them is ready.",
+      "Neither of them were ready.",
+      "Neither of them have ready."
+    ],
+    "answer": "Neither of them is ready.",
+    "explanation": "'Neither' is singular and takes a singular verb."
+  },
+  {
+    "id": "verb_69",
+    "question": "Which sentence is correct?",
+    "choices": [
+      "The information are accurate.",
+      "The information is accurate.",
+      "The informations is accurate.",
+      "The informations are accurate."
+    ],
+    "answer": "The information is accurate.",
+    "explanation": "'Information' is an uncountable noun and takes a singular verb."
+  },
+  {
+    "id": "verb_70",
+    "question": "Choose the correct form.",
+    "choices": [
+      "He did not went there.",
+      "He did not goes there.",
+      "He did not go there.",
+      "He do not go there."
+    ],
+    "answer": "He did not go there.",
+    "explanation": "After 'did not', the base form of the verb is used."
+  },
+  {
+    "id": "verb_71",
+    "question": "Identify the correct sentence.",
+    "choices": [
+      "The dog wagged it's tail.",
+      "The dog wagged its tail.",
+      "The dog wagged its' tail.",
+      "The dog wagged it tail."
+    ],
+    "answer": "The dog wagged its tail.",
+    "explanation": "'Its' is the correct possessive form; 'it's' means 'it is'."
+  },
+  {
+    "id": "verb_72",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "She explained the topic clear.",
+      "She explained the topic clearly.",
+      "She clear explained the topic.",
+      "She explained clearly the topic."
+    ],
+    "answer": "She explained the topic clearly.",
+    "explanation": "Adverbs modify verbs; 'clearly' correctly modifies 'explained'."
+  },
+  {
+    "id": "verb_73",
+    "question": "Choose the correct synonym of 'abundant'.",
+    "choices": ["Plentiful", "Rare", "Scarce", "Empty"],
+    "answer": "Plentiful",
+    "explanation": "'Abundant' means existing in large quantities."
+  },
+  {
+    "id": "verb_74",
+    "question": "Choose the correct antonym of 'ancient'.",
+    "choices": ["Old", "Modern", "Historic", "Antique"],
+    "answer": "Modern",
+    "explanation": "'Ancient' means very old; its opposite is 'modern'."
+  },
+  {
+    "id": "verb_75",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "The book, which I borrowed is interesting.",
+      "The book which I borrowed is interesting.",
+      "The book, which I borrowed, is interesting.",
+      "The book which, I borrowed is interesting."
+    ],
+    "answer": "The book which I borrowed is interesting.",
+    "explanation": "Restrictive clauses do not require commas."
+  },
+  {
+    "id": "verb_76",
+    "question": "Arrange the sentence parts correctly: 'quickly / the boy / finished / his homework'.",
+    "choices": [
+      "Quickly the boy finished his homework",
+      "The boy quickly finished his homework",
+      "Finished the boy quickly his homework",
+      "His homework quickly the boy finished"
+    ],
+    "answer": "The boy quickly finished his homework",
+    "explanation": "Standard sentence structure is Subject + Adverb + Verb + Object."
+  },
+  {
+    "id": "verb_77",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "Everyone are happy today.",
+      "Everyone is happy today.",
+      "Everyone were happy today.",
+      "Everyone be happy today."
+    ],
+    "answer": "Everyone is happy today.",
+    "explanation": "'Everyone' is singular and takes 'is'."
+  },
+  {
+    "id": "verb_78",
+    "question": "Choose the correct analogy: TREE : FOREST :: STAR : ____",
+    "choices": ["Galaxy", "Sky", "Moon", "Planet"],
+    "answer": "Galaxy",
+    "explanation": "A forest is made of trees; a galaxy is made of stars."
+  },
+  {
+    "id": "verb_79",
+    "question": "Choose the correct analogy: CLOCK : TIME :: THERMOMETER : ____",
+    "choices": ["Weight", "Heat", "Temperature", "Pressure"],
+    "answer": "Temperature",
+    "explanation": "A thermometer measures temperature just as a clock measures time."
+  },
+  {
+    "id": "verb_80",
+    "question": "Choose the correct synonym of 'vivid'.",
+    "choices": ["Dull", "Bright", "Weak", "Dark"],
+    "answer": "Bright",
+    "explanation": "'Vivid' means bright, clear, or striking."
+  },
+  {
+    "id": "verb_81",
+    "question": "Which sentence is correct?",
+    "choices": [
+      "He is taller than me.",
+      "He is more taller than me.",
+      "He is most taller than me.",
+      "He is tall than me."
+    ],
+    "answer": "He is taller than me.",
+    "explanation": "Comparative form of 'tall' is 'taller', not 'more taller'."
+  },
+  {
+    "id": "verb_82",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "The scissors is sharp.",
+      "The scissors are sharp.",
+      "The scissors be sharp.",
+      "The scissors was sharp."
+    ],
+    "answer": "The scissors are sharp.",
+    "explanation": "Some plural-form nouns like 'scissors' take plural verbs."
+  },
+  {
+    "id": "verb_83",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "She enjoys to read books.",
+      "She enjoys reading books.",
+      "She enjoy reading books.",
+      "She enjoying reading books."
+    ],
+    "answer": "She enjoys reading books.",
+    "explanation": "After 'enjoy', the verb takes the -ing form."
+  },
+  {
+    "id": "verb_84",
+    "question": "Choose the correct antonym of 'generous'.",
+    "choices": ["Kind", "Selfish", "Helpful", "Friendly"],
+    "answer": "Selfish",
+    "explanation": "'Generous' means giving; its opposite is 'selfish'."
+  },
+  {
+    "id": "verb_85",
+    "question": "Choose the correct synonym of 'rapid'.",
+    "choices": ["Slow", "Fast", "Weak", "Soft"],
+    "answer": "Fast",
+    "explanation": "'Rapid' means quick or fast."
+  },
+  {
+    "id": "verb_86",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "The group of students are noisy.",
+      "The group of students is noisy.",
+      "The group of students were noisy.",
+      "The group of students be noisy."
+    ],
+    "answer": "The group of students is noisy.",
+    "explanation": "Collective noun 'group' is treated as singular."
+  },
+  {
+    "id": "verb_87",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "He arrived at the airport on Monday.",
+      "He arrived in the airport on Monday.",
+      "He arrived to the airport on Monday.",
+      "He arrived by the airport on Monday."
+    ],
+    "answer": "He arrived at the airport on Monday.",
+    "explanation": "'Arrive at' is used for specific places."
+  },
+  {
+    "id": "verb_88",
+    "question": "Choose the correct analogy: CUP : COFFEE :: PLATE : ____",
+    "choices": ["Food", "Drink", "Water", "Soup"],
+    "answer": "Food",
+    "explanation": "A cup holds coffee; a plate holds food."
+  },
+  {
+    "id": "verb_89",
+    "question": "Choose the correct synonym of 'fragile'.",
+    "choices": ["Strong", "Delicate", "Heavy", "Thick"],
+    "answer": "Delicate",
+    "explanation": "'Fragile' means easily broken or delicate."
+  },
+  {
+    "id": "verb_90",
+    "question": "Choose the correct antonym of 'expand'.",
+    "choices": ["Grow", "Increase", "Contract", "Extend"],
+    "answer": "Contract",
+    "explanation": "'Expand' means to grow; opposite is 'contract'."
+  },
+  {
+    "id": "verb_91",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "She can sings well.",
+      "She can sing well.",
+      "She can singing well.",
+      "She can sang well."
+    ],
+    "answer": "She can sing well.",
+    "explanation": "Modal verbs like 'can' are followed by the base verb."
+  },
+  {
+    "id": "verb_92",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "Neither of the answers are correct.",
+      "Neither of the answers is correct.",
+      "Neither of the answers were correct.",
+      "Neither of the answers be correct."
+    ],
+    "answer": "Neither of the answers is correct.",
+    "explanation": "'Neither' takes a singular verb."
+  },
+  {
+    "id": "verb_93",
+    "question": "Choose the correct synonym of 'sincere'.",
+    "choices": ["Fake", "Honest", "Cruel", "Weak"],
+    "answer": "Honest",
+    "explanation": "'Sincere' means honest and genuine."
+  },
+  {
+    "id": "verb_94",
+    "question": "Arrange the sentence logically.\nI. She studied hard for the exam.\nII. She passed with high marks.\nIII. She enrolled in a review class.\nIV. She took the examination.",
+    "choices": [
+      "III–I–IV–II",
+      "I–III–IV–II",
+      "III–IV–I–II",
+      "IV–III–I–II"
+    ],
+    "answer": "III–I–IV–II",
+    "explanation": "Preparation (review class) → studying → exam → result."
+  },
+  {
+    "id": "verb_95",
+    "question": "Read the passage and answer the question.\n\nTime management is an essential skill for students. It allows them to balance study, rest, and leisure effectively, leading to better academic performance.\n\nWhat is the main idea?",
+    "choices": [
+      "Students should avoid studying.",
+      "Time management is important for students.",
+      "Leisure is more important than study.",
+      "Students should only rest."
+    ],
+    "answer": "Time management is important for students.",
+    "explanation": "The passage emphasizes the importance of managing time effectively."
+  },
+  {
+    "id": "verb_96",
+    "question": "Read the passage and answer the question.\n\nTime management is an essential skill for students. It allows them to balance study, rest, and leisure effectively, leading to better academic performance.\n\nWhy is time management important?",
+    "choices": [
+      "It increases sleeping hours.",
+      "It helps balance study, rest, and leisure.",
+      "It removes the need for studying.",
+      "It replaces school attendance."
+    ],
+    "answer": "It helps balance study, rest, and leisure.",
+    "explanation": "The passage directly explains this benefit."
+  },
+  {
+    "id": "verb_97",
+    "question": "Read the passage and answer the question.\n\nTime management is an essential skill for students. It allows them to balance study, rest, and leisure effectively, leading to better academic performance.\n\nWhich statement is supported?",
+    "choices": [
+      "Time management is useless.",
+      "It leads to better academic performance.",
+      "Only teachers need time management.",
+      "Students should avoid leisure."
+    ],
+    "answer": "It leads to better academic performance.",
+    "explanation": "The passage clearly states this result."
+  },
+  {
+    "id": "verb_98",
+    "question": "Read the passage and answer the question.\n\nTime management is an essential skill for students. It allows them to balance study, rest, and leisure effectively, leading to better academic performance.\n\nThe author's purpose is to:",
+    "choices": [
+      "Describe a historical event.",
+      "Encourage time management.",
+      "Criticize students.",
+      "Compare study methods."
+    ],
+    "answer": "Encourage time management.",
+    "explanation": "The passage promotes the value of time management."
+  },
+  {
+    "id": "verb_99",
+    "question": "Choose the correct analogy: BRUSH : PAINT :: PEN : ____",
+    "choices": ["Write", "Ink", "Paper", "Draw"],
+    "answer": "Ink",
+    "explanation": "A brush uses paint; a pen uses ink."
+  },
+  {
+    "id": "verb_100",
+    "question": "Choose the correct sentence.",
+    "choices": [
+      "The data is correct.",
+      "The data are correct.",
+      "The data be correct.",
+      "The data was correct."
+    ],
+    "answer": "The data is correct.",
+    "explanation": "In modern usage, 'data' is often treated as singular in general contexts."
   }
 ]
