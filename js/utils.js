@@ -78,9 +78,11 @@ function renderNavbar() {
                         <span class="sm:hidden">${streak}d</span>
                     </div>
                     
+                    <!-- 
                     <div class="hidden sm:flex w-8 h-8 rounded-full bg-blue-100 text-blue-700 border border-blue-200 items-center justify-center text-xs font-bold shadow-sm" title="User Profile">
-                        RD
-                    </div>
+                        Reserved for later
+                    </div> 
+                    -->
                     
                     <!-- Mobile Menu Trigger -->
                     <button id="mobile-menu-toggle" class="md:hidden p-1.5 text-slate-600 hover:text-slate-800 focus:outline-none cursor-pointer">
