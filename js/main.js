@@ -1,4 +1,3 @@
-
 function initDefaultData() {
     if (localStorage.getItem('cse_streak') === null) {
         save('cse_streak', 1);
@@ -25,28 +24,6 @@ function initDefaultData() {
 }
 
 // Function to update the home page stats UI
-async function getExamQuestionsTotal() {
-    const urls = [
-        'data/numerical.json',
-        'data/verbal.json',
-        'data/analytical.json',
-        'data/clerical.json',
-        'data/gen-info.json'
-    ];
-    try {
-        const results = await Promise.all(urls.map(url => fetchJSON(url)));
-        let total = 0;
-        results.forEach(qList => {
-            if (qList) total += qList.length;
-        });
-        return total;
-    } catch (e) {
-        console.error("Error fetching exam questions total:", e);
-        return 0;
-    }
-}
-
-// Function to update the home page stats UI
 async function updateHomeUI() {
     // 1. Calculate Exam High Score
     const history = load('cse_exam_history', []);
@@ -67,8 +44,7 @@ async function updateHomeUI() {
         if (maxPercentage > 0) {
             highScoreEl.textContent = `${maxPercentage}% (${maxRatio})`;
         } else {
-            const totalExamQs = await getExamQuestionsTotal();
-            highScoreEl.textContent = `0% (0 / ${totalExamQs})`;
+            highScoreEl.textContent = `0% (0 / ${limits.EXAM_LIMIT})`;
         }
     }
     

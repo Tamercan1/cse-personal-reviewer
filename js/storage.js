@@ -1,7 +1,3 @@
-/**
- * Storage helpers for local storage synchronization.
- */
-
 function save(key, value) {
     try {
         localStorage.setItem(key, JSON.stringify(value));

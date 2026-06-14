@@ -1,13 +1,3 @@
-const limits = {
-    EXAM_LIMIT: 40,
-    TIME_LIMIT: 11400,
-    numerical: 45,
-    verbal: 45,
-    analytical: 45,
-    clerical: 15,
-    genInfo: 20
-}
-
 const examState = {
     questions: [],
     selectedAnswers: [],

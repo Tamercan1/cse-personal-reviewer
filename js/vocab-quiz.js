@@ -1,7 +1,3 @@
-/**
- * Controller for the Daily Vocabulary Challenge quiz.
- */
-
 const vocabQuizState = {
     currentDay: 1,
     currentQuestion: 0,

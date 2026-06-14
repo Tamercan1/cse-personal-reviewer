@@ -1,7 +1,3 @@
-/**
- * Controller for the Vocabulary Digest page.
- */
-
 const vocabularyState = {
     currentDay: 1,
     vocabData: [],

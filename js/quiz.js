@@ -1,4 +1,4 @@
-const QUIZ_LIMIT = 5; // Maximum questions per practice quiz category
+const QUIZ_LIMIT = 25; 
 
 const quizState = {
     category: "Numerical",

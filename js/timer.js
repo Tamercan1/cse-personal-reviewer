@@ -1,7 +1,3 @@
-/**
- * Timer module for tracking exam countdowns.
- */
-
 let timerInterval = null;
 
 function startTimer(durationSeconds, onTick, onFinish) {

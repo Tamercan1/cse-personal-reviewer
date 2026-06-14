@@ -1,6 +1,13 @@
-/**
- * Common utility functions for the CSE Reviewer App.
- */
+// Global configuration limits shared across views
+const limits = {
+    EXAM_LIMIT: 170,
+    TIME_LIMIT: 11400,
+    numerical: 45,
+    verbal: 45,
+    analytical: 45,
+    clerical: 15,
+    genInfo: 20
+};
 
 // Helper to check if the current page is in the root directory
 function isRootDirectory() {
