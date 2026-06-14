@@ -1,5 +1,3 @@
-const QUIZ_LIMIT = 25; 
-
 const quizState = {
     category: "Numerical",
     currentQuestion: 0,
@@ -184,7 +182,7 @@ async function startCategory(categoryName) {
     const data = await fetchJSON(file);
     if (data) {
         shuffleArray(data);
-        quizState.questions = data.slice(0, QUIZ_LIMIT);
+        quizState.questions = data.slice(0, limits.QUIZ_LIMIT);
         showQuestion();
         updateProgress();
         const cardCategory = document.getElementById('question-category');
@@ -420,6 +418,14 @@ function updateProgress() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.category-tab');
+    const qNumber = document.querySelectorAll('.category-tab span p');
+
+    if (qNumber) {
+        qNumber.forEach(el => {
+            el.textContent = limits.QUIZ_LIMIT;
+        });
+    }
+
     if (tabs.length > 0) {
         tabs.forEach(tab => {
             tab.addEventListener('click', (e) => {

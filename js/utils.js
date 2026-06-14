@@ -1,6 +1,7 @@
 // Global configuration limits shared across views
 const limits = {
     EXAM_LIMIT: 170,
+    QUIZ_LIMIT: 25,
     TIME_LIMIT: 11400,
     numerical: 45,
     verbal: 45,
